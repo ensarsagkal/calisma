@@ -9,8 +9,8 @@
     font-family: "Roboto Condensed", sans-serif;
 
 }
-
-li{
+/* ----ilk liste------- */
+ul.languages li{
 
     background-color: lightgreen;
     border: 1px solid orange;
@@ -25,8 +25,21 @@ li{
 
 }
 
-li:hover{
+ul.languages li:hover{
     opacity: 0.5;
+    cursor: pointer;
+    transition: 1.5s;
 
 }
 
+
+
+/*  pseudo class */
+
+.pseudo{
+    color: aquamarine;
+}
+
+.pseudo i{
+    color: purple;
+}
