@@ -1,0 +1,32 @@
+.title1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.title2{
+    color: blueviolet;
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+
+li{
+
+    background-color: lightgreen;
+    border: 1px solid orange;
+    border-radius: 15px;
+    margin: 15px;
+    width: 300px;
+    list-style-position: inside;
+    list-style-image: url(./img/cubes-solid.svg);
+    border-left: 5px solid grey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 7px;
+
+}
+
+li:hover{
+    opacity: 0.5;
+
+}
+
