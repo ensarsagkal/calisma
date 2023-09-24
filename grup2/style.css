@@ -8,6 +8,8 @@ body{
     background-color:  rgb(48, 46, 46, 0.815);
     border-radius: 15px;
     width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
 
 }
 
@@ -42,7 +44,7 @@ h2{
     font-style: bolder;
     color: red;
     margin-left: 25px;
-    border: 1px solid yellowgreen;
+   
     
 
 
@@ -51,5 +53,38 @@ h2{
 article{
     text-align: justify;
     margin: 12px 25px;
-    border: 1px solid yellowgreen;
 }
+
+li{
+    line-height: 1.6;
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+button{
+    border: 2px solid orange;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    
+
+
+}
+
+button:hover{
+    color: red;
+    background-color:  rgb(48, 46, 46, 0.815);
+    cursor: pointer;
+
+}
+
+img{
+    box-shadow: 6px 6px 150px 46px rgba(232, 17, 17, 0.6);
+    
+}
+
