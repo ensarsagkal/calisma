@@ -4,9 +4,11 @@ body{
 }
 
 .container{
- margin:45px ;
+    margin:45px ;
     background-color:  rgb(48, 46, 46, 0.815);
     border-radius: 15px;
+    width: 80%;
+
 }
 
 
@@ -39,9 +41,15 @@ h2{
     font-family: 'Lobster Two', cursive;
     font-style: bolder;
     color: red;
+    margin-left: 25px;
+    border: 1px solid yellowgreen;
+    
+
+
 }
 
 article{
     text-align: justify;
-    padding: 23px;
+    margin: 12px 25px;
+    border: 1px solid yellowgreen;
 }
