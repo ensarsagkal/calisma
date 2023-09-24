@@ -1,5 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+body{
+    background-color: black;
+    color: white;
+}
+
+.container{
+ margin:45px ;
+    background-color:  rgb(48, 46, 46, 0.815);
+    border-radius: 15px;
+}
+
+
+
 h1 {
-    font-family: 'Lobster', cursive;
-    font-weight: bold;
+    color: white
+;
+    font-family: 'Lobster Two', cursive;
+    font-size: bolder;
+    font-size: 48px;
+    text-align: center;
+
+}
+span{
+    color: red;
+}
+
+
+.header-part{
+    text-align: center;
+}
+
+img{
+    width: 18em ;
+    border-radius: 35px;
+}
+
+
+h2{
+    font-family: 'Lobster Two', cursive;
+    font-style: bolder;
+    color: red;
+}
+
+article{
+    text-align: justify;
+    padding: 23px;
 }
