@@ -15,9 +15,15 @@ main{
     background-color: white;
     border:  1px solid black;
     width: 650px;
-    height: 470px;    
-    margin: auto;
-    margin-top: 150px;
+    height: 470px;
+    /* div ortalamada position metodu */
+    position: absolute;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* margin: auto; */
+    /* margin-top: 150px; */
+
 }
 
 .stepdiv{
