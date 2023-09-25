@@ -35,7 +35,7 @@ main{
     background-position: center center;
     /* margin-left: 15px;
     margin-bottom: 10px; */
-    border-radius: 10%;
+    border-radius: 5%;
     position: absolute;  
     top: 50%;
     left: 25%;
@@ -46,10 +46,66 @@ main .stepdiv ul li{
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     line-height: 20px;
+    list-style-type: none;
+    margin-left: 10px;
 }
 
 main .stepdiv ul li span{
     color:#B4B4B3;
+}
+
+main .stepdiv ul li .number1{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid black;
+    position: absolute;
+    top: 8%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+    /* background-color: blueviolet; */
+}
+main .stepdiv ul li .number2{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid black;
+    position: absolute;
+    top: 22%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+}
+main .stepdiv ul li .number3{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid black;
+    position: absolute;
+    top: 36%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+}
+main .stepdiv ul li .number4{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid black;
+    position: absolute;
+    top: 49%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+}
+
+main .stepdiv ul li .number{
+    border:1px solid white;
+}
+
+main .stepdiv ul li .number:hover{
+    background-color: blueviolet;
 }
 
 /* .info{
