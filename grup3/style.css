@@ -23,12 +23,22 @@ main{
     transform: translate(-50%,-50%);
     /* margin: auto; */
     /* margin-top: 150px; */
+    border-radius: 5%;
 
 }
 
 .stepdiv{
     width: 270px;
-    height: 450px;
+    height: 430px;
     background-image: url(./img/bg-sidebar-desktop\ \(1\).svg);
     background-position: center center;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+
 }
+
+
+/* .info{
+
+} */
