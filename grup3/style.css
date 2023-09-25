@@ -1,0 +1,28 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+body{
+    background-color: rgb(190, 186, 186);
+   
+    /* height: 100vh;
+    margin: auto; */
+}
+
+
+main{
+    background-color: white;
+    border:  1px solid black;
+    width: 650px;
+    height: 470px;    
+    margin: auto;
+    margin-top: 150px;
+}
+
+.stepdiv{
+    width: 270px;
+    height: 450px;
+    background-image: url(./img/bg-sidebar-desktop\ \(1\).svg);
+    background-position: center center;
+}
