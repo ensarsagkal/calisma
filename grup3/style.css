@@ -32,10 +32,13 @@ main{
     height: 430px;
     background-image: url(./img/bg-sidebar-desktop\ \(1\).svg);
     background-position: center center;
-    margin-left: 15px;
-    margin-bottom: 10px;
+    /* margin-left: 15px;
+    margin-bottom: 10px; */
     border-radius: 10%;
-
+    position: absolute;  
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
 }
 
 
