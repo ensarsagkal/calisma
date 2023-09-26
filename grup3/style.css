@@ -15,8 +15,8 @@ body{
 main{
     background-color: white;
     border:  1px solid black;
-    width: 650px;
-    height: 470px;
+    width: 750px;
+    height: 490px;
     /* div ortalamada position metodu */
     position: absolute;  
     top: 50%;
@@ -30,8 +30,8 @@ main{
 }
 
 .stepdiv{
-    width: 270px;
-    height: 430px;
+    width: 260px;
+    height: 450px;
     background-image: url(./img/bg-sidebar-desktop\ \(1\).svg);
     background-position: center center;
     /* margin-left: 15px;
@@ -39,7 +39,7 @@ main{
     border-radius: 5%;
     position: absolute;  
     top: 50%;
-    left: 25%;
+    left: 20%;
     transform: translate(-50%,-50%);
 }
 main .stepdiv ul li{
@@ -110,11 +110,58 @@ main .stepdiv ul li .number:hover{
 }
 
 .info{
-    border:  2px solid red;
-    width: 320px;
+    /* border:  2px solid red; */
+    width: 420px;
     height: 430px;
-    margin-left: 310px;
+    margin-left: 300px;
     margin-top: 23px;
     border-radius: 5px;
+    
 
+    font-family: 'Lato', sans-serif;
+
+}
+
+.info h3{
+    color: rgb(4, 4, 104);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-bottom: -10px;
+    padding-top: 20px;
+
+}
+
+
+.info p{
+    color: #B4B4B3;
+    
+    
+
+
+
+}
+
+
+    
+
+
+.info label{
+ 
+ color: rgb(4, 4, 104);
+ font-weight: bold;
+  
+
+}
+
+.info input{
+    font-family: 'Lato', sans-serif;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    width: 93%;
+    line-height: 25px;
+    border-radius: 5px;
+    border-color: #b4b4b367;
+    padding: 5px;
 }
