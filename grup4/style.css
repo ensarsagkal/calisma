@@ -1,65 +1,94 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    background-color: lightgray;
-  }
-  nav {
-    background-color: white;
-    margin: 1%;
-    height: 7vh;
-    border-radius: 6px;
-  }
-  nav ul li {
-    display: inline-block;
-    /* padding: 15px 150px; */
-    padding-top: 1%;
-    font-family: "Roboto", sans-serif;
-  }
-  #devlinks {
-    margin-left: 2%;
-    font-weight: bold;
-    font-size: 18px;
-    padding-top: 1%;
-  }
-  #icon1 {
-    border: 2px solid blueviolet;
-    background-color: blueviolet;
-    color: white;
-    border-radius: 1%;
-  }
-  #icon2 {
-    color: rgb(114, 112, 112);
-  }
-  #links {
-    color: rgb(114, 112, 112);
-    margin-left: 32%;
-    padding: 0.6% 1%;
-  }
-  a {
-    text-decoration: none;
-    color: rgb(114, 112, 112);
-  }
-  #profile {
-    margin-left: 6%;
-  }
-  #icon3 {
-    color: rgb(114, 112, 112);
-  }
-  #preview {
-    border: 2px solid blueviolet;
-    border-radius: 6px;
-    padding: 0.4%;
-    margin-left: 29%;
-    padding: 0.6% 1.3%;
-    padding-bottom: 0.3%;
-  }
-  #links:hover {
-    background-color: rgba(137, 43, 226, 0.281);
-    color: blueviolet;
-    border-radius: 6px;
-    /* padding: 0.6% 1%; */
-    
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightgray;
+}
+nav {
+  background-color: white;
+  margin: 1%;
+  height: 7vh;
+  border-radius: 6px;
+}
+nav ul li {
+  display: inline-block;
+  /* padding: 15px 150px; */
+  padding-top: 1%;
+  font-family: "Roboto", sans-serif;
+}
+#devlinks {
+  margin-left: 2%;
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 1%;
+}
+#icon1 {
+  border: 2px solid blueviolet;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 1%;
+}
+#icon2 {
+  color: rgb(114, 112, 112);
+}
+#links {
+  /* color: rgb(114, 112, 112); */
+  /* margin-left: 32%; */
+  /* padding: 0.6% 1%; */
+  margin-left: 12px;
+}
+a {
+  text-decoration: none;
+  color: rgb(114, 112, 112);
+}
+div{
+  display: inline-block;
+  width: 115px;
+  margin-left: 30%;
+  padding: 10px;   
+
+}
+.div2{
+  display: inline-block;
+  width: 150px;
+  /* margin-left: 20%; */
+  padding: 10px;
+  margin-left: 4%;
+  
+}
+div:hover a {
+  color: blueviolet;
+}
+div:hover {
+  background-color: rgba(137, 43, 226, 0.37);
+  color: blueviolet;
+  border-radius: 6px;
+  /* padding: 0.6% 1%; */
+}
+div:hover #icon2 {
+  color: blueviolet;
+}
+#profile {
+  margin-left: 6%;
+}
+#icon3 {
+  color: rgb(114, 112, 112);
+}
+.div2:hover #icon3 {
+  color: blueviolet;}
+
+#preview {
+  border: 2px solid blueviolet;
+  border-radius: 6px;
+  padding: 0.4%;
+  margin-left: 29%;
+  padding: 0.6% 1.3%;
+  padding-bottom: 0.3%;
+}
+
+
+
+
+
