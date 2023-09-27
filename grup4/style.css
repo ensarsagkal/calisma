@@ -88,7 +88,88 @@ div:hover #icon2 {
   padding-bottom: 0.3%;
 }
 
+/* -------------------------------------------------- */
+.left{
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: white;
+  width: 35%;
+  height: 85vh;
+  margin-left: 1%;
+}
 
 
+.phone{
+  border: 1px solid grey;
+  border-radius:35px ;
+  width: 45%;
+  height: 75%;
+  margin: auto;
+  margin-top: 14%;
+}
+
+.phone2{
+  border: 1px solid grey;
+  border-radius:35px ;
+  width: 95%;
+  height: 95%;
+  margin: 4% auto;
+  
+}
 
 
+.photo{
+  /* border: 1px solid grey; */
+  
+  width: 35%;
+  height: 20%;
+  margin: 10% auto;
+  border-radius: 50%;
+  background-color: rgba(211, 211, 211, 0.505);
+
+}
+
+.photo2{
+  /* border: 1px solid grey; */
+  
+  width: 65%;
+  height: 3%;
+  margin: 10% auto 3%;
+  border-radius: 5px;
+  background-color: rgba(211, 211, 211, 0.505);
+
+}
+
+
+.photo3{
+  /* border: 1px solid grey; */
+  
+  width: 40%;
+  height: 2%;
+  margin: 4% auto;
+  border-radius: 5px;
+  background-color: rgba(211, 211, 211, 0.505);
+
+}
+/* diğeerlerinde de kullanılacak */
+
+.github{
+    border: 1px solid grey;
+  
+    width: 85%;
+    height: 8%;
+    margin: 10% auto;
+    border-radius: 5px;
+    background-color:black;
+    color: white;
+    font-size: 12px;
+    padding-top: 4%;
+
+}
+
+#arrow{
+  padding-left: 55%;
+}
+#space{
+  padding-left: 8%;
+}
