@@ -168,8 +168,75 @@ div:hover #icon2 {
 }
 
 #arrow{
-  padding-left: 55%;
+  padding-left: 51%;
 }
-#space{
+#arrow1{
+  padding-left: 46%;
+}
+
+#arrow2{
+  padding-left: 50%;
+}
+#space, #space2, #space3{
   padding-left: 8%;
+}
+.yt{
+  border: 1px solid grey;
+  
+  width: 85%;
+  height: 8%;
+  margin: -8% auto;
+  border-radius: 5px;
+  background-color:red;
+  color: white;
+  font-size: 12px;
+  padding-top: 4%;
+
+}
+
+.linkedin{
+  border: 1px solid grey;
+  
+  width: 85%;
+  height: 8%;
+  margin: 10% auto;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  font-size: 12px;
+  padding-top: 4%;
+
+}
+
+.bos{
+  /* border: 1px solid grey; */
+  
+  width: 85%;
+  height: 8%;
+  margin: -8% auto;
+  border-radius: 5px;
+  background-color:rgba(211, 211, 211, 0.505);
+  color: white;
+  font-size: 12px;
+  padding-top: 4%;
+
+}
+.bos2{
+  /* border: 1px solid grey; */
+  
+  width: 85%;
+  height: 8%;
+  margin: 10% auto;
+  border-radius: 5px;
+  background-color:rgba(211, 211, 211, 0.505);
+  color: white;
+  font-size: 12px;
+  padding-top: 4%;
+
+}
+
+/* -------sagdaki div--------------------- */
+
+.right{
+  
 }
