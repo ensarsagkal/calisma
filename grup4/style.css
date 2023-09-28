@@ -96,7 +96,7 @@ div:hover #icon2 {
   border-radius: 6px;
   background-color: white;
   width: 35%;
-  height: 85vh;
+  height: 87vh;
   margin-left: 1%;
   display: inline-block;
   position: absolute;
@@ -248,7 +248,7 @@ div:hover #icon2 {
     border-radius: 6px;
     background-color: white;
     width: 61.8%;
-    height: 84.8vh;
+    height: 87vh;
     margin-bottom: -15.1%;
     margin-left: 1%;
     display: inline-block;
@@ -260,7 +260,7 @@ div:hover #icon2 {
 .right h1{
   font-family: "Roboto", sans-serif;
   padding-left: 5%;
-  padding-top: 5%;
+  padding-top: 3%;
 
 }
 .right p{
@@ -283,16 +283,62 @@ div:hover #icon2 {
 text-shadow: 1px 0 1px;
 }
 
-.link1{
-  background-color:rgba(211, 211, 211, 0.505);
-  margin: 2% 5%;
-  height: 30%;
-  border-radius: 8px;
 
-}
-.link1 p{
-  padding-left: 2%;
+.link1{
+  background-color: rgba(211, 211, 211, 0.505);
+  margin: 1% 5%;
+  height: 28%;
+  border-radius: 8px;
+  
 }
 .link1 span{
   padding-left: 82%;
+  font-weight:lighter;
+}
+.link1 p{
+  padding-left: 2%;
+  color: rgb(114, 112, 112);
+  font-weight: bold;
+  line-height: 10px;
+  padding-top: -10%;
+
+ 
+}
+.label1{
+  margin-left: 2.5%;
+  display: block;
+  margin-top: 1%;
+  font-size: 14px;
+  color: rgb(114, 112, 112);
+  /* border: 1px solid red; */
+}
+.select{
+  width: 95%;
+  margin-left: 2%;
+  display: block;
+  margin-top: -2%;
+  height: 20%;
+  border-radius: 8px;
+  border:1px solid rgb(114, 112, 112);
+
+  
+}
+
+.label2{
+  margin-left: 2.5%;
+  display: block;
+  margin-top: 1%;
+  font-size: 14px;
+  color: rgb(114, 112, 112);
+  /* border: 1px solid red; */
+}
+#label2{
+  width: 95%;
+  margin-left: 2%;
+  display: block;
+  margin-top: 0;
+  height: 20%;
+  border-radius: 8px;
+  border:1px solid rgb(114, 112, 112);
+
 }
