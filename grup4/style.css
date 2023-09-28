@@ -11,6 +11,8 @@ nav {
   margin: 1%;
   height: 7vh;
   border-radius: 6px;
+  position: relative;
+  top: 5%;
 }
 nav ul li {
   display: inline-block;
@@ -96,6 +98,9 @@ div:hover #icon2 {
   width: 35%;
   height: 85vh;
   margin-left: 1%;
+  display: inline-block;
+  position: absolute;
+  left:1%;
 }
 
 
@@ -239,4 +244,55 @@ div:hover #icon2 {
 
 .right{
   
+    /* border: 1px solid black; */
+    border-radius: 6px;
+    background-color: white;
+    width: 61.8%;
+    height: 84.8vh;
+    margin-bottom: -15.1%;
+    margin-left: 1%;
+    display: inline-block;
+    position: absolute;
+    left: 37%;
+
+
+}
+.right h1{
+  font-family: "Roboto", sans-serif;
+  padding-left: 5%;
+  padding-top: 5%;
+
+}
+.right p{
+  font-family: "Roboto", sans-serif;
+  padding-left: 5%;
+  padding-top: 3%;
+  color: grey;
+}
+.btn1{
+  width: 90%;
+  margin: auto;
+  margin-left: 5% ;
+  margin-top: 2%;
+  padding: 1% 0;
+  border-radius: 8px;
+  color: blueviolet;
+  background-color: white;
+  font-weight: bolder;
+  border: 2px solid rgba(137, 43, 226, 0.37);
+text-shadow: 1px 0 1px;
+}
+
+.link1{
+  background-color:rgba(211, 211, 211, 0.505);
+  margin: 2% 5%;
+  height: 30%;
+  border-radius: 8px;
+
+}
+.link1 p{
+  padding-left: 2%;
+}
+.link1 span{
+  padding-left: 82%;
 }
