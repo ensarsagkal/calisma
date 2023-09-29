@@ -342,3 +342,19 @@ text-shadow: 1px 0 1px;
   border:1px solid rgb(114, 112, 112);
 
 }
+
+
+.btn2{
+  margin-left: 88%;
+  margin-top: 3%;
+  padding: 1% 2%;
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(120,34, 248);
+  border: none;
+
+}
+.btn2:hover{
+  transform: scale(1.1);
+
+}
