@@ -240,3 +240,18 @@ console.log("Hello_World!");
 // yourNote = parseInt(prompt("enter your note:"))
 // const gecmeDurumu = yourNote<40 ? "Kaldi" : (yourNote<50 ? "sartli gecti" : "gecti")   
 // console.log(gecmeDurumu);
+
+
+// ! maas
+
+// let salary= parseInt(prompt("enter your salary: "))
+// let minimumWage=11402
+
+// let newSalary =salary<=minimumWage ? `Your new salary is ${salary+(salary/2)}` : `Your new salary is ${salary+(salary/10)}`
+// console.log(newSalary);
+
+let income = parseInt(prompt("enter your income : "))
+let expense = parseInt(prompt("enter your expense :"))
+let minimumWage=11402
+let credit = ((income - expense)>=minimumWage)? "credit avaible" : "sorry"
+console.log(credit);
