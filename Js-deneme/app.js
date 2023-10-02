@@ -120,4 +120,115 @@ console.log("Hello_World!");
 // const maxNumber =Math.max(numb1,numb2,numb3)
 // console.log(`max number is ${maxNumber}`);
 
+// ...hesap makinesi...
+let number1 = parseInt(prompt("enter a number1"))
+let number2 = parseInt(prompt("enter a number2"))
+let result
+islem = prompt("bir islem seciniz")
+if(islem == "+"){
+   result = number1 + number2
+   console.log(`${result}`)
+}else if(islem== "*"){
+    result= number1* number2
+    console.log(`${result}`)
+}else if(islem == "-"){
+    result= number1 - number2
+    console.log(`${result}`)
+}else if(islem == "/" ){
+    result= number1 / number2
+    console.log(`${result}`)
+}
+else{
+    console.log("hatalı bir giris yaptınız");
+}
+
+
+let ay =Number(prompt('Ay:1-12'))
+
+switch (ay) {
+    case 1:
+        ay='ocak'
+        break;
+
+    case 2:
+        ay='subat'   
+        break;
+    case 3:
+        ay='mart'    
+        break;
+    case 4:
+        ay='nisan'    
+        break;
+    case 5:
+        ay='mayıs'    
+        break;
+    case 6:
+        ay='haziran'    
+        break;
+    case 7:
+        ay='temmuz'    
+        break;
+    case 8:
+        ay='agustos'    
+        break;
+    case 9:
+        ay='eylul'    
+        break;
+    case 10:
+        ay='ekim'    
+        break;
+    case 11:
+        ay='kasım'    
+        break;
+    case 12:
+        ay='aralık'    
+        break;
+
+    default:
+        ay = console.log('yanlıs');
+        break;
+}
+
+console.log(ay);
+
+let gun =prompt('gun:pazartesi-pazar')
+ gun = gun.toLowerCase()
+
+switch (gun) {
+    case 'pazartesi':
+        gun = 'inclass'
+        
+        break;
+
+    case 'sali':
+        gun = 'inclass'
+        
+        break;
+    case 'carsamba':
+        gun = 'inclass'
+        
+        break;
+    case 'persembe':
+        gun = 'inclass'
+        
+        break;
+    case 'cuma':
+        gun = 'teamwork'
+        
+        break;
+    case 'cumartesi':
+        gun = 'inclass + workshop'
+        
+        break;
+    case 'pazar':
+        gun = 'self-study'
+        
+        break;
+
+    default:
+        console.log('yanlıs girdiniz');
+        break;
+}
+
+console.log(gun);
 
