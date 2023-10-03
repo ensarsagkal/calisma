@@ -372,22 +372,101 @@ console.log("Hello_World!");
 // maksimum deger : ${max}
 // minimum deger : ${min}`);
 
-const num1 = Number(prompt('enter a first number'))
-const num2 = Number(prompt('enter a second number'))
-const num3 = Number(prompt('enter a third number'))
+// const num1 = Number(prompt('enter a first number'))
+// const num2 = Number(prompt('enter a second number'))
+// const num3 = Number(prompt('enter a third number'))
 
-let toplam = num1 + num2 + num3
-// console.log(toplam);
-let carpim = num1 * num2 * num3
-// console.log(carpim);
+// let toplam = num1 + num2 + num3
+// // console.log(toplam);
+// let carpim = num1 * num2 * num3
+// // console.log(carpim);
 
-let max = Math.max(num1,num2,num3)
-// console.log(max);
+// let max = Math.max(num1,num2,num3)
+// // console.log(max);
 
-let min = Math.min(num1,num2,num3)
-// console.log(min);
+// let min = Math.min(num1,num2,num3)
+// // console.log(min);
 
-console.log(`girilen sayilarin toplami: ${toplam}
-carpimi ${carpim}
-maksimum deger : ${max}
-minimum deger : ${min}`);
+// console.log(`girilen sayilarin toplami: ${toplam}
+// carpimi ${carpim}
+// maksimum deger : ${max}
+// minimum deger : ${min}`);
+
+
+// let number = Number(prompt("Sayi giriniz: "))
+// let sonuc = number % 2 == 0 ? "number cifttir"
+// : "number tektir"
+// console.log(sonuc);
+
+// let whichKind = prompt("fahrenheit to celsius(F) or celsius to fahrenheit(C): ")
+// let degree = Number(prompt("please enter a degree: "))
+// if(whichKind == "F" ){
+//   result = (degree -32) / 1.8
+//   console.log(result)
+// }else if(whichKind == "C"){
+//   result = degree * 1.8 + 32
+//   console.log(result)
+// }else{
+//   console.log("ERROR")
+// }
+
+// const number = Math.round(Math.random() * 100);
+// console.log(number);
+// let guess = +prompt("please enter your guess: ");
+// if (guess == number) {
+//   console.log("bingo!!");
+// } else {
+//   console.log("fail!");
+// }
+
+// !sayı tahmini coklu
+
+
+// const number = Math.round(Math.random() * 100);
+// console.log(number);
+// let guess;
+// let counter = 1
+// while (counter < 6){
+//     guess = +prompt('pls enter the number: ')
+//     if (counter == 5){
+//         console.log("game over");
+//         break
+//     }
+//     else if (counter == 4){
+//         console.log("last chance");
+//         counter++
+//     }
+//     else if(guess == number){
+//         console.log("bingo");
+//         break
+//     }
+//     else{
+//         console.log("try again");
+//         counter++
+//     }
+// }
+
+
+// !sayı tahminini mhmmd
+
+// const number = Math.round(Math.random() * 100);
+// console.log(number);
+// let guess;
+// let counter = 0;
+// let lastChange = 5;
+// while (counter < 5){
+//     guess = +prompt("please enter your guess: ");
+//     if (guess == number){
+//         console.log("Bingo!!");
+//         break
+//     }
+//     counter++
+//     if(counter == lastChange){
+//         console.log("last chance!!");
+//     }
+//     if(counter !== lastChange || counter !== lastChange++){
+//       console.log("try again");
+
+//     }
+      
+// }
