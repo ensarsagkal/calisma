@@ -112,7 +112,7 @@ console.log("Hello_World!");
 //   }
 // } else if (numb2 > numb3) {
 //   console.log(`max number is ${numb2}`);
-  
+
 // } else {
 //     console.log(`max number is ${numb3}`);
 //   }
@@ -142,7 +142,6 @@ console.log("Hello_World!");
 //     console.log("hatalı bir giris yaptınız");
 // }
 
-
 // let ay =Number(prompt('Ay:1-12'))
 
 // switch (ay) {
@@ -151,37 +150,37 @@ console.log("Hello_World!");
 //         break;
 
 //     case 2:
-//         ay='subat'   
+//         ay='subat'
 //         break;
 //     case 3:
-//         ay='mart'    
+//         ay='mart'
 //         break;
 //     case 4:
-//         ay='nisan'    
+//         ay='nisan'
 //         break;
 //     case 5:
-//         ay='mayıs'    
+//         ay='mayıs'
 //         break;
 //     case 6:
-//         ay='haziran'    
+//         ay='haziran'
 //         break;
 //     case 7:
-//         ay='temmuz'    
+//         ay='temmuz'
 //         break;
 //     case 8:
-//         ay='agustos'    
+//         ay='agustos'
 //         break;
 //     case 9:
-//         ay='eylul'    
+//         ay='eylul'
 //         break;
 //     case 10:
-//         ay='ekim'    
+//         ay='ekim'
 //         break;
 //     case 11:
-//         ay='kasım'    
+//         ay='kasım'
 //         break;
 //     case 12:
-//         ay='aralık'    
+//         ay='aralık'
 //         break;
 
 //     default:
@@ -197,32 +196,32 @@ console.log("Hello_World!");
 // switch (gun) {
 //     case 'pazartesi':
 //         gun = 'inclass'
-        
+
 //         break;
 
 //     case 'sali':
 //         gun = 'inclass'
-        
+
 //         break;
 //     case 'carsamba':
 //         gun = 'inclass'
-        
+
 //         break;
 //     case 'persembe':
 //         gun = 'inclass'
-        
+
 //         break;
 //     case 'cuma':
 //         gun = 'teamwork'
-        
+
 //         break;
 //     case 'cumartesi':
 //         gun = 'inclass + workshop'
-        
+
 //         break;
 //     case 'pazar':
 //         gun = 'self-study'
-        
+
 //         break;
 
 //     default:
@@ -238,9 +237,8 @@ console.log("Hello_World!");
 // console.log(degree);
 
 // yourNote = parseInt(prompt("enter your note:"))
-// const gecmeDurumu = yourNote<40 ? "Kaldi" : (yourNote<50 ? "sartli gecti" : "gecti")   
+// const gecmeDurumu = yourNote<40 ? "Kaldi" : (yourNote<50 ? "sartli gecti" : "gecti")
 // console.log(gecmeDurumu);
-
 
 // ! maas
 
@@ -256,11 +254,8 @@ console.log("Hello_World!");
 // let credit = ((income - expense)>=minimumWage)? "credit avaible" : "sorry"
 // console.log(credit);
 
-
-
 // let grade = Number(prompt("Enter your grade: "))
 // let sonuc=""
-
 
 // if(grade>=0 && grade<=100){
 //     if(grade<=25){
@@ -276,9 +271,6 @@ console.log("Hello_World!");
 //     }else{
 //         sonuc="AA"
 //     }
-
-
-
 
 // }else{sonuc="hatali giris yaptiniz"}
 // console.log(sonuc);
@@ -313,7 +305,6 @@ console.log("Hello_World!");
 
 // //? ODEV: console'dan 3 tamsayi alarak bunlarin en buyugunu
 // //? yazdiriniz.,
-
 
 // let month = prompt("ay ismi giriniz")
 // month = month.toLowerCase()
@@ -360,12 +351,9 @@ console.log("Hello_World!");
 // }
 // console.log(month);
 
-
-
 // let num1= Number(prompt("enter a first number: "))
 // let num2=Number(prompt("enter a second number: "))
 // let num3=Number(prompt("enter a third number: "))
-
 
 // console.log(`girilen sayilarin toplami: ${toplam}
 // carpimi ${carpim}
@@ -391,7 +379,6 @@ console.log("Hello_World!");
 // carpimi ${carpim}
 // maksimum deger : ${max}
 // minimum deger : ${min}`);
-
 
 // let number = Number(prompt("Sayi giriniz: "))
 // let sonuc = number % 2 == 0 ? "number cifttir"
@@ -421,7 +408,6 @@ console.log("Hello_World!");
 
 // !sayı tahmini coklu
 
-
 // const number = Math.round(Math.random() * 100);
 // console.log(number);
 // let guess;
@@ -442,7 +428,7 @@ console.log("Hello_World!");
 //         }else{console.log("too low.guess a higher number");}
 //         counter++
 //     }
-  
+
 //     else{
 //         console.log("try again");
 //         if(guess>number){console.log("too high.guess a lower number");
@@ -450,15 +436,6 @@ console.log("Hello_World!");
 //         counter++
 //     }
 // }
-
-
-
-
-
-
-
-
-
 
 // !sayı tahminini mhmmd
 
@@ -481,11 +458,10 @@ console.log("Hello_World!");
 //       console.log("try again");
 
 //     }
-      
+
 // }
 
 // let isRaining = false
-
 
 // isRaining ? console.log("şemsiyeni al") : console.log("gerek yok");
 
@@ -495,8 +471,6 @@ console.log("Hello_World!");
 
 //  if(age>=18){console.log("You are old enough to drive.");
 // }else{console.log(`You are left with ${18-age} years to drive.`)}
-
-
 
 // ! day and season
 // let month =prompt("enter a month: 1/12")
@@ -524,3 +498,30 @@ console.log("Hello_World!");
 // if((year % 4 ==0)&& !(year % 100==0)||(year%400==0)){
 //     console.log(`${year} is leap year`);
 // }else{console.log(`${year} is not  leap year`);}
+
+
+// ! hangi ay kaç gün?
+
+// let month = prompt("enter a month");
+// month = month.toLocaleLowerCase();
+// switch (month) {
+//   case "ocak":
+//   case "mart":
+//   case "mayis":
+//   case "temmuz":
+//   case "agustos":
+//   case "ekim":
+//   case "aralik":
+//     console.log(`${month} has 31 days`);
+//     break;
+//   case "subat":
+//     console.log(`${month} has 28 days`);
+//   case "nisan":
+//   case "haziran":
+//   case "eylul":
+//   case "kasim":
+//     console.log(`${month} has 30 days`);
+//   default:
+//     console.log("hatali giris");
+//     break;
+// }
