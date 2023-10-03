@@ -428,23 +428,36 @@ console.log("Hello_World!");
 // let counter = 1
 // while (counter < 6){
 //     guess = +prompt('pls enter the number: ')
-//     if (counter == 5){
+//     if(guess == number){
+//         console.log("bingo");
+//         break
+//     }
+//     else if (counter == 5){
 //         console.log("game over");
 //         break
 //     }
 //     else if (counter == 4){
 //         console.log("last chance");
+//         if(guess>number){console.log("too high.guess a lower number");
+//         }else{console.log("too low.guess a higher number");}
 //         counter++
 //     }
-//     else if(guess == number){
-//         console.log("bingo");
-//         break
-//     }
+  
 //     else{
 //         console.log("try again");
+//         if(guess>number){console.log("too high.guess a lower number");
+//         }else{console.log("too low.guess a higher number");}
 //         counter++
 //     }
 // }
+
+
+
+
+
+
+
+
 
 
 // !sayı tahminini mhmmd
@@ -470,3 +483,15 @@ console.log("Hello_World!");
 //     }
       
 // }
+
+// let isRaining = false
+
+
+// isRaining ? console.log("şemsiyeni al") : console.log("gerek yok");
+
+// // !driver licence
+
+// const age= Number(prompt("Enter your age:"))
+
+//  if(age>=18){console.log("You are old enough to drive.");
+// }else{console.log(`You are left with ${18-age} years to drive.`)}
