@@ -315,3 +315,79 @@ console.log("Hello_World!");
 // //? yazdiriniz.,
 
 
+// let month = prompt("ay ismi giriniz")
+// month = month.toLowerCase()
+// switch (month) {
+//     case "ocak":
+//         month = 1
+//         break;
+//     case "subat":
+//         month = 2
+//         break;
+//     case "mart":
+//         month = 3
+//         break;
+//     case "nisan":
+//         month = 4
+//         break;
+//     case "mayıs":
+//         month = 5
+//         break;
+//     case "haziran":
+//         month = 6
+//         break;
+//     case "temmuz":
+//         month = 7
+//         break;
+//     case "agustos":
+//         month = 8
+//         break;
+//     case "eylül":
+//         month = 9
+//         break;
+//     case "ekim":
+//         month = 10
+//         break;
+//     case "kasım":
+//         month = 11
+//         break;
+//     case "aralık":
+//         month = 12
+//         break;
+//     default:
+//     month = "hatali giriş yaptınız"
+//         break;
+// }
+// console.log(month);
+
+
+
+// let num1= Number(prompt("enter a first number: "))
+// let num2=Number(prompt("enter a second number: "))
+// let num3=Number(prompt("enter a third number: "))
+
+
+// console.log(`girilen sayilarin toplami: ${toplam}
+// carpimi ${carpim}
+// maksimum deger : ${max}
+// minimum deger : ${min}`);
+
+const num1 = Number(prompt('enter a first number'))
+const num2 = Number(prompt('enter a second number'))
+const num3 = Number(prompt('enter a third number'))
+
+let toplam = num1 + num2 + num3
+// console.log(toplam);
+let carpim = num1 * num2 * num3
+// console.log(carpim);
+
+let max = Math.max(num1,num2,num3)
+// console.log(max);
+
+let min = Math.min(num1,num2,num3)
+// console.log(min);
+
+console.log(`girilen sayilarin toplami: ${toplam}
+carpimi ${carpim}
+maksimum deger : ${max}
+minimum deger : ${min}`);
