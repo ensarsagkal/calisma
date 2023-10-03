@@ -250,8 +250,68 @@ console.log("Hello_World!");
 // let newSalary =salary<=minimumWage ? `Your new salary is ${salary+(salary/2)}` : `Your new salary is ${salary+(salary/10)}`
 // console.log(newSalary);
 
-let income = parseInt(prompt("enter your income : "))
-let expense = parseInt(prompt("enter your expense :"))
-let minimumWage=11402
-let credit = ((income - expense)>=minimumWage)? "credit avaible" : "sorry"
-console.log(credit);
+// let income = parseInt(prompt("enter your income : "))
+// let expense = parseInt(prompt("enter your expense :"))
+// let minimumWage=11402
+// let credit = ((income - expense)>=minimumWage)? "credit avaible" : "sorry"
+// console.log(credit);
+
+
+
+// let grade = Number(prompt("Enter your grade: "))
+// let sonuc=""
+
+
+// if(grade>=0 && grade<=100){
+//     if(grade<=25){
+//         sonuc="FF"
+//     }else if(grade<=45){
+//         sonuc="DD"
+//     }else if(grade<=65){
+//         sonuc="CC"
+//     }else if(grade<=75){
+//         sonuc="BB"
+//     }else if(grade<=90){
+//         sonuc="BA"
+//     }else{
+//         sonuc="AA"
+//     }
+
+
+
+
+// }else{sonuc="hatali giris yaptiniz"}
+// console.log(sonuc);
+
+// !=================================================================
+
+// const grade = 20
+// let sonuc = ""
+
+// if (grade < 0 || grade > 100) {
+//   console.log("Hatali not girisi")
+// } else if (grade < 40) {
+//   sonuc = "FF"
+// } else if (grade < 55) {
+//   sonuc = "DD"
+// } else if (grade < 70) {
+//   sonuc = "CC"
+// } else if (grade < 85) {
+//   sonuc = "BB"
+// } else {
+//   sonuc = "AA"
+// }
+// //! Kısa hali
+// if (sonuc) {
+//   console.log("SONUC:", sonuc)
+// }
+
+// //? uzun hali
+// // if (Boolean(sonuc) == true) {
+// //   console.log("SONUC:", sonuc)
+// // }
+
+// //? ODEV: console'dan 3 tamsayi alarak bunlarin en buyugunu
+// //? yazdiriniz.,
+
+
