@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #131E25;
+}
+header{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+}
+nav{
+    text-align: center;
+    margin-bottom: 15rem;
+}
+nav a{
+    color: white;
+    background-color: #D2B48C;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    margin-right: 0.7;
+    font-weight: 900;
+
+}
+nav a:hover{
+    opacity: 0.7;
+    color: orangered;
+}
+#about{
+    font-family: 'Rampart One', cursive;
+    color: white;
+    font-size: 2.5rem;
+    color: #D2B48C;
+    text-align: center;
+}
+img{
+    width: 500px;
+    height: 200px;
+}
