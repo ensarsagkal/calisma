@@ -472,7 +472,7 @@ console.log("Hello_World!");
 //  if(age>=18){console.log("You are old enough to drive.");
 // }else{console.log(`You are left with ${18-age} years to drive.`)}
 
-// ! day and season
+// // ! day and season
 // let month =prompt("enter a month: 1/12")
 // let day= prompt("enter a day: 1/31")
 
@@ -486,7 +486,7 @@ console.log("Hello_World!");
 //     season="summer"
 // }else if((month>=10 && month<=11)||(month==9 && day>=22)||(month==12 && day<=20)){
 //     season="fall"
-// }else if((month==1)||(month==12 && day>=21)||(month==12 && day<=20)){
+// }else if((month==1)||(month==12 && day>=21)||(month==2 && day<=20)){
 //     season="winter"
 // }
 // console.log(`The season for ${month} / ${day} is ${season}`);
@@ -525,3 +525,98 @@ console.log("Hello_World!");
 //     console.log("hatali giris");
 //     break;
 // }
+// *=====================FOR LOOPS=======================================
+// *========================================================================
+
+// for(let i = 0; i<=17; i++){
+//     console.log(i);
+// }
+// for(let i = 1; i<=17; ++i){
+//     console.log(i);
+// }
+
+// for(let i=0; i<=10; i++){
+//     console.log(`${i}*${i} = ${i*i}`);
+// }
+// for(let num=2;num<=1000; num+=num){
+//     console.log(`${1000/num}`);
+// }
+
+// const ulkeler = ["Finland","Sweden","Denmark","Norway","Canada"]
+// const yeniListe = []
+
+// for(let i=0; i<ulkeler.length; i++){
+//     yeniListe.push(ulkeler[i].toUpperCase())
+// }
+// console.log(yeniListe);
+// console.log(ulkeler.length);
+// console.log(ulkeler[4]);
+
+
+// const names=["Ahmet","MEHMET","aLi","SEda", "ceMal"]
+
+// let isim="ensarsagkal"
+// console.log(isim.length);
+// console.log(isim[3]);
+// let nameArr=[]
+// let firstName= prompt("enter first name")
+// let secondName=prompt("enter second name")
+// let thirdName= prompt("enter third name")
+// let fourthName= prompt("enter fourth name")
+
+// nameArr[0]=firstName
+// nameArr[1]=secondName
+// nameArr[2]=thirdName
+// nameArr[3]=fourthName
+// console.log(nameArr);
+
+// const numbers = [10,11,12,13,14,15]
+// let sum = 0
+// for(let i=0; i<numbers.length; i++){
+    
+//     // console.log(sum);
+//     if(numbers[i]%2==0){
+//         sum+=numbers[i]
+//     }
+// }
+// console.log(sum);
+
+
+// const oddOrEven=[10,11,12,13,14,15,16,17,18,19,20,21]
+// let even=[]
+// let odd=[]
+// let sumEven = 0
+// let sumOdd =0
+// let sum =0
+// for(let i=0;i<oddOrEven.length;i++){
+//     if(oddOrEven[i]%2==0){
+//        even.push(oddOrEven[i])
+//        sum+=even
+//        console.log(sum);
+//     }else{odd.push(oddOrEven[i])}
+// }
+// console.log(even);
+// console.log(odd);
+
+
+const oddOrEven=[10,11,12,13,14,15,16,17,18,19,20,21]
+let even=[]
+let odd=[]
+let sum =0
+let sumo =0
+for(let i=0;i<oddOrEven.length;i++){
+    if(oddOrEven[i]%2==0){
+       even.push(oddOrEven[i])
+       sum = sum + oddOrEven[i]
+       
+    }else{odd.push(oddOrEven[i])
+        sumo = sum + oddOrEven[i]
+    }
+}
+console.log(`cift sayılar: ${even},
+bu sayıların toplamı: ${sum}`);
+console.log(`tek sayılar: ${odd},
+bu sayıların toplamı: ${sumo}`);
+
+
+
