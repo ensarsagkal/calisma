@@ -84,13 +84,77 @@ nav a:hover{
     font-size: 1.2rem;
     font-weight: 900;
     margin-right: 0.7rem;
+    text-decoration: none;
 
+}
+#contact i{
+    padding-right: 0.2rem;
+}
+#contact a:hover{
+    color: orangered;
+}
+form{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+form h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    
+}
+.box{
+    width: 50%;
+    background-color: #131E25;
+    color: #D2B48C;
+    padding: 0.5rem 3.5rem;
+    border: 2px solid #D2B48C;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.box.btn{
+   background-color: #D2B48C;
+    color: white;
+    font-weight: 900;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+.btn i{
+    color: #D2B48C;
+}
+.box.btn:hover{
+    color: orangered;
+    cursor: pointer;
+    height: 4rem;
+    opacity: 1;
+
+}
+.box.btn i:hover{
+    color:orangered ;
+
+}
+.box.btn:hover i{
+    color: orangered;
 }
 
 
+.top{
+    background-color:#D2B48C;
+    text-decoration: none;
+    padding: 0.8rem 1.3rem;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
 
-
-
-
+}
+.top:hover{
+    background-color: orangered;
+}
 
 
