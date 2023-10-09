@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.left img{
+    width: 60px;
+    height: 60px;
+}
+.left .name h3{
+    font-size: 18px;
+}
+.right{
+    margin-right: 1rem;
+}
+.right i{
+    margin-right: 1.5rem;
+    font-size: 20px;
+    
+}
+#second{
+    margin-right: 2rem;
+}
