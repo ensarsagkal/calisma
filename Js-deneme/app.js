@@ -617,6 +617,16 @@ console.log("Hello_World!");
 // bu sayıların toplamı: ${sum}`);
 // console.log(`tek sayılar: ${odd},
 // bu sayıların toplamı: ${sumo}`);
-
+/* -------------------------------------------------------------------------- */
+/!*                                FUNCTIONS                                 */
+/* -------------------------------------------------------------------------- */
+function printfullName(){
+    let firstName = "Ensar"
+    let lastName = "Sagkal"
+    let space =" "
+    let fullName = firstName + space + lastName
+    console.log(fullName);
+}
+printfullName()
 
 
