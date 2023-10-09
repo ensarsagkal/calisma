@@ -678,13 +678,21 @@ console.log("Hello_World!");
 // console.log(printfullName("ensar","sagkal"));
 
 
-function sumArrayValues(arr){
-    let sum = 0
-    for(let i= 0; i<arr.length; i++){
-        sum+=arr[i]
-    }
-    return sum
-}
+// function sumArrayValues(arr){
+//     let sum = 0
+//     for(let i= 0; i<arr.length; i++){
+//         sum+=arr[i]
+//     }
+//     return sum
+// }
 
-const numbers=[10,15,20,25,30]
-console.log(sumArrayValues(numbers));
+// const numbers=[10,15,20,25,30]
+// console.log(sumArrayValues(numbers));
+
+
+
+// const areaOfCircle = (radius) => {
+//     let area = Math.PI*radius*radius
+//     return area
+// }
+// console.log(areaOfCircle(10));
