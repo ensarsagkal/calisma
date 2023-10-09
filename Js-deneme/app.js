@@ -672,3 +672,19 @@ console.log("Hello_World!");
 // }
 
 // console.log(sumTwoNumbers(+prompt("first"),+prompt("second")));
+// function printfullName(firstName,secondName){
+//     return `${firstName} ${secondName}`
+// }
+// console.log(printfullName("ensar","sagkal"));
+
+
+function sumArrayValues(arr){
+    let sum = 0
+    for(let i= 0; i<arr.length; i++){
+        sum+=arr[i]
+    }
+    return sum
+}
+
+const numbers=[10,15,20,25,30]
+console.log(sumArrayValues(numbers));
