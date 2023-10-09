@@ -6,10 +6,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Inter', sans-serif;
+}
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
 }
 .left{
     display: flex;
@@ -44,10 +48,11 @@ nav{
     background-color: #20889F;
     padding: 1rem;
     color: white;
+    height: 70px;
 }
 .posting{
     font-family: 'Kenia', cursive;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -57,7 +62,7 @@ nav{
 }
 .links ul li{
     display: inline-block;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     font-size: 1rem;
     font-family: 'Inter', sans-serif;
 
@@ -65,4 +70,20 @@ nav{
 #name1{
     display: flex;
     flex-wrap: wrap;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.sidebar section{
+    /* border: 2px solid red; */
+    padding: 1rem;
+}
+.hvr:hover{
+    background-color: #D2E7EC;
+    border-radius: 10px;
 }
