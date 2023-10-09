@@ -620,13 +620,35 @@ console.log("Hello_World!");
 /* -------------------------------------------------------------------------- */
 /!*                                FUNCTIONS                                 */
 /* -------------------------------------------------------------------------- */
-function printfullName(){
-    let firstName = "Ensar"
-    let lastName = "Sagkal"
-    let space =" "
-    let fullName = firstName + space + lastName
-    console.log(fullName);
+// function printfullName(){
+//     let firstName = "Ensar"
+//     let lastName = "Sagkal"
+//     let space =" "
+//     let fullName = firstName + space + lastName
+//     return fullName
+// }
+// console.log(printfullName());
+
+
+// function vki(height,weight){
+//     let index= weight/(height*height)
+//     return index
+// }
+
+// console.log(vki(1.72,80));
+
+function vki(){
+    let height =1.60
+    let weight =85
+    let index = Math.round(weight/ (height**2))
+   
+   return index
 }
-printfullName()
 
 
+
+if (vki()>=30){
+    console.log("overweighted");
+}else if(vki()<30){
+    console.log("normal");
+}
