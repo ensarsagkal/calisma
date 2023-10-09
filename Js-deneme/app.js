@@ -637,18 +637,38 @@ console.log("Hello_World!");
 
 // console.log(vki(1.72,80));
 
-function vki(){
-    let height =1.60
-    let weight =85
-    let index = Math.round(weight/ (height**2))
+// function vki(){
+//     let height =1.60
+//     let weight =85
+//     let index = Math.round(weight/ (height**2))
    
-   return index
-}
+//    return index
+// }
 
 
 
-if (vki()>=30){
-    console.log("overweighted");
-}else if(vki()<30){
-    console.log("normal");
-}
+// if (vki()>=30){
+//     console.log("overweighted");
+// }else if(vki()<30){
+//     console.log("normal");
+// }
+
+// function areaOfCircle(r){
+//     let area= +(Math.PI*r*r).toFixed(2)
+//     return area
+// }
+// console.log(areaOfCircle(10));
+// console.log(areaOfCircle(20));
+
+// function square(number){
+//     let result = number**2
+//     return result
+// }
+// console.log(square(prompt("enter a number")));
+
+// function sumTwoNumbers(num1,num2){
+//     let sum= num1 +num2
+//     return sum
+// }
+
+// console.log(sumTwoNumbers(+prompt("first"),+prompt("second")));
