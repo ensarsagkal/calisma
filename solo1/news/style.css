@@ -107,7 +107,7 @@ nav{
 .profiles-section{
     display: flex;
     align-items:center;
-    justify-content:center;
+    justify-content :start;
     flex-wrap: wrap;
     border-bottom: 2px solid grey;
 
@@ -116,11 +116,19 @@ nav{
 .profile{
     display: flex;
     align-items: center;
+    gap: 1rem;
     padding: 1.5rem;
+    margin-left: 1rem;
 }
 .profile img{
     width: 80px;
     height: 75px;
     border: 2px solid black;
     border-radius: 50%;
+}
+.john{
+    font-size: 1.2rem;
+}
+.article{
+    color: grey;
 }
