@@ -772,8 +772,12 @@ console.log("Hello_World!");
 // console.log(`${yasHesaplama(yas)}  yaşındasınız`);
 
 
-const divideFour = (num)=>{
-    return num%4 ? "4'e bölünmez" :"bölünür"
-}
+// const divideFour = (num)=>{
+//     return num%4 ? "4'e bölünmez" :"bölünür"
+// }
 
-console.log(divideFour(19));
+// console.log(divideFour(19));
+
+const meyveDilimle = (meyveSayisi) => meyveSayisi*4
+
+
