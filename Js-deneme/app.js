@@ -778,6 +778,44 @@ console.log("Hello_World!");
 
 // console.log(divideFour(19));
 
-const meyveDilimle = (meyveSayisi) => meyveSayisi*4
+// const meyveDilimle = (meyveSayisi) => meyveSayisi*4
 
 
+
+
+
+// function reverseWordsWithoutArray(sentence) {
+//     let reversedSentence = "";
+//     let word = "";
+//     for (let i = sentence.length - 1; i >= 0; i--) {
+//       if (sentence[i] === " " || i === 0) {
+//         if (i === 0) {
+//           word += sentence[i];
+//         }
+       
+//         }
+//       }
+    
+//     return word;
+//   }
+//   const sentence = "Hello World!";
+//   console.log(reverseWordsWithoutArray(sentence));
+
+
+// function reversedWordsWithoutArray(inputSentence) {
+//     let reversedSentence = "";
+//     let currentWord = "";
+//     for (let i = 0; i < inputSentence.length; i++) {
+//       if (inputSentence[i] === " ") {
+//         reversedSentence = currentWord + " " + reversedSentence;
+//         currentWord = "";
+//       } else {
+//         currentWord += inputSentence[i];
+//       }
+//     }
+//     reversedSentence = currentWord + " " + reversedSentence;
+//     return reversedSentence;
+//   }
+//   const enteredSentence = "Hello World!";
+//   const reversed = reversedWordsWithoutArray(enteredSentence);
+//   console.log(reversed);
