@@ -696,3 +696,18 @@ console.log("Hello_World!");
 //     return area
 // }
 // console.log(areaOfCircle(10));
+
+// !arrow function
+
+// const areaOfCircle =(r)=>Math.PI*r*r
+
+// const yariCap = Number(prompt("alanını istediğiniz dairenin yarıçapını giriniz : "))
+
+// console.log(`dairenin alanı ${areaOfCircle(yariCap)}`);
+
+// *-------------------------------------------
+// const age = (yas) => 2023 - yas
+
+// const personAge = Number(prompt("enter your date of birth : "))
+
+// console.log(`your age is ${age(personAge)}`);
