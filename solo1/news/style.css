@@ -78,6 +78,19 @@ nav{
     align-items: center;
     gap: 2rem;
     margin-top: 2rem;
+    background-color: #F5F5F5;
+}
+.long{
+    width: 40rem;
+    background-color: #FFFFFF;
+}
+.longpadding{
+    padding: 1rem;
+}
+.sidebar{
+    background-color: #FFFFFF;
+    width: 8rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.623);
 }
 .sidebar section{
     /* border: 2px solid red; */
@@ -86,4 +99,28 @@ nav{
 .hvr:hover{
     background-color: #D2E7EC;
     border-radius: 10px;
+}
+
+.participants h2{
+    color: #4B889F;
+}
+.profiles-section{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid grey;
+
+   
+}
+.profile{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+.profile img{
+    width: 80px;
+    height: 75px;
+    border: 2px solid black;
+    border-radius: 50%;
 }
