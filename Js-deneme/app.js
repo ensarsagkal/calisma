@@ -711,3 +711,36 @@ console.log("Hello_World!");
 // const personAge = Number(prompt("enter your date of birth : "))
 
 // console.log(`your age is ${age(personAge)}`);
+
+
+
+// ! HESAP MAKİNESİ FONKSİYONLARI
+
+// function topla(num1,num2){
+//     const sum = num1 +num2
+//     return sum
+// }
+// function cikar(num1,num2){
+//     const cikarma = num1-num2
+//     return cikarma
+// }
+// function carp(num1,num2){
+//     const mult = num1*num2
+//     return mult
+// }
+// function bol(num1,num2){
+//     const divide =num1/num2
+//     return divide
+// }
+// console.log(topla(5,10),cikar(78,65),carp(9,8),bol(12,3));
+
+// function hesapMakinesi(num1,num2){
+//     const toplam = num1+num2
+//     const cikarma = num1 - num2
+//     const carpim = num1*num2
+//     const bolum = num1/num2
+//     return toplam ,cikarma,carpim,bolum
+// }
+
+// console.log(hesapMakinesi(9,3));
+
