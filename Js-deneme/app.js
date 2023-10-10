@@ -734,13 +734,46 @@ console.log("Hello_World!");
 // }
 // console.log(topla(5,10),cikar(78,65),carp(9,8),bol(12,3));
 
+
+
+
 // function hesapMakinesi(num1,num2){
 //     const toplam = num1+num2
 //     const cikarma = num1 - num2
 //     const carpim = num1*num2
 //     const bolum = num1/num2
-//     return toplam ,cikarma,carpim,bolum
+//     return `toplam : ${toplam} ---- cıkarma :${cikarma} ----- çarpım : ${carpim} ------ bölüm : ${bolum}`
 // }
 
 // console.log(hesapMakinesi(9,3));
 
+
+
+// const topla = function(num1,num2){
+//     return num1+num2
+// }
+
+// let sayi1= Number(prompt("ilk sayiyi giriniz: "))
+// let sayi2= Number(prompt("ikinci sayiyi giriniz: "))
+//  console.log(`${sayi1}+${sayi2}'nin toplamı : ${topla(sayi1,sayi2)} `);
+
+// ! true false kontrolü ile ternary
+// const divideFour = function(num){
+//     return num%4 ? "4'e bölünmez" :"bölünür"
+// }
+
+// console.log(divideFour(19));
+
+
+// const yasHesaplama = (dogumTarihi) => new Date().getFullYear() - dogumTarihi
+
+// const yas = Number(prompt("doğum yılınızı giriniz :"))
+
+// console.log(`${yasHesaplama(yas)}  yaşındasınız`);
+
+
+const divideFour = (num)=>{
+    return num%4 ? "4'e bölünmez" :"bölünür"
+}
+
+console.log(divideFour(19));
