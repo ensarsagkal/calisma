@@ -847,13 +847,24 @@ console.log("Hello_World!");
 // !reversed array
 // reverseArray(['A', 'B', 'C'])
 
-const reversedArray=(arr)=>{
-    let newArray=[]
-    for(i =arr.length-1; i>=0;i--){
-        newArray.push(arr[i])
-    }
-    return newArray
+// const reversedArray=(arr)=>{
+//     let newArray=[]
+//     for(i =arr.length-1; i>=0;i--){
+//         newArray.push(arr[i])
+//     }
+//     return newArray
+// }
+
+// console.log(reversedArray(['A', 'B', 'C']));
+
+
+// !swap values
+
+const swapValues = (num1,num2)=>{
+    let num3 = num1
+    num1=num2
+    num2=num3
+    return `${num1} ${num2}`
 }
 
-console.log(reversedArray(['A', 'B', 'C']));
-
+console.log(swapValues(45,15));
