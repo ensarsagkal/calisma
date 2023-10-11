@@ -860,11 +860,21 @@ console.log("Hello_World!");
 
 // !swap values
 
-const swapValues = (num1,num2)=>{
-    let num3 = num1
-    num1=num2
-    num2=num3
-    return `${num1} ${num2}`
-}
+// const swapValues = (num1,num2)=>{
+//     let num3 = num1
+//     num1=num2
+//     num2=num3
+//     return `${num1} ${num2}`
+// }
 
-console.log(swapValues(45,15));
+// console.log(swapValues(45,15));
+// const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+// function generateRandomCode(){
+//     let result = ""
+//     let charactersLength = characters.length;
+//     for ( var i = 0; i < 6 ; i++ ) {
+//         result += characters.charAt(Math.floor(Math.random() * charactersLength));
+//     }
+//     return result
+// }
+// console.log(generateRandomCode());
