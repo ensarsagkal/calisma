@@ -868,13 +868,26 @@ console.log("Hello_World!");
 // }
 
 // console.log(swapValues(45,15));
-// const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-// function generateRandomCode(){
+
+
+
+
+
+
+// const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+// function generateRandomCode(hane){
+    
+   
 //     let result = ""
 //     let charactersLength = characters.length;
-//     for ( var i = 0; i < 6 ; i++ ) {
+//     for ( var i = 0; i < hane ; i++ ) {
 //         result += characters.charAt(Math.floor(Math.random() * charactersLength));
 //     }
 //     return result
+
+
 // }
-// console.log(generateRandomCode());
+// const hane = Number(prompt("kaç haneli şifre istersin?"))
+// // const kere = Number(prompt("kaç farklı şifre istersin?"))
+
+// console.log(generateRandomCode(hane));
