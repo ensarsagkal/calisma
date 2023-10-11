@@ -819,3 +819,30 @@ console.log("Hello_World!");
 //   const enteredSentence = "Hello World!";
 //   const reversed = reversedWordsWithoutArray(enteredSentence);
 //   console.log(reversed);
+
+
+// !BMI program
+const bmi = (w,h)=>{
+    // if(typeof(w)!==Number || typeof(h)!==Number){
+    //     return `error!`
+    // }
+    let index = w / (h**2)
+    index =Number(index.toFixed(2))
+    if(index<=18.5){
+        return `Your BMI is : ${index} and you are Underweight`
+    }else if(index<=24.9){
+        return `Your BMI is : ${index} and you are Normal weight`
+    }else if(index<=29.9){
+        return `Your BMI is : ${index} and you are Overweight`
+    }else if(index>=30){
+        return `Your BMI is : ${index} and you are Obese`
+    }else{
+        return `error!`
+    }
+}
+
+
+const weight = Number(prompt("enter your weight(kg)  :"))
+const height = Number(prompt("Enter your height(m)  :"))
+
+console.log(bmi(weight,height));
