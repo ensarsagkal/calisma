@@ -874,13 +874,13 @@ console.log("Hello_World!");
 
 
 
-// const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+// const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789><.£#$!';
 // function generateRandomCode(hane){
     
    
 //     let result = ""
 //     let charactersLength = characters.length;
-//     for ( var i = 0; i < hane ; i++ ) {
+//     for ( let i = 0; i < hane ; i++ ) {
 //         result += characters.charAt(Math.floor(Math.random() * charactersLength));
 //     }
 //     return result
@@ -962,3 +962,30 @@ console.log("Hello_World!");
 
 // let showDateTime = `${day}/${month}/${year}  ${hours}:${minutes}`;
 // console.log(showDateTime); 
+
+
+// const addItem = box =>{
+//     const newColour = []
+//     for(const element of box){
+//         newColour.push(element)
+//     }
+//     return newColour
+// }
+
+// const colors = prompt("renk giriniz")
+// console.log(addItem(colors));
+
+// function generateColors(type) {
+//     if (type === "hex") {
+//       return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+//     } else if (type === "rgb") {
+//       const randomValue = () => Math.floor(Math.random() * 256);
+//       return `rgb(${randomValue()}, ${randomValue()}, ${randomValue()})`;
+//     }
+//   }
+  
+//   const hexColor = generateColors("hex");
+//   console.log("Rastgele Hex Renk:", hexColor);
+  
+//   const rgbColor = generateColors("rgb");
+//   console.log("Rastgele RGB Renk:", rgbColor);
