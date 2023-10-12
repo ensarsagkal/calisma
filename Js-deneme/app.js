@@ -891,3 +891,25 @@ console.log("Hello_World!");
 // // const kere = Number(prompt("kaç farklı şifre istersin?"))
 
 // console.log(generateRandomCode(hane));
+
+
+
+
+// ! tersten yazdırma
+
+const reversedWitoutArray2 = (value) => {
+    let reversedSentence=""
+    let reversedWord =""
+
+    for(let i =value.length -1;i>=0;i-- ){
+        if(i===0 || i===" "){
+           reversedWord +=value[i] 
+        }else{
+            reversedSentence+=value[i]
+        }
+    }for(j=reversedWord.length-1; j>=0;j--){
+        reversedSentence+=reversedWord[j]
+    }
+    return reversedSentence
+}
+console.log(reversedWitoutArray2("hello world!"));
