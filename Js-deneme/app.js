@@ -855,7 +855,7 @@ console.log("Hello_World!");
 //     return newArray
 // }
 
-// console.log(reversedArray(['A', 'B', 'C']));
+// console.log(reversedArray(['A', 'B', 'C','5',5,69,1993]));
 
 
 // !swap values
