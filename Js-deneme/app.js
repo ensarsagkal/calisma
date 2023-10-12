@@ -913,3 +913,39 @@ console.log("Hello_World!");
 //     return reversedSentence
 // }
 // console.log(reversedWitoutArray2("hello world! 2023"));
+
+
+// const reversedWitoutArray2 = (value) => {
+//     let reversedSentence=""
+    
+
+//     for(let i =value.length -1;i>=0;i-- ){
+        
+        
+        
+//             reversedSentence+=value[i]
+//     }
+    
+//     return reversedSentence
+// }
+// console.log(reversedWitoutArray2("hello world! 2023"));
+
+
+// function reversedWordsWithoutArray(inputSentence) {
+//     let reversedSentence = "";
+//     let currentWord = "";
+//     for (let i = 0; i < inputSentence.length; i++) {
+//       if (inputSentence[i] === " ") {
+//         reversedSentence = currentWord + " " + reversedSentence;
+//         currentWord = "";
+//       } else {
+//         currentWord += inputSentence[i];
+//       }
+//     }
+//     reversedSentence = currentWord + " " + reversedSentence;
+//     return reversedSentence;
+//   }
+//   const enteredSentence = "Hello JS World!";
+//   const reversed = reversedWordsWithoutArray(enteredSentence);
+//   console.log(reversed);
+
