@@ -949,3 +949,16 @@ console.log("Hello_World!");
 //   const reversed = reversedWordsWithoutArray(enteredSentence);
 //   console.log(reversed);
 
+
+
+// const date= new Date();
+
+// let day = date.getDate();
+// let month = date.getMonth() + 1;
+// let year = date.getFullYear();
+// let hours = date.getHours();
+// let minutes = date.getMinutes();
+
+
+// let showDateTime = `${day}/${month}/${year}  ${hours}:${minutes}`;
+// console.log(showDateTime); 
