@@ -1002,3 +1002,12 @@ console.log("Hello_World!");
     
     
 //    console.log(randomValue());
+
+// !STRING METHODS
+
+let str ="30 Days Of JavaScript"
+// console.log(str);
+// console.log(str.length);
+// console.log(str.toUpperCase());
+// console.log(str);
+// console.log(str.toLowerCase());
