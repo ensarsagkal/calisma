@@ -989,3 +989,16 @@ console.log("Hello_World!");
   
 //   const rgbColor = generateColors("rgb");
 //   console.log("Rastgele RGB Renk:", rgbColor);
+
+
+const randomValue = () => {
+   let color = Math.floor(Math.random() * 256)
+   let color2 = Math.floor(Math.random() * 256)
+   let color3 = Math.floor(Math.random() * 256)
+
+    return `rgb =${color}, ${color2} ,${color3}` 
+
+};
+    
+    
+   console.log(randomValue());
