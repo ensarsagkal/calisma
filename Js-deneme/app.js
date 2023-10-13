@@ -1011,3 +1011,22 @@ let str ="30 Days Of JavaScript"
 // console.log(str.toUpperCase());
 // console.log(str);
 // console.log(str.toLowerCase());
+
+// let newstr = "30 Days Of ";
+// console.log(str.substr(newstr.length, 4));
+// console.log(str.substring(11, 15));
+// console.log(str.substring(3, 22));
+// console.log(str.includes("script"));
+// // console.log(str.split("J", 1));
+// console.log(str.split(" "));
+// console.log("30 Days Of Javascript".split(" "));
+// console.log("Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon".split(","));
+// console.log(str.replace('Javascript','python'));
+// console.log(str.charAt(15));
+// console.log(str.charCodeAt(11));
+// console.log(str.indexOf('a'));
+// console.log(str.lastIndexOf("a"));
+// console.log('You cannot end a sentence with because because because is a conjunction'.indexOf("because"));
+// console.log('You cannot end a sentence with because because because is a conjunction'.lastIndexOf("because"));
+// console.log('You cannot end a sentence with because because because is a conjunction'.search("because"));
+// console.log(str.trim());
