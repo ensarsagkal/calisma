@@ -1066,3 +1066,5 @@ let str ="30 Days Of JavaScript"
 // const cleanedSentence = sentence.replace(/[^a-zA-Z0-9\s]/g, '')
 
 // console.log(newSentence.split(" "));
+
+// *boolean----
