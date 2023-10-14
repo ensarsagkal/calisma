@@ -1074,4 +1074,6 @@ let age = 30
 let isMarried = false
 let year = new Date().getFullYear()
 
-console.log(typeof year);
+console.log(typeof year, typeof firstName, typeof  age);
+
+console.log("10"===10);
