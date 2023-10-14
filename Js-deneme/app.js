@@ -1068,3 +1068,10 @@ let str ="30 Days Of JavaScript"
 // console.log(newSentence.split(" "));
 
 // *boolean----
+let firstName = "Ensar"
+let  lastName = "Sagkal"
+let age = 30
+let isMarried = false
+let year = new Date().getFullYear()
+
+console.log(typeof year);
