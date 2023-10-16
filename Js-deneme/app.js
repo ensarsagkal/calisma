@@ -1170,3 +1170,144 @@ let str ="30 Days Of JavaScript"
 // let index = fruits.indexOf(prompt('enter a fruits').toLowerCase())
 
 // index === -1 ? console.log('not exist') : console.log('index of fruits');
+
+
+//! Array olusturma metotlari - 3 adet
+
+// const arr = Array()
+// const arr1 = new Array()
+// const arr2 = []
+
+// console.log(arr);
+// console.log(arr1);
+// console.log(arr2);
+
+// console.log(typeof arr);
+// console.log(typeof arr1);
+// console.log(typeof arr2);
+
+
+// const numbers = [5,6,7,2.4,5]
+// console.log(numbers);
+// console.log(numbers.length);
+
+
+// const arr4 = ['Hakan',30,true,{ country: 'Finland', city: 'Helsinki' },{ skills: ['HTML', 'CSS', 'JS', 'React', 'Python'] } ]
+
+// console.log(arr4);
+// console.log(arr4.length);
+
+
+// const js = 'Java script'
+// console.log(js.split(' '));
+// console.log(js.split('a',2));
+
+
+// const fruits = ['banana', 'orange', 'mango', 'lemon']
+
+// console.log(fruits[0]);
+// console.log(fruits[0][2]);
+// console.log(fruits[2]);
+// //? last index
+// console.log(fruits[fruits.length-1]);
+
+// //* Ornek
+
+// const countries = [
+//     'Albania',
+//     'Bolivia',
+//     'Canada',
+//     'Denmark',
+//     'Ethiopia',
+//     'Finland',
+//     'Germany',
+//     'Hungary',
+//     'Ireland',
+//     'Japan',
+//     'Kenya'
+//   ]
+
+//   console.log(countries);
+//   countries[1] = "Turkey"
+//   console.log(countries);
+
+//   countries[11] = "Turkey"
+//   console.log(countries);
+
+//   countries[15]= 'Turkey'
+//   console.log(countries);
+
+
+//   const arr5 = Array(5).fill('3')
+//   console.log(arr5);
+
+
+// //?    CONCAT
+// const firstList = [1, 2, 3]
+// const secondList = [4, 5, 6]
+// const thirdlist = [7,8,9]
+
+// const fourtlist = firstList.concat(secondList,thirdlist)
+// console.log(fourtlist);
+
+
+// //?   indexOf()
+// const number = [1, 2, 3, 4, 5, 'banana']
+
+// console.log(number.indexOf(2));
+// console.log(number.indexOf(6));
+// console.log(number.indexOf('banana'));
+// console.log(number.indexOf('apple'));
+
+
+// const fruit = ['banana', 'orange', 'mango', 'lemon']
+
+// let index = fruit.indexOf(prompt("enter a ftuit").toLowerCase())
+
+// index === -1 ? console.log("not exist") : console.log("index of fruit");
+
+
+// const fruit = ['banana','apple', 'orange','banana','mango', 'lemon', 'apple','banana']
+
+// console.log(fruit.lastIndexOf('banana'));
+// console.log(fruit.lastIndexOf('banana',6));
+
+
+// console.log(fruit.includes('apple'));
+// console.log(fruit.includes('uzum'));
+
+// console.log(Array.isArray(fruit));
+
+// //* Array mi degil mi
+// const ad = 'Hakan'
+// console.log(Array.isArray(ad));
+
+// console.log(fruit.toString());
+
+
+// //? Join() Metotu --- immutable dir. 
+
+
+// const webTechs = [
+//     'HTML',
+//     'CSS',
+//     'JavaScript',
+//     'React',
+//     'Redux',
+//     'Node',
+//     'MongoDB'
+//   ]
+
+
+// console.log(webTechs.join(' - '));
+// console.log(webTechs);
+
+
+// //? slice() Metotu --- immutable dir. 
+
+// console.log(webTechs.slice(2,4));
+// console.log(webTechs);
+// console.log(webTechs.slice(webTechs.length-1));
+
+const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle" ,"Amazon"]
+console.log(itCompanies);
