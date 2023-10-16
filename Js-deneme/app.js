@@ -1310,4 +1310,11 @@ let str ="30 Days Of JavaScript"
 // console.log(webTechs.slice(webTechs.length-1));
 
 const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle" ,"Amazon"]
-console.log(itCompanies);
+// console.log(itCompanies);
+// console.log(itCompanies.length);
+// console.log(itCompanies[0],itCompanies[(itCompanies.length-1)/2],itCompanies[itCompanies.length-1]);
+// for(let i=0; i<= itCompanies.length-1; i++){
+//     console.log(itCompanies[i]);
+//  }
+
+// console.log(`${itCompanies.join(" ")} are big it companies`);
