@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: #ECECEC;
+}
+.container{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem;
+    
+}
+.pc{
+flex-grow: 1;
+}
+.pc img{
+    width: 100%;
+}
+.info{
+flex-grow: 1;
+}
