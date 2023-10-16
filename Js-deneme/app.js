@@ -1068,12 +1068,17 @@ let str ="30 Days Of JavaScript"
 // console.log(newSentence.split(" "));
 
 // *boolean----
-let firstName = "Ensar"
-let  lastName = "Sagkal"
-let age = 30
-let isMarried = false
-let year = new Date().getFullYear()
+// let firstName = "Ensar"
+// let  lastName = "Sagkal"
+// let age = 30
+// let isMarried = false
+// let year = new Date().getFullYear()
 
-console.log(typeof year, typeof firstName, typeof  age);
+// console.log(typeof year, typeof firstName, typeof  age);
 
-console.log("10"===10);
+// console.log("10"===10);
+
+// ! =========================ARRAYS=======================
+const fruits = ['banana', 'orange', 'mango', 'lemon']
+
+console.log(fruits[0][2]);
