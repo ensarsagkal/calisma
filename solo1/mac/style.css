@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter&family=Kenia&family=Poppins:wght@300;500;600;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,21 +8,91 @@
 }
 body{
    background-color: #ECECEC;
+  
+font-family: 'Poppins', sans-serif;
+
 }
 .container{
     width: 90vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem 2rem;
+    margin: auto;
+    margin-top: 1rem;
+    border: 1px solid red;
+    background-color: #FFFFFF;
     
 }
 .pc{
-flex-grow: 1;
+width: 50%;
 }
 .pc img{
     width: 100%;
 }
 .info{
-flex-grow: 1;
+width: 50%;
+}
+.mba{
+    margin: 1rem 0;
+}
+.mba h1{
+    font-size: 32px;
+}
+.mba p{
+    font-size: 24px;
+}
+h3{
+    font-size: 19px;
+    font-weight: 600;
+    
+}
+.pro-info{
+    margin: 1rem 0;
+}
+.pro-info p{
+    font-size: 17px;
+    color:#555555;
+}
+.storage{
+    margin-bottom: 1rem;
+}
+ul li{
+    display: inline-block;
+    margin-right: 1rem;
+    color: black ;
+    padding: .5rem 1.5rem;
+    width: 5rem;
+    text-align: center;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color:#EEEEEE;
+    margin-left1rem: ;
+}
+ul li:hover{
+    background-color:#2175F5;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    background-color: #2175F5;
+}
+.add{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.card{
+    font-size: 18px;
+    color: white;
+    background-color: #2175F5;
+    width: 12rem;
+    /* height: 2rem; */
+    text-align: center;
+    padding: 1rem;
+    
+}
+.price{
+    font-size: 34px;
 }
