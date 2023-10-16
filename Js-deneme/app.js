@@ -1079,6 +1079,94 @@ let str ="30 Days Of JavaScript"
 // console.log("10"===10);
 
 // ! =========================ARRAYS=======================
-const fruits = ['banana', 'orange', 'mango', 'lemon']
+// const fruits = ['banana', 'orange', 'mango', 'lemon']
 
-console.log(fruits[0][2]);
+// console.log(fruits[0][2]);
+// const arr = Array()
+// const arr1 = new Array()
+// const arr2 = [] 
+
+// console.log(typeof arr);
+// console.log(typeof arr1);
+// console.log(typeof arr2);
+
+// console.log(arr);
+
+// const numbers = [5,6,7,2.4,5]
+// console.log(numbers);
+// console.log(numbers.length);
+// console.clear()
+
+// const arr5 = [
+//     'Asabeneh',
+//     250,
+//     true,
+//     { country: 'Finland', city: 'Helsinki' },
+//     { skills: ['HTML', 'CSS', 'JS', 'React', 'Python'] }
+// ]
+
+// console.log(object);
+
+// console.log(arr5);
+// console.log(arr5.length);
+
+// let js = 'Java script'
+
+// console.log(js.split('a',2));
+
+// const fruits = ['banana', 'orange', 'mango', 'lemon']
+
+// console.log(fruits[0][0],fruits[2]);
+// console.log(fruits[2]);
+// console.log(fruits[fruits.length-1]);
+// console.log(fruits.length);
+
+// const webTechs = [
+//     'HTML',
+//     'CSS',
+//     'JavaScript',
+//     'React',
+//     'Redux',
+//     'Node',
+//     'MongoDB'
+//   ]
+
+//   console.log(webTechs);
+// console.clear()
+
+// const countries = [
+//     'Albania',
+//     'Bolivia',
+//     'Canada',
+//     'Denmark',
+//     'Ethiopia',
+//     'Finland',
+//     'Germany',
+//     'Hungary',
+//     'Ireland',
+//     'Japan',
+//     'Kenya'
+//   ]
+// console.log(countries);
+//   countries[14] = 'Turkey'
+//   console.log(countries);
+
+// const firstList = [1, 2, 3]
+// const secondList = [4, 5, 6]
+// const thirdList  = [7,8,9]
+
+// const fourtList = firstList.concat(secondList,thirdList)
+
+// console.log(fourtList);
+
+// const numbers = [1, 2, 3, 4, 5,'banana']
+
+// console.log(numbers.indexOf(2));
+// console.log(numbers.indexOf('apple'));
+// console.log(numbers.indexOf('banana'));
+
+// const fruits = ['banana', 'orange', 'mango', 'lemon','apple']
+
+// let index = fruits.indexOf(prompt('enter a fruits').toLowerCase())
+
+// index === -1 ? console.log('not exist') : console.log('index of fruits');
