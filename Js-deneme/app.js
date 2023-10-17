@@ -1438,3 +1438,23 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 //     console.log(countries);
 //     countries.includes("Ethiopia") ? console.log(countries.splice(countries.indexOf("Ethiopia"),1,"ETHİOPİA")) : countries.push("Ethiopia")
 //     console.log(countries);
+
+// const webTechs = [
+//     "HTML",
+//     "CSS",
+//     "JavaScript",
+//     "React",
+//     "Redux",
+//     "Node",
+//     "MongoDB",
+//   ];
+  
+//   webTechs.includes("Sass")
+//     ? console.log("Sass is a CSS preprocess")
+//     : webTechs.splice(webTechs.indexOf("JavaScript"), 0, "Sass") &&
+//       console.log(webTechs);
+
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+const fullStack= frontEnd.concat(backEnd)
+console.log(fullStack)
