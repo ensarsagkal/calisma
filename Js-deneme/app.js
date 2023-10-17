@@ -1459,27 +1459,7 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 // const fullStack= frontEnd.concat(backEnd)
 // console.log(fullStack)
 
-function compare (a, b) {
-    y = a.split("").sort();
-    z = b.split("").sort();
-    for (i=0; i<y.length; i++) {
-      if(y.length===z.length) {
-        if (y[i]===z[i]){
-          console.log(a + " and " + b + " are anagrams!");
-          break;                                                        
-        }
-        else {
-          console.log(a + " and " + b + " are not anagrams.");
-          break;
-        }
-      }
-      else {
-        console.log(a + " has a different amount of letters than " + b);
-      }
-      break;
-    }
-  }
-  
+
 //   compare("mary", "arms")
 //   console.log(compare("mary", "arms"));
 // let name1= "mary"
@@ -1491,15 +1471,49 @@ function compare (a, b) {
 // let a = "ahmet Ali"
 // let b = cleanAndNormalize(a)
 // console.log(b)
-const unique = (arr) =>{
-    let newUniqueArr =[]
-    for(const item of arr){
-        if(!newUniqueArr.includes(item)){
-            newUniqueArr.push(item)
+// const unique = (arr) =>{
+//     let newUniqueArr =[]
+//     for(const item of arr){
+//         if(!newUniqueArr.includes(item)){
+//             newUniqueArr.push(item)
+//         }
+//     }
+//     return newUniqueArr
+// }
+
+// const arrayWithDuplicates = [1, 2, 2, 3, 4, 4, 5];
+// console.log(unique(arrayWithDuplicates));
+
+// const unique = (arr) =>{
+//     let newUniqueArr =[]
+//     for(const item of arr){
+//         if(newUniqueArr.includes(item)){
+            
+//         }else{
+//             newUniqueArr.push(item)
+//         }
+//     }
+//     return newUniqueArr
+// }
+
+// const arrayWithDuplicates = [1, 2, 2, 3, 4, 4, 5];
+// console.log(unique(arrayWithDuplicates));
+
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [3, 4, 5, 6, 7];
+// const result = findIntersection(array1, array2);
+// console.log(result); // [3, 4, 5]
+
+const inter = (arr1,arr2)=>{
+    const interArr=[]
+    for(let i =0;i< arr1.length; i++){
+        for(let j =0; j<arr2.length;j++){
+            if(arr1[i]===arr2[j]){
+                interArr.push(arr1[i])
+            }
         }
     }
-    return newUniqueArr
+    return interArr
 }
 
-const arrayWithDuplicates = [1, 2, 2, 3, 4, 4, 5];
-console.log(unique(arrayWithDuplicates));
+console.log(inter(array1,array2));
