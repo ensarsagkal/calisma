@@ -1400,10 +1400,41 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 // console.log(itCompanies.splice((itCompanies.length-1)/2,1));
 // console.log(itCompanies);
 
-console.log(itCompanies.pop());
-console.log(itCompanies);
+// console.log(itCompanies.pop());
+// console.log(itCompanies);
 
 
 
 // itCompanies.fill()
 // console.log(itCompanies);
+
+// itCompanies.length %2 ? console.log(itCompanies[(itCompanies.length-1)/2]) :console.log(itCompanies[
+//     itCompanies.length/2
+// ]);
+// ;
+// const shoppingCart = ["Milk", "Coffee", "Tea", "Honey"];
+
+// shoppingCart.indexOf("Meat") === -1 ? shoppingCart.unshift("Meat") : "";
+// console.log(shoppingCart);
+// shoppingCart.indexOf("Sugar") === -1 ? shoppingCart.push("Sugar") : "";
+// console.log(shoppingCart);
+// confirm("You're allergic to honey") ? shoppingCart.splice(4, 1) : "";
+// console.log(shoppingCart);
+
+// const countries = [
+//     'Albania',
+//     'Bolivia',
+//     'Canada',
+//     'Denmark',
+//     'Ethiopia',
+//     'Finland',
+//     'Germany',
+//     'Hungary',
+//     'Ireland',
+//     'Japan',
+//     'Kenya'
+//   ]
+//     countries.includes("Ethiopia") ? console.log(countries[countries.indexOf("Ethiopia")].toUpperCase()) : countries.push("Ethiopia")
+//     console.log(countries);
+//     countries.includes("Ethiopia") ? console.log(countries.splice(countries.indexOf("Ethiopia"),1,"ETHİOPİA")) : countries.push("Ethiopia")
+//     console.log(countries);
