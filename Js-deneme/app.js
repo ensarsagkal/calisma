@@ -1318,3 +1318,59 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 //  }
 
 // console.log(`${itCompanies.join(" ")} are big it companies`);
+// let ocounter= 0
+// for(let i=0 ; i<itCompanies.length; i++){
+//     for(let j=0; j<itCompanies[i].length;j++){
+//       if(itCompanies[i][j]==="o"){
+//         ocounter+=1
+        
+//       }  
+//     }
+//     if()
+// }
+// console.log(ocounter);
+
+// let filterCompanies = []
+
+//  for(let i=0;i<itCompanies.length;i++){
+//     let len = itCompanies[0].match(/o/gi).length
+//     if(len >=1){
+//         filterCompanies.push(itCompanies[i])
+//     }
+//  }
+//  console.log(filterCompanies);
+
+// const companies = [
+//     { name: 'Google' },
+//     { name: 'Microsoft' },
+//     { name: 'Facebook' },
+//     { name: 'Apple' },
+//     { name: 'Oracle' },
+//   ];
+//   const filteredCompanies = [];
+//   for (let i = 0; i < companies.length; i++) {
+//     const company = companies[i];
+//     const companyName = company.name.toLowerCase(); // Convert to lowercase for case-insensitive check
+//     let oCount = 0;
+//     for (let j = 0; j < companyName.length; j++) {
+//       if (companyName[j] === 'o') {
+//         oCount++;
+//         if (oCount > 1) {
+//           break; // More than one 'o' found, skip this company
+//         }
+//       }
+//     }
+//     if (oCount <= 1) {
+//       filteredCompanies.push(company);
+//     }
+//   }
+//   console.log(filteredCompanies);
+
+let filterCompanies = [];
+for (let i = 0; i < itCompanies.length; i++) {
+  let len = (itCompanies[i].match(/o/gi) || []).length;
+  if (len > 1) {
+    filterCompanies.push(itCompanies[i]);
+  }
+}
+console.log(filterCompanies);
