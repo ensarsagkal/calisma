@@ -1499,22 +1499,22 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 // const arrayWithDuplicates = [1, 2, 2, 3, 4, 4, 5];
 // console.log(unique(arrayWithDuplicates));
 
-const array1 = [1, 2, 3, 4, 5];
-const array2 = [3, 4, 5, 6, 7];
-// const result = findIntersection(array1, array2);
-// console.log(result); // [3, 4, 5]
+// const array1 = [1, 2, 3, 4, 5];
+// const array2 = [3, 4, 5, 6, 7];
+// // const result = findIntersection(array1, array2);
+// // console.log(result); // [3, 4, 5]
 
-const inter = (arr1,arr2)=>{
-    const interArr=[]
-    for(let i =0;i< arr1.length; i++){
-        for(let j =0; j<arr2.length;j++){
-            if(arr1[i]===arr2[j]){
-                interArr.push(arr1[i])
-                break
-            }
-        }
-    }
-    return interArr
-}
+// const inter = (arr1,arr2)=>{
+//     const interArr=[]
+//     for(let i =0;i< arr1.length; i++){
+//         for(let j =0; j<arr2.length;j++){
+//             if(arr1[i]===arr2[j]){
+//                 interArr.push(arr1[i])
+//                 break
+//             }
+//         }
+//     }
+//     return interArr
+// }
 
-console.log(inter(array1,array2));
+// console.log(inter(array1,array2));
