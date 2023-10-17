@@ -1518,3 +1518,47 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 // }
 
 // console.log(inter(array1,array2));
+
+
+// const cleanAndNormalize  = (str) => {
+//     let cleanedStr = ""
+
+//     for(let i=0; i<str.length;i++){
+//         const char = str[i].toLowerCase();
+
+//         if(char !== " " && char !== "\n" && char !=="\t"){
+//             cleanedStr +=char;
+//         }
+//     }
+//     return cleanedStr
+// }
+
+// //? -------------------------------------
+
+// const sortString =  (str) =>{
+//     return str.split("").sort().join("")
+// }
+
+// //?---------------------------------------
+
+// const areAnagrams=(str1, str2) =>{
+//     const cleanedStr1 = cleanAndNormalize(str1)
+//     const cleanedStr2 = cleanAndNormalize(str2)
+
+//     if(cleanedStr1.length !== cleanedStr2.length){
+//         return false;
+//     }
+
+//     const sortedStr1 = sortString(cleanedStr1)
+//     const sortedStr2 = sortString(cleanedStr2)
+
+//     return sortedStr1 === sortedStr2
+
+// }
+
+
+// console.log(areAnagrams("listen", "silent")); // Should print true
+// console.log(areAnagrams("hello", "world")); // Should print false
+// console.log(areAnagrams("The Morse Code", "Here come dots"));  // Should print true
+// console.log(areAnagrams("Dormitory", "dirty room")); // Should print true
+// console.log(areAnagrams("Astronomer", "Moon starer")); // Should print true
