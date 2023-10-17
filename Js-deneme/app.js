@@ -1454,7 +1454,37 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 //     : webTechs.splice(webTechs.indexOf("JavaScript"), 0, "Sass") &&
 //       console.log(webTechs);
 
-const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
-const backEnd = ['Node','Express', 'MongoDB']
-const fullStack= frontEnd.concat(backEnd)
-console.log(fullStack)
+// const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+// const backEnd = ['Node','Express', 'MongoDB']
+// const fullStack= frontEnd.concat(backEnd)
+// console.log(fullStack)
+
+function compare (a, b) {
+    y = a.split("").sort();
+    z = b.split("").sort();
+    for (i=0; i<y.length; i++) {
+      if(y.length===z.length) {
+        if (y[i]===z[i]){
+          console.log(a + " and " + b + " are anagrams!");
+          break;                                                        
+        }
+        else {
+          console.log(a + " and " + b + " are not anagrams.");
+          break;
+        }
+      }
+      else {
+        console.log(a + " has a different amount of letters than " + b);
+      }
+      break;
+    }
+  }
+  
+  compare("mary", "arms")
+//   console.log(compare("mary", "arms"));
+// let name1= "mary"
+// let name2 = "arms"
+// let y =name1.split("").sort()
+// let z =name2.split("").sort()
+// console.log(y ,z);
+
