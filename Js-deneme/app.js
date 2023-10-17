@@ -1366,11 +1366,44 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 //   }
 //   console.log(filteredCompanies);
 
-let filterCompanies = [];
-for (let i = 0; i < itCompanies.length; i++) {
-  let len = (itCompanies[i].match(/o/gi) || []).length;
-  if (len > 1) {
-    filterCompanies.push(itCompanies[i]);
-  }
-}
-console.log(filterCompanies);
+// let filterCompanies = [];
+// for (let i = 0; i < itCompanies.length; i++) {
+//   let len = (itCompanies[i].match(/o/gi) || []).length;
+//   if (len > 1) {
+//     filterCompanies.push(itCompanies[i]);
+//   }
+// }
+// console.log(filterCompanies);
+
+// console.log(itCompanies.sort());
+
+// console.log(itCompanies.reverse());,
+
+// console.log(itCompanies.slice(0,3));
+// console.log(itCompanies.slice(itCompanies.length-3,itCompanies.length));
+
+// const companis = ["Facebook", "Google", "Microsoft", "Apple", "IBM","Oracle","Amazon"]
+// for(i=0; i<= companis.length ; i++){
+
+// if((companis[i].match(/o/gi)).length>=2){
+//     console.log(companis[i]);
+// }
+// }
+
+// itCompanies.length %2 ? console.log(itCompanies[(itCompanies.length-1)/2]) :console.log(itCompanies[
+//     itCompanies.length/2
+// ]);
+// ;
+
+// console.log(itCompanies.shift());
+// console.log(itCompanies);
+// console.log(itCompanies.splice((itCompanies.length-1)/2,1));
+// console.log(itCompanies);
+
+console.log(itCompanies.pop());
+console.log(itCompanies);
+
+
+
+// itCompanies.fill()
+// console.log(itCompanies);
