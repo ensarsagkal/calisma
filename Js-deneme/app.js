@@ -1480,7 +1480,7 @@ function compare (a, b) {
     }
   }
   
-  compare("mary", "arms")
+//   compare("mary", "arms")
 //   console.log(compare("mary", "arms"));
 // let name1= "mary"
 // let name2 = "arms"
@@ -1488,3 +1488,18 @@ function compare (a, b) {
 // let z =name2.split("").sort()
 // console.log(y ,z);
 
+// let a = "ahmet Ali"
+// let b = cleanAndNormalize(a)
+// console.log(b)
+const unique = (arr) =>{
+    let newUniqueArr =[]
+    for(const item of arr){
+        if(!newUniqueArr.includes(item)){
+            newUniqueArr.push(item)
+        }
+    }
+    return newUniqueArr
+}
+
+const arrayWithDuplicates = [1, 2, 2, 3, 4, 4, 5];
+console.log(unique(arrayWithDuplicates));
