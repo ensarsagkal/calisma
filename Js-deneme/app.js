@@ -1562,3 +1562,37 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 // console.log(areAnagrams("The Morse Code", "Here come dots"));  // Should print true
 // console.log(areAnagrams("Dormitory", "dirty room")); // Should print true
 // console.log(areAnagrams("Astronomer", "Moon starer")); // Should print true
+// !===============================HIGHER ORDER=================================
+
+// const higherOrder = n =>{
+//     const doSomething = m=>{
+//         const doWhatEver = t=>{
+//             return 2*n +3*m+t
+//         }
+//         return doWhatEver
+//     }
+//     return doSomething
+// }
+// console.log(higherOrder(2)(3)(10));
+
+// const numbers=[1,2,3,4,5]
+// const sumArr = arr=>{
+//     let sum =0
+//     const callback = function(element){
+//         sum += element
+//     }
+//     arr.forEach(callback)
+//     return sum
+// }
+// console.log(sumArr(numbers));
+
+// const numbers=[1,2,3,4,5]
+// const sumArr = arr=>{
+//     let sum =0
+//     arr.forEach(function(element){
+//         sum+=element
+//     })
+//     return sum 
+// }    
+// console.log(sumArr(numbers));
+
