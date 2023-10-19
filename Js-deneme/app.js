@@ -1596,3 +1596,31 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 // }    
 // console.log(sumArr(numbers));
 
+// const letters = ['A', 'B', 'C', ,'E'];
+
+// letters.forEach((e)=>{
+//    let arr=[]
+//    arr.push(letters.slice(1,e))
+//    console.log(arr);
+// })
+
+const cities = [
+    {name: 'Los Angeles', population: 3792621},
+    {name: 'Chicago', population: 2695598},
+    {name: 'New York', population: 8175133},
+    {name: 'Houston', population: 2099451},
+    {name: 'Philadelphia', population: 1526006}
+  ];
+
+  const smallestCities = cities.filter((city)=>{
+   return city.population<3000000
+   
+  })
+  console.log(smallestCities);
+
+
+  const rounded = cities.map((city)=>{
+    city.population=(city.population/1000000).toFixed(2)+"M"
+    return city
+  })
+  console.log(rounded);
