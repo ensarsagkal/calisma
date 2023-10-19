@@ -1649,6 +1649,6 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 // const newArr = arr.map((num)=>num*5)
 // console.log(newArr);
 
-const adlar = ["ali", "ahmet", "ayşe","faik", "ensar","erol"]
-const newNames = adlar.map((n)=>n.toUpperCase())
-console.log(newNames);
+// const adlar = ["ali", "ahmet", "ayşe","faik", "ensar","erol"]
+// const newNames = adlar.map((n)=>n.toUpperCase())
+// console.log(newNames);
