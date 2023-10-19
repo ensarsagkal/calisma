@@ -1604,23 +1604,51 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 //    console.log(arr);
 // })
 
-const cities = [
-    {name: 'Los Angeles', population: 3792621},
-    {name: 'Chicago', population: 2695598},
-    {name: 'New York', population: 8175133},
-    {name: 'Houston', population: 2099451},
-    {name: 'Philadelphia', population: 1526006}
-  ];
+// const cities = [
+//     {name: 'Los Angeles', population: 3792621},
+//     {name: 'Chicago', population: 2695598},
+//     {name: 'New York', population: 8175133},
+//     {name: 'Houston', population: 2099451},
+//     {name: 'Philadelphia', population: 1526006}
+//   ];
 
-  const smallestCities = cities.filter((city)=>{
-   return city.population<3000000
+//   const smallestCities = cities.filter((city)=>{
+//    return city.population<3000000
    
-  })
-  console.log(smallestCities);
+//   })
+//   console.log(smallestCities);
 
 
-  const rounded = cities.map((city)=>{
-    city.population=(city.population/1000000).toFixed(2)+"M"
-    return city
-  })
-  console.log(rounded);
+//   const rounded = cities.map((city)=>{
+//     city.population=(city.population/1000000).toFixed(2)+"M"
+//     return city
+//   })
+//   console.log(rounded);
+// const adlar = ["ali", "ahmet", "ayşe"]
+// const soyAdlar=["ağaç","güzel","arı"]
+
+// const birles= (arr1,arr2)=>{
+//     let nameSurname=[]
+//     for(let i in arr1){
+//         nameSurname[i]=`${arr1[i]} ${arr2[i]}`
+//     }
+//     return nameSurname
+// }
+// console.log(birles(adlar,soyAdlar));
+// const arr=[-5,24,-13,7]
+// let newArr=[]
+// arr.forEach((num)=>{newArr.push(num*5)})
+// console.log(newArr);
+
+// const arr=[-5,24,-13,7]
+// let newArr=[]
+// arr.forEach((num,index)=>{newArr[index]=(num*5)})
+// console.log(newArr);
+
+// const arr=[-5,24,-13,70]
+// const newArr = arr.map((num)=>num*5)
+// console.log(newArr);
+
+const adlar = ["ali", "ahmet", "ayşe","faik", "ensar","erol"]
+const newNames = adlar.map((n)=>n.toUpperCase())
+console.log(newNames);
