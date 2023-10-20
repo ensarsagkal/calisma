@@ -1652,3 +1652,28 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 // const adlar = ["ali", "ahmet", "ayşe","faik", "ensar","erol"]
 // const newNames = adlar.map((n)=>n.toUpperCase())
 // console.log(newNames);
+
+const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const products = [
+  { product: 'banana', price: 3 },
+  { product: 'mango', price: 6 },
+  { product: 'potato', price: ' ' },
+  { product: 'avocado', price: 8 },
+  { product: 'coffee', price: 10 },
+  { product: 'tea', price: '' },
+]
+
+
+countries.forEach((country)=>console.log(country))
+names.forEach((name)=>console.log(name))
+numbers.forEach((number)=>console.log(number))
+const newCountries = countries.map((country)=>country.toUpperCase())
+console.log(newCountries);
+const lenghtCountries = countries.map((country)=>country.length)
+console.log(lenghtCountries);
+const newNumbers = numbers.map((number)=>number**2)
+console.log(newNumbers);
+const newNames= names.map((name)=>name.toUpperCase())
+console.log(newNames);
