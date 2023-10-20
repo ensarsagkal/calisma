@@ -1686,3 +1686,16 @@ const sixMoreChar = countries.filter((country)=>country.length>=6)
 console.log(sixMoreChar);
 const startE = countries.filter((country)=>country[0]==="E")
 console.log(startE);
+// const valuesOnly = products.filter((product)=>product.price)
+// console.log(valuesOnly);
+const arr9=["a","b",5,9,7]
+const getStringList = (arr)=>{
+    return arr.filter((str)=> typeof str=== "string")
+
+}
+console.log(getStringList(arr9));
+
+const sumNumbers = numbers.reduce((sum,num)=> sum+=num,0)
+console.log(sumNumbers);
+const newSentence= countries.reduce((sum,country)=>`Estonia ${sum+=country} are Europian countries`)
+console.log(newSentence);
