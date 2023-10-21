@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.calc{
+    width: 500px;
+    height: 840px;
+    border-radius: 5%;
+    margin: 2rem auto;
+    background-color: #181A1B;
+    color: white;
+    padding: 20px;
+
+}
+.box{
+    height: 250px;
+    width: 460px;
+    border: 1px solid wheat;
+
+}
+.buttons{
+    display: grid;
+    gap: .2rem;
+    grid-template-columns:repeat(4,1fr) ;
+}
+.items{
+    width: 100px;
+    height: 100px;
+    background-color: #2A2E2F;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20%;
+
+}
