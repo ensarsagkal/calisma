@@ -1653,49 +1653,52 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 // const newNames = adlar.map((n)=>n.toUpperCase())
 // console.log(newNames);
 
-const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand',"England"]
-const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const products = [
-  { product: 'banana', price: 3 },
-  { product: 'mango', price: 6 },
-  { product: 'potato', price: ' ' },
-  { product: 'avocado', price: 8 },
-  { product: 'coffee', price: 10 },
-  { product: 'tea', price: '' },
-]
+// const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand',"England"]
+// const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// const products = [
+//   { product: 'banana', price: 3 },
+//   { product: 'mango', price: 6 },
+//   { product: 'potato', price: ' ' },
+//   { product: 'avocado', price: 8 },
+//   { product: 'coffee', price: 10 },
+//   { product: 'tea', price: '' },
+// ]
 
 
-countries.forEach((country)=>console.log(country))
-names.forEach((name)=>console.log(name))
-numbers.forEach((number)=>console.log(number))
-const newCountries = countries.map((country)=>country.toUpperCase())
-console.log(newCountries);
-const lenghtCountries = countries.map((country)=>country.length)
-console.log(lenghtCountries);
-const newNumbers = numbers.map((number)=>number**2)
-console.log(newNumbers);
-console.log(names.map((name)=>name.toUpperCase()))
-const prices=products.map((product)=>product);
-console.log(prices);
-const landCountries = countries.filter((country)=>country.toLowerCase().includes("land"))
-console.log(landCountries);
-const sixChar = countries.filter((country)=>country.length===6)
-console.log(sixChar);
-const sixMoreChar = countries.filter((country)=>country.length>=6)
-console.log(sixMoreChar);
-const startE = countries.filter((country)=>country[0]==="E")
-console.log(startE);
-// const valuesOnly = products.filter((product)=>product.price)
-// console.log(valuesOnly);
-const arr9=["a","b",5,9,7]
-const getStringList = (arr)=>{
-    return arr.filter((str)=> typeof str=== "string")
+// countries.forEach((country)=>console.log(country))
+// names.forEach((name)=>console.log(name))
+// numbers.forEach((number)=>console.log(number))
+// const newCountries = countries.map((country)=>country.toUpperCase())
+// console.log(newCountries);
+// const lenghtCountries = countries.map((country)=>country.length)
+// console.log(lenghtCountries);
+// const newNumbers = numbers.map((number)=>number**2)
+// console.log(newNumbers);
+// console.log(names.map((name)=>name.toUpperCase()))
+// const prices=products.map((product)=>product);
+// console.log(prices);
+// const landCountries = countries.filter((country)=>country.toLowerCase().includes("land"))
+// console.log(landCountries);
+// const sixChar = countries.filter((country)=>country.length===6)
+// console.log(sixChar);
+// const sixMoreChar = countries.filter((country)=>country.length>=6)
+// console.log(sixMoreChar);
+// const startE = countries.filter((country)=>country[0]==="E")
+// console.log(startE);
+// // const valuesOnly = products.filter((product)=>product.price)
+// // console.log(valuesOnly);
+// const arr9=["a","b",5,9,7]
+// const getStringList = (arr)=>{
+//     return arr.filter((str)=> typeof str=== "string")
 
-}
-console.log(getStringList(arr9));
+// }
+// console.log(getStringList(arr9));
 
-const sumNumbers = numbers.reduce((sum,num)=> sum+=num,0)
-console.log(sumNumbers);
-const newSentence= countries.reduce((sum,country)=>`Estonia ${sum+=country} are Europian countries`)
-console.log(newSentence);
+// const sumNumbers = numbers.reduce((sum,num)=> sum+=num,0)
+// console.log(sumNumbers);
+// const newSentence= countries.reduce((sum,country)=>`Estonia ${sum+=country} are Europian countries`)
+// console.log(newSentence);
+const isimler = ["Alice", "Bob", "Charlie", "David", "Eve"]
+const newİS =isimler.filter((isim)=>isim.length>=5)
+console.log(newİS);
