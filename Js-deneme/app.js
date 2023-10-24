@@ -1724,90 +1724,91 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 // })
 // console.log(newObj);
 
-const books = [
-    { title: 'The Catcher in the Rye', author: 'J.D. Salinger', rating: 4.2 },
-    { title: 'To Kill a Mockingbird', author: 'Harper Lee', rating: 4.6 },
-    { title: '1984', author: 'George Orwell', rating: 4.0 },
-    { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', rating: 4.7 },
-    { title: 'Pride and Prejudice', author: 'Jane Austen', rating: 4.5 },
-    { title: 'Moby-Dick', author: 'Herman Melville', rating: 4.1 },
-    { title: 'The Lord of the Rings', author: 'J.R.R. Tolkien', rating: 4.8 },
-    { title: 'The Hobbit', author: 'J.R.R. Tolkien', rating: 4.3 },
-    { title: 'Harry Potter and the Sorcerer\'s Stone', author: 'J.K. Rowling',
-   rating: 4.7 },
-    { title: 'Brave New World', author: 'Aldous Huxley', rating: 4.0 },
-    { title: 'The Shining', author: 'Stephen King', rating: 4.2 },
-    { title: 'The Da Vinci Code', author: 'Dan Brown', rating: 3.9 },
-    { title: 'The Alchemist', author: 'Paulo Coelho', rating: 4.4 },
-    { title: 'War and Peace', author: 'Leo Tolstoy', rating: 4.9 },
-    { title: 'Crime and Punishment', author: 'Fyodor Dostoevsky', rating: 4.5 },
-    { title: 'The Odyssey', author: 'Homer', rating: 4.6 },
-    { title: 'Frankenstein', author: 'Mary Shelley', rating: 4.2 },
-    { title: 'The Hunger Games', author: 'Suzanne Collins', rating: 4.1 },
-    { title: 'The Road', author: 'Cormac McCarthy', rating: 4.3 },
-    { title: 'The Hitchhiker\'s Guide to the Galaxy', author: 'Douglas Adams',rating: 4.7 },
-    { title: 'The Count of Monte Cristo', author: 'Alexandre Dumas', rating: 4.8 },]
+// const books = [
+//     { title: 'The Catcher in the Rye', author: 'J.D. Salinger', rating: 4.2 },
+//     { title: 'To Kill a Mockingbird', author: 'Harper Lee', rating: 4.6 },
+//     { title: '1984', author: 'George Orwell', rating: 4.0 },
+//     { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', rating: 4.7 },
+//     { title: 'Pride and Prejudice', author: 'Jane Austen', rating: 4.5 },
+//     { title: 'Moby-Dick', author: 'Herman Melville', rating: 4.1 },
+//     { title: 'The Lord of the Rings', author: 'J.R.R. Tolkien', rating: 4.8 },
+//     { title: 'The Hobbit', author: 'J.R.R. Tolkien', rating: 4.3 },
+//     { title: 'Harry Potter and the Sorcerer\'s Stone', author: 'J.K. Rowling',
+//    rating: 4.7 },
+//     { title: 'Brave New World', author: 'Aldous Huxley', rating: 4.0 },
+//     { title: 'The Shining', author: 'Stephen King', rating: 4.2 },
+//     { title: 'The Da Vinci Code', author: 'Dan Brown', rating: 3.9 },
+//     { title: 'The Alchemist', author: 'Paulo Coelho', rating: 4.4 },
+//     { title: 'War and Peace', author: 'Leo Tolstoy', rating: 4.9 },
+//     { title: 'Crime and Punishment', author: 'Fyodor Dostoevsky', rating: 4.5 },
+//     { title: 'The Odyssey', author: 'Homer', rating: 4.6 },
+//     { title: 'Frankenstein', author: 'Mary Shelley', rating: 4.2 },
+//     { title: 'The Hunger Games', author: 'Suzanne Collins', rating: 4.1 },
+//     { title: 'The Road', author: 'Cormac McCarthy', rating: 4.3 },
+//     { title: 'The Hitchhiker\'s Guide to the Galaxy', author: 'Douglas Adams',rating: 4.7 },
+//     { title: 'The Count of Monte Cristo', author: 'Alexandre Dumas', rating: 4.8 },]
 
 
-    const filteredBooks= books.filter((b)=>b.rating>=4.5).map((book)=>({title:book.author,author:book.author}))
-    console.log(filteredBooks);
+//     const filteredBooks= books.filter((b)=>b.rating>=4.5).map((book)=>({title:book.author,author:book.author}))
+//     console.log(filteredBooks);
 
 
-    const longText =`There are many variations of passages of Lorem Ipsum available, but the majority
-    have suffered alteration in some form, by injected humour, or randomised words
-    which don't look even slightly believable. If you are going to use a passage of
-    Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
-    middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
-    predefined chunks as necessary, making this the first true generator on the
-    Internet. It uses a dictionary of over 200 Latin words, combined with a handful of
-    model sentence structures, to generate Lorem Ipsum which looks reasonable. The
-    generated Lorem Ipsum is therefore always free from repetition, injected humour, or
-    non-characteristic words etc.`
-    // const newLongTextArr = longText.split(" ")
-    // console.log(newLongTextArr);
-//    const x =newLongTextArr.map((i)=>i)
-// for(let i of newLongTextArr){
-//    console.log(i.splice(0,1,i[0].toUpperCase()));
-// }
+//     const longText =`There are many variations of passages of Lorem Ipsum available, but the majority
+//     have suffered alteration in some form, by injected humour, or randomised words
+//     which don't look even slightly believable. If you are going to use a passage of
+//     Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+//     middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
+//     predefined chunks as necessary, making this the first true generator on the
+//     Internet. It uses a dictionary of over 200 Latin words, combined with a handful of
+//     model sentence structures, to generate Lorem Ipsum which looks reasonable. The
+//     generated Lorem Ipsum is therefore always free from repetition, injected humour, or
+//     non-characteristic words etc.`
+//     // const newLongTextArr = longText.split(" ")
+//     // console.log(newLongTextArr);
+// //    const x =newLongTextArr.map((i)=>i)
+// // for(let i of newLongTextArr){
+// //    console.log(i.splice(0,1,i[0].toUpperCase()));
+// // }
    
-function capitalizeWords(text){
-    const words = text.split(' ');
-    const capitalizeWords = words.map(word => word[0].toUpperCase()+word.slice(1))
+// function capitalizeWords(text){
+//     const words = text.split(' ');
+//     const capitalizeWords = words.map(word => word[0].toUpperCase()+word.slice(1))
       
 
-    const capitalizeText = capitalizeWords.join(' ');
-    return capitalizeText;
-}
+//     const capitalizeText = capitalizeWords.join(' ');
+//     return capitalizeText;
+// }
 
-const inputText = `There are many variations of passages of Lorem Ipsum available, but the majority
-have suffered alteration in some form, by injected humour, or randomised words
-which don't look even slightly believable. If you are going to use a passage of
-Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
-middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
-predefined chunks as necessary, making this the first true generator on the
-Internet. It uses a dictionary of over 200 Latin words, combined with a handful of
-model sentence structures, to generate Lorem Ipsum which looks reasonable. The
-generated Lorem Ipsum is therefore always free from repetition, injected humour, or
-non-characteristic words etc.`;
+// const inputText = `There are many variations of passages of Lorem Ipsum available, but the majority
+// have suffered alteration in some form, by injected humour, or randomised words
+// which don't look even slightly believable. If you are going to use a passage of
+// Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+// middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
+// predefined chunks as necessary, making this the first true generator on the
+// Internet. It uses a dictionary of over 200 Latin words, combined with a handful of
+// model sentence structures, to generate Lorem Ipsum which looks reasonable. The
+// generated Lorem Ipsum is therefore always free from repetition, injected humour, or
+// non-characteristic words etc.`;
 
-const result = capitalizeWords(inputText);
-console.log(result);
+// const result = capitalizeWords(inputText);
+// console.log(result);
 
 
 
-// const products = [
-//     { name: "Product 1", price: 20, category: "Electronics" },
-//     { name: "Product 2", price: 30, category: "Clothes" },
-//     { name: "Product 3", price: 40, category: "Electronics" },
-//     { name: "Product 4", price: 50, category: "Clothes" },
-//     { name: "Product 5", price: 60, category: "Clothes" },
-//     { name: "Product 6", price: 70, category: "Electronics" },
-//     { name: "Product 7", price: 80, category: "Clothes" },
-//     { name: "Product 8", price: 90, category: "Electronics" },
-//    ];
+const products = [
+    { name: "Product 1", price: 20, category: "Electronics" },
+    { name: "Product 2", price: 30, category: "Clothes" },
+    { name: "Product 3", price: 40, category: "Electronics" },
+    { name: "Product 4", price: 50, category: "Clothes" },
+    { name: "Product 5", price: 60, category: "Clothes" },
+    { name: "Product 6", price: 70, category: "Electronics" },
+    { name: "Product 7", price: 80, category: "Clothes" },
+    { name: "Product 8", price: 90, category: "Electronics" },
+   ];
+// const filteredProducts = products.filter((p)=>({category:p.category==="Electronics" ||"Clothes", average:products.reduce((acc,p)=>acc+p,0)}))
+// console.log(filteredProducts);
 
-// const filteredproducts = products.map(function(p){
-//     return{category:products.filter((p)=>p.category==="Electronics"), average:products.reduce((acc,v)=>(acc+v)/v)}
-// })
-// console.log(filteredproducts);
-
+const filteredProducts = products.map((p)=>{
+    return {category: products.filter((p)=>p.category==="Electronics" ||"Clothes")}
+})
+console.log(filteredProducts);
