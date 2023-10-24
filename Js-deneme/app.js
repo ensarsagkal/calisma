@@ -1749,8 +1749,8 @@ const books = [
     { title: 'The Count of Monte Cristo', author: 'Alexandre Dumas', rating: 4.8 },]
 
 
-    const filteredBooks= books.filter((b)=>b.rating>=4.5)
-    // console.log(filteredBooks);
+    const filteredBooks= books.filter((b)=>b.rating>=4.5).map((book)=>({title:book.author,author:book.author}))
+    console.log(filteredBooks);
 
 
     const longText =`There are many variations of passages of Lorem Ipsum available, but the majority
@@ -1763,28 +1763,51 @@ const books = [
     model sentence structures, to generate Lorem Ipsum which looks reasonable. The
     generated Lorem Ipsum is therefore always free from repetition, injected humour, or
     non-characteristic words etc.`
-    const newLongTextArr = longText.split(" ")
+    // const newLongTextArr = longText.split(" ")
     // console.log(newLongTextArr);
 //    const x =newLongTextArr.map((i)=>i)
 // for(let i of newLongTextArr){
 //    console.log(i.splice(0,1,i[0].toUpperCase()));
 // }
    
+function capitalizeWords(text){
+    const words = text.split(' ');
+    const capitalizeWords = words.map(word => word[0].toUpperCase()+word.slice(1))
+      
+
+    const capitalizeText = capitalizeWords.join(' ');
+    return capitalizeText;
+}
+
+const inputText = `There are many variations of passages of Lorem Ipsum available, but the majority
+have suffered alteration in some form, by injected humour, or randomised words
+which don't look even slightly believable. If you are going to use a passage of
+Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
+predefined chunks as necessary, making this the first true generator on the
+Internet. It uses a dictionary of over 200 Latin words, combined with a handful of
+model sentence structures, to generate Lorem Ipsum which looks reasonable. The
+generated Lorem Ipsum is therefore always free from repetition, injected humour, or
+non-characteristic words etc.`;
+
+const result = capitalizeWords(inputText);
+console.log(result);
 
 
-const products = [
-    { name: "Product 1", price: 20, category: "Electronics" },
-    { name: "Product 2", price: 30, category: "Clothes" },
-    { name: "Product 3", price: 40, category: "Electronics" },
-    { name: "Product 4", price: 50, category: "Clothes" },
-    { name: "Product 5", price: 60, category: "Clothes" },
-    { name: "Product 6", price: 70, category: "Electronics" },
-    { name: "Product 7", price: 80, category: "Clothes" },
-    { name: "Product 8", price: 90, category: "Electronics" },
-   ];
 
-const filteredproducts = products.map(function(p){
-    return{category:products.filter((p)=>p.category==="Electronics"), average:products.reduce((acc,v)=>(acc+v)/v)}
-})
-console.log(filteredproducts);
+// const products = [
+//     { name: "Product 1", price: 20, category: "Electronics" },
+//     { name: "Product 2", price: 30, category: "Clothes" },
+//     { name: "Product 3", price: 40, category: "Electronics" },
+//     { name: "Product 4", price: 50, category: "Clothes" },
+//     { name: "Product 5", price: 60, category: "Clothes" },
+//     { name: "Product 6", price: 70, category: "Electronics" },
+//     { name: "Product 7", price: 80, category: "Clothes" },
+//     { name: "Product 8", price: 90, category: "Electronics" },
+//    ];
+
+// const filteredproducts = products.map(function(p){
+//     return{category:products.filter((p)=>p.category==="Electronics"), average:products.reduce((acc,v)=>(acc+v)/v)}
+// })
+// console.log(filteredproducts);
 
