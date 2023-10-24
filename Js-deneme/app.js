@@ -1699,6 +1699,27 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 // console.log(sumNumbers);
 // const newSentence= countries.reduce((sum,country)=>`Estonia ${sum+=country} are Europian countries`)
 // console.log(newSentence);
-const isimler = ["Alice", "Bob", "Charlie", "David", "Eve"]
-const newİS =isimler.filter((isim)=>isim.length>=5)
-console.log(newİS);
+// const isimler = ["Alice", "Bob", "Charlie", "David", "Eve"]
+// const newİS =isimler.filter((isim)=>isim.length>=5)
+// console.log(newİS);
+const team = [
+    { name: "Ahmet", surname: "Can", job: "Developer", age: 30 },
+    { name: "Mary", surname: "Bary", job: "tester", age: 22 },
+    { name: "Hazel", surname: "Nut", job: "developer", age: 20 },
+  ]
+
+ const names = team.map((p)=>p.name)
+ console.log(names);
+
+const sumOfAges = team.reduce((s,p)=>s+p.age,0)
+console.log(sumOfAges);
+
+const lowerSurname = team.map((p)=>{
+    return p.surname.toUpperCase()
+})
+console.log(lowerSurname);
+
+const newObj = team.map((p)=>{
+    return {fulname:`${p.name.toUpperCase()} ${p.surname.toUpperCase()}`,ageplus : `${p.age+5}` }
+})
+console.log(newObj);
