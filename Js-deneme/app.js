@@ -1805,10 +1805,44 @@ const products = [
     { name: "Product 7", price: 80, category: "Clothes" },
     { name: "Product 8", price: 90, category: "Electronics" },
    ];
-// const filteredProducts = products.filter((p)=>({category:p.category==="Electronics" ||"Clothes", average:products.reduce((acc,p)=>acc+p,0)}))
+// const filteredProducts = products.filter((p)=>({category:p.category==="Electronics" ||"Clothes", average:products.reduce((acc,p,i)=>acc+p,0)}))
 // console.log(filteredProducts);
 
-const filteredProducts = products.map((p)=>{
-    return {category: products.filter((p)=>p.category==="Electronics" ||"Clothes")}
-})
+// const filteredProducts = products.map((p)=>{
+//     return {category: products.filter((p)=>p.category==="Electronics" ||"Clothes")}
+// })
+// console.log(filteredProducts);
+
+
+const filteredProducts = products.filter((p)=>p.category==="Electronics").reduce((acc,p)=>acc+p.price,0)
+
 console.log(filteredProducts);
+
+// const calculateAveragePriceByCategory = (products) => {
+//     // Step 1: Group products by category using map
+//     const groupedProducts = products.reduce((result, product) => {
+//         if (!result[product.category]) {
+//             result[product.category] = [];
+//         }
+//         result[product.category].push(product);
+//         return result;
+//     }, {});
+
+    
+
+//     // Step 2: Calculate the average price for each category using map and reduce
+//     const categoryAverages = Object.keys(groupedProducts).map((category) => {
+//         const categoryProducts = groupedProducts[category];
+//         const total = categoryProducts.reduce((sum, product) => sum + product.price, 0);
+//         const average = total / categoryProducts.length;
+//         return { category, average };
+//     });
+
+//     // Step 3: Filter categories with an average price above 50 using filter
+//     const categoriesAbove50 = categoryAverages.filter((category) => category.average > 50);
+
+//     return categoriesAbove50;
+// };
+
+// const result = calculateAveragePriceByCategory(products);
+// console.log(result);
