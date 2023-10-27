@@ -1814,9 +1814,9 @@ const products = [
 // console.log(filteredProducts);
 
 
-const filteredProducts = products.filter((p)=>p.category==="Electronics").reduce((acc,p)=>acc+p.price,0)
+// const filteredProducts = products.filter((p)=>p.category==="Electronics").reduce((acc,p)=>acc+p.price,0)
 
-console.log(filteredProducts);
+// console.log(filteredProducts);
 
 // const calculateAveragePriceByCategory = (products) => {
 //     // Step 1: Group products by category using map
@@ -1846,3 +1846,64 @@ console.log(filteredProducts);
 
 // const result = calculateAveragePriceByCategory(products);
 // console.log(result);
+
+
+const constants = [2.72, 3.14, 9.81, 37, 100]
+const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
+const rectangle = {
+  width: 20,
+  height: 10,
+  area: 200,
+  perimeter: 60
+}
+const users = [
+{
+  name:'Brook',
+  scores:75,
+  skills:['HTM', 'CSS', 'JS'],
+  age:16
+},
+{
+  name:'Alex',
+  scores:80,
+  skills:['HTM', 'CSS', 'JS'],
+  age:18
+},
+{
+  name:'David',
+  scores:75,
+  skills:['HTM', 'CSS'],
+  age:22
+},
+{
+  name:'John',
+  scores:85,
+  skills:['HTML'],
+  age:25
+},
+{
+  name:'Sara',
+  scores:95,
+  skills:['HTM', 'CSS', 'JS'],
+  age: 26
+},
+{
+  name:'Martha',
+  scores:80,
+  skills:['HTM', 'CSS', 'JS'],
+  age:18
+},
+{
+  name:'Thomas',
+  scores:90,
+  skills:['HTM', 'CSS', 'JS'],
+  age:20
+}
+]
+
+const [e,pi,gravitiy,humanBodyTemp,waterBoilingTemp]= constants
+console.log(gravitiy);
+const [fin, est, sw, den, nor]= countries
+console.log(fin);
+const {width,height,area,perimeter}=rectangle
+console.log(width);
