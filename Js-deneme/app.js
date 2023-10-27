@@ -1925,11 +1925,36 @@ const users = [
 
 
 
-const student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
+// const student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
 
 // const [name,skills,[,,jsScore, reactScore]]=student
 // console.log(name, skills, jsScore, reactScore)
 
 
-const [name,skills,[a1,a2,...kalan]]=student
-console.log(name, skills, kalan)
+// const [name,skills,[a1,a2,...kalan]]=student
+// console.log(name, skills, kalan)
+
+const students = [
+    ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
+    ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
+  ]
+  
+  const convertArrayToObject= (students)=>{
+     
+     const news1 = students.map((s)=> ({name:s[0],skills:s[1],scores:s[2]}))
+     
+     return news1
+       
+  }
+  
+  console.log(convertArrayToObject(students));
+
+  
+  const convertArrayToObject1 = (arr) => {
+    let arrOfObjects = [];
+    for(const [name, skills, scores] of arr) 
+        arrOfObjects.push({name, skills, scores});
+    return arrOfObjects;
+  } 
+  
+  console.log(convertArrayToObject1(students));
