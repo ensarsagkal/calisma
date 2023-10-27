@@ -1996,3 +1996,9 @@ const products = [
     { name: "Product 7", price: 80, category: "Clothes" },
     { name: "Product 8", price: 90, category: "Electronics" },
    ];
+  //  const electronics = products.filter((p)=>p.category==="Electronics")
+  //  const avgEletronics =electronics.reduce((sum,p)=> sum+p,0)/electronics.length
+
+  const calculatAvg=(products)=>{
+    
+  }
