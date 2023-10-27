@@ -1795,16 +1795,16 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 
 
 
-const products = [
-    { name: "Product 1", price: 20, category: "Electronics" },
-    { name: "Product 2", price: 30, category: "Clothes" },
-    { name: "Product 3", price: 40, category: "Electronics" },
-    { name: "Product 4", price: 50, category: "Clothes" },
-    { name: "Product 5", price: 60, category: "Clothes" },
-    { name: "Product 6", price: 70, category: "Electronics" },
-    { name: "Product 7", price: 80, category: "Clothes" },
-    { name: "Product 8", price: 90, category: "Electronics" },
-   ];
+// const products = [
+//     { name: "Product 1", price: 20, category: "Electronics" },
+//     { name: "Product 2", price: 30, category: "Clothes" },
+//     { name: "Product 3", price: 40, category: "Electronics" },
+//     { name: "Product 4", price: 50, category: "Clothes" },
+//     { name: "Product 5", price: 60, category: "Clothes" },
+//     { name: "Product 6", price: 70, category: "Electronics" },
+//     { name: "Product 7", price: 80, category: "Clothes" },
+//     { name: "Product 8", price: 90, category: "Electronics" },
+//    ];
 // const filteredProducts = products.filter((p)=>({category:p.category==="Electronics" ||"Clothes", average:products.reduce((acc,p,i)=>acc+p,0)}))
 // console.log(filteredProducts);
 
@@ -1959,10 +1959,40 @@ const users = [
   
 //   console.log(convertArrayToObject1(students));
 
-const newStudent2 = {...student}
-console.log(newStudent2);
+// const newStudent2 = {...student}
+// console.log(newStudent2);
 
 
 
-newStudent2.skills.frontEnd.push({skill:'Bootstrap',level:8})
-newStudent2.skills.backEnd.push({skill:'Express',level:9})
+// newStudent2.skills.frontEnd.push({skill:'Bootstrap',level:8})
+// newStudent2.skills.backEnd.push({skill:'Express',level:9})
+
+
+
+// const input = [1, -4, 12, 0, -3, 30, 42, -150];
+// const positiveInput =input.filter((n)=>n>0).reduce((sum,n)=>sum+n,0)
+// console.log(positiveInput);
+
+
+
+// const names = ["Alice", "Bob", "Charlie"];
+// console.log(names.map((n)=>n.length));
+
+// 
+
+const words = ["apple", "banana", "cherry"];
+console.log(words.map((w)=>w.toUpperCase()));
+
+
+
+
+const products = [
+    { name: "Product 1", price: 20, category: "Electronics" },
+    { name: "Product 2", price: 30, category: "Clothes" },
+    { name: "Product 3", price: 40, category: "Electronics" },
+    { name: "Product 4", price: 50, category: "Clothes" },
+    { name: "Product 5", price: 60, category: "Clothes" },
+    { name: "Product 6", price: 70, category: "Electronics" },
+    { name: "Product 7", price: 80, category: "Clothes" },
+    { name: "Product 8", price: 90, category: "Electronics" },
+   ];
