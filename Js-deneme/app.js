@@ -1901,9 +1901,35 @@ const users = [
 }
 ]
 
-const [e,pi,gravitiy,humanBodyTemp,waterBoilingTemp]= constants
-console.log(gravitiy);
-const [fin, est, sw, den, nor]= countries
-console.log(fin);
-const {width,height,area,perimeter}=rectangle
-console.log(width);
+// const [e,pi,gravitiy,humanBodyTemp,waterBoilingTemp]= constants
+// console.log(gravitiy);
+// const [fin, est, sw, den, nor]= countries
+// console.log(fin);
+// const {width,height,area,perimeter}=rectangle
+// console.log(width);
+
+
+// for({name,scores,skills,age}of users){
+//     console.log(name,scores,skills,age);
+//     console.log(scores);
+// }
+
+
+// const skilledTwo = users.filter((s)=>s.skills.length<2).map((n)=>n.name)
+// console.log(skilledTwo);
+
+// users.filter((s)=>s.skills.length<2).forEach((n)=>console.log(n.name))
+
+
+
+
+
+
+const student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
+
+// const [name,skills,[,,jsScore, reactScore]]=student
+// console.log(name, skills, jsScore, reactScore)
+
+
+const [name,skills,[a1,a2,...kalan]]=student
+console.log(name, skills, kalan)
