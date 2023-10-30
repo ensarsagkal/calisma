@@ -1,0 +1,42 @@
+@import "./theme.css";
+
+nav{
+  background-color: var(--grey-3);
+  font-family:var(--ff-prosto);
+}
+
+h1{
+  color:var(--green);
+}
+
+
+
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+  padding: 1rem;
+}
+.main {
+  display: flex;
+}
+
+.card1,
+.card2 {
+  background-color:var(--orange-light);
+  width: 30%;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  color:var(--grey-3);
+  font-family:var(--ff-prosto);
+}
+
+.card2{
+  background-color: var(--green);
+}
+.card1 img,
+.card2 img {
+  width: 100%;
+}

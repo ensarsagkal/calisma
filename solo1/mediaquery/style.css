@@ -5,7 +5,26 @@
 .box{
     background-color: aquamarine;
     height: 200px;
-    width: 25%;
+    width: 15%;
     display: inline-block;
-
+    margin: .1rem;
+}
+@media screen and (max-width:900px) {
+    .box{
+        background-color: red;
+        width: 30%;
+        
+    }
+}
+@media (max-width:768px) {
+    .box{
+        background-color: antiquewhite;
+        width: 48%;
+    }
+}
+@media screen and (max-width:600px) {
+    .box{
+        background-color:fuchsia;
+        width: 100%;
+    }
 }

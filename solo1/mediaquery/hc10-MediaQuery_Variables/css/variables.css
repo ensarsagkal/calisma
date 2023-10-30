@@ -1,0 +1,28 @@
+/* root ile değişken tanımlıyoruz */
+
+:root{
+    --baslikRengi:rgba(223, 65, 60, 0.862);
+    --yaziRengi:rgb(10,150,200);
+    --standatOlcu:1rem;
+    --borderDegeri:0.5rem;
+
+    --ff-coriur:'Courier New', Courier, monospace;
+
+    --s-3xl:3rem;
+}
+/* var ile bu değişkenleri kullanıyoruz */
+h1{
+    color:var(--baslikRengi);
+    font-size:calc(var(--standatOlcu)*3);
+   
+}
+p{
+    font-family: var(--ff-coriur);
+    font-size:var(--s-3xl)
+}
+
+button{
+    background-color:var(--baslikRengi); 
+    padding:var(--standatOlcu);
+    border:none;
+}

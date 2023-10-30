@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Prosto+One&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500;1,900&family=Sevillana&family=Yeon+Sung&display=swap");
+
+
+:root {
+  /* #mavi tonları */
+  --blue-1: hsl(205, 100%, 30%);
+  --blue-2: hsl(205, 100%, 40%);
+  --blue-3: hsl(205, 100%, 50%);
+  --blue-4: hsl(205, 100%, 60%);
+  --blue-5: hsl(205, 100%, 70%);
+
+  /*? Daha acik mavi tonlari */
+  --blue-light-1: hsl(205, 89%, 70%);
+  --blue-light-2: hsl(205, 90%, 76%);
+  --blue-light-3: hsl(205, 86%, 81%);
+  --blue-light-4: hsl(205, 90%, 88%);
+  --blue-light-5: hsl(205, 100%, 96%);
+
+  /*? Grimin koyu tonlari */
+  --grey-1: hsl(209, 61%, 16%);
+  --grey-2: hsl(211, 39%, 23%);
+  --grey-3: hsl(209, 37%, 48%);
+  --grey-4: hsl(209, 28%, 39%);
+
+  /*? Grinin acik tonlari */
+  --grey-5: hsl(210, 22%, 49%);
+  --grey-6: hsl(209, 23%, 60%);
+  --grey-7: hsl(211, 27%, 70%);
+  --grey-8: hsl(210, 31%, 80%);
+  --grey-9: hsl(212, 33%, 89%);
+  --grey-10: hsl(210, 36%, 96%);
+
+  /*? Diger renkler */
+  --purple: hsl(276, 85%, 49%);
+  --white: #fff;
+  --red-dark: #a62440;
+  --red-light: hsl(360, 67%, 66%);
+  --black: #222;
+
+  --green-dark: hsl(168, 66%, 22%);
+  --green: hsl(114, 32%, 66%);
+  --green-light: hsl(75, 51%, 60%);
+  --yellow: hsl(52, 100%, 68%);
+  --orange: hsl(11, 100%, 59%);
+  --orange-light: hsl(11, 100%, 67%);
+  --orange-dark: hsl(11, 100%, 50%);
+
+  /* fontlar */
+  --ff-roboto: "Roboto";
+  --ff-prosto: "Prosto One", cursive;
+  --ff-pt: "PT Sans Narrow", sans-serif;
+  --ff-sevillana: "Sevillana", cursive;
+  --ff-yeon: "Yeon Sung", cursive;
+
+  /* font size */
+  --fs-3xl:3rem;
+  --fs-2xl:2rem;
+  --fs-xl:1.8rem;
+  --fs-lg: 1.4rem;
+  --fs-md: 1rem;
+  --fs-sm: 0.8rem;
+  --fs-xs: 0.6rem;
+
+  /* line height */
+  --line-xl:2;
+  --line-lg:1.5;
+
+  /* shadow */
+  --shadow-dark:0 0 20px rgba(0,0,0,0.8);
+  --shadow-light:0 0 20px rgba(0,0,0,0.2)
+
+}
+
+/* 
+
+Color Theme Swatches in Hex
+.RockON!-1-hex { color: #010221; }
+.RockON!-2-hex { color: #0A7373; }
+.RockON!-3-hex { color: #B7BF99; }
+.RockON!-4-hex { color: #EDAA25; }
+.RockON!-5-hex { color: #C43302; }
+
+/* Color Theme Swatches in RGBA 
+.RockON!-1-rgba { color: rgba(1, 2, 33, 1); }
+.RockON!-2-rgba { color: rgba(10, 114, 114, 1); }
+.RockON!-3-rgba { color: rgba(182, 191, 153, 1); }
+.RockON!-4-rgba { color: rgba(237, 169, 36, 1); }
+.RockON!-5-rgba { color: rgba(196, 50, 1, 1); }
+
+/* Color Theme Swatches in HSLA 
+.RockON!-1-hsla { color: hsla(238, 94, 6, 1); }
+.RockON!-2-hsla { color: hsla(180, 83, 24, 1); }
+.RockON!-3-hsla { color: hsla(72, 22, 67, 1); }
+.RockON!-4-hsla { color: hsla(39, 84, 53, 1); }
+.RockON!-5-hsla { color: hsla(15, 98, 38, 1); } */
