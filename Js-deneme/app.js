@@ -1980,8 +1980,8 @@ const users = [
 
 // 
 
-const words = ["apple", "banana", "cherry"];
-console.log(words.map((w)=>w.toUpperCase()));
+// const words = ["apple", "banana", "cherry"];
+// console.log(words.map((w)=>w.toUpperCase()));
 
 
 
@@ -2002,3 +2002,19 @@ const products = [
   const calculatAvg=(products)=>{
     
   }
+
+
+
+
+
+
+
+ 
+
+  const sumAll=(...n)=>{
+    console.log(n);
+    return n.reduce((sum,num)=>sum+num)
+  }
+
+
+  console.log(`sum of all : ${sumAll(5,8,99,7)}`);
