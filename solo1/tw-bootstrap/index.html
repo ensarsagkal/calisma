@@ -1,46 +1,324 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TW-06 Bootstrap-page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>tw06 Bootstrap Web Page</title>
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-   <!-- ----------------------------------------------------------------------- -->
-   <!--                                 BANNER                                  -->
-   <!-- ----------------------------------------------------------------------- -->
-   <!-- navbar -->
-   <!-- banner -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 BANNER                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- --------------------------------NAVBAR --------------------------------------- -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">AmeriCode Tech</a>
+        <button
+          class="navbar-toggler text-secondary fs-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-secondary"
+                aria-current="page"
+                href="#"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Staff</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- --------------------------------BANNER--------------------------------------- -->
+    <div class="banner container-fluid d-flex justify-content-center align-items-center">
+        <div class="container text-center text-danger-emphasis">
+            <p class="fs-3">The IT Career of Your Dreams Starts Here!</p>
+            <h1 class="display-4">AmeriCode Tech</h1>
+            <button type="button" class="btn btn-danger">Our Services</button>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  MAIN                                   -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- ---------------------------------SERVICES -------------------------------------- -->
+    <div class="container-fluid p-5">
+        <div class="container text-center">
+            <h2 class=" display-3">Services</h2>
+            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, maxime.</p>
+            <div class="row ">
+                <div class="col-md-4 ">
+                    <p class="round d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-code text-white fa-4x"></i>
+                    </p>
+                    <h5>Programming</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="round d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-palette text-white fa-4x"></i>
+                    </p>
+                    <h5>Design</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="round d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-network-wired text-white fa-4x"></i>
+                    </p>
+                    <h5>Networking</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------- PORTFOLIO ------------------------------------- -->
+    <div class="container-fluid bg-light text-center p-3">
+        <h3 class="mt-3 display-3">Portfolio</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quas placeat saepe dolor modi architecto.</p>
+        <div class="row gy-3 p-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/ds1.jpg" class="card-img-top" alt="..." width="100%" >
+                    <div class="card-body">
+                        <h4>Lorem, ipsum.</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/ds2.jpg" class="card-img-top" alt="..." width="100%" >
+                    <div class="card-body">
+                        <h4>Lorem, ipsum.</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div><div class="col-md-4">
+                <div class="card">
+                    <img src="./img/ds3.jpg" class="card-img-top" alt="..." width="100%" >
+                    <div class="card-body">
+                        <h4>Lorem, ipsum.</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div><div class="col-md-4">
+                <div class="card">
+                    <img src="./img/ds4.jpg" class="card-img-top" alt="..." width="100%" >
+                    <div class="card-body">
+                        <h4>Lorem, ipsum.</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div><div class="col-md-4">
+                <div class="card">
+                    <img src="./img/ds1.jpg" class="card-img-top" alt="..." width="100%" >
+                    <div class="card-body">
+                        <h4>Lorem, ipsum.</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div><div class="col-md-4">
+                <div class="card">
+                    <img src="./img/ds1.jpg" class="card-img-top" alt="..." width="100%" >
+                    <div class="card-body">
+                        <h4>Lorem, ipsum.</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------- ABOUT US ------------------------------------ -->
+    <div class="container-fluid text-center p-3">
+        <h3 class="display-3">About</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row p-2 ">
+            <div class="col-md-6 d-flex flex-column align-items-start ">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo magni vel voluptate maiores hic accusamus, debitis corporis delectus commodi. Eveniet id nisi incidunt corporis dicta totam asperiores tempore sint fugiat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo magni vel voluptate maiores hic accusamus, debitis corporis delectus commodi. Eveniet id nisi incidunt corporis dicta totam asperiores tempore sint fugiat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo magni vel voluptate maiores hic accusamus, debitis corporis delectus commodi. Eveniet id nisi incidunt corporis dicta totam asperiores tempore sint fugiat.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="./img/aboutus.jpeg" width="70%" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------- OUR TEAM ------------------------------------ -->
+    <div class="container-fluid bg-light text-center p-3 ">
+        <h3 class="display-3">Our Team</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, in.
+        </p>
+        <div class="our-team-row row">
+          <div class="col-md-4">
+            <div class="card bg-light">
+              <img
+                src="./img/mark-maddison-profile.jpeg"
+                class="card-img-top img-thumbnail"
+                alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Mark Madisson</h5>
+                <p class="card-text">Web developer</p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link bg-black p-3">
+                  <i class="fa-brands fa-facebook-f text-white"></i>
+                </a>
+                <a href="#" class="card-link bg-black p-3">
+                  <i class="fa-brands fa-twitter text-white"></i>
+                </a>
+                <a href="#" class="card-link bg-black p-3">
+                  <i class="fa-brands fa-linkedin-in text-white"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card bg-light">
+                <img
+                  src="./img/Noah-Adams-profile.png"
+                  class="card-img-top img-thumbnail"
+                  alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Noah Adams</h5>
+                  <p class="card-text">FullStack developer</p>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="card-link bg-black p-3">
+                    <i class="fa-brands fa-facebook-f text-white"></i>
+                  </a>
+                  <a href="#" class="card-link bg-black p-3">
+                    <i class="fa-brands fa-twitter text-white"></i>
+                  </a>
+                  <a href="#" class="card-link bg-black p-3">
+                    <i class="fa-brands fa-linkedin-in text-white"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card bg-light">
+                <img
+                  src="./img/Harvey-Watson-profile.png"
+                  class="card-img-top img-thumbnail"
+                  alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Harvey Watson</h5>
+                  <p class="card-text">Mobile Developer</p>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="card-link bg-black p-3">
+                    <i class="fa-brands fa-facebook-f text-white"></i>
+                  </a>
+                  <a href="#" class="card-link bg-black p-3">
+                    <i class="fa-brands fa-twitter text-white"></i>
+                  </a>
+                  <a href="#" class="card-link bg-black p-3">
+                    <i class="fa-brands fa-linkedin-in text-white"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
 
-   <!-- ----------------------------------------------------------------------- -->
-   <!--                                  MAIN                                   -->
-   <!-- ----------------------------------------------------------------------- -->
-   <!-- services -->
-   <!-- portfolio -->
-   <!-- about us -->
-   <!-- our team -->
-   <!-- google  -->
-   <!-- contact us -->
-<!-- ----------------------------------------------------------------------- -->
-<!--                                 FOOTER                                  -->
-<!-- ----------------------------------------------------------------------- -->
+    <!-- ------------------------------------ GOOGLE ----------------------------------- -->
+    <div class="google d-flex justify-content-around container-fluid p-5">
+        <a href="">
+            <img src="https://clarusway.com/wp-content/uploads/2022/06/Google-300x124.png" width="200px" alt="">
+        </a>
+        <a href="">
+            <img src="https://clarusway.com/wp-content/uploads/2022/06/Google-300x124.png" width="200px" alt="">
+        </a>
+        <a href="">
+            <img src="https://clarusway.com/wp-content/uploads/2022/06/Google-300x124.png" width="200px" alt="">
+        </a>
+        <a href="">
+            <img src="https://clarusway.com/wp-content/uploads/2022/06/Google-300x124.png" width="200px" alt="">
+        </a>
+        <a href="">
+            <img src="https://clarusway.com/wp-content/uploads/2022/06/Google-300x124.png" width="200px" alt="">
+        </a>
+    </div>
+    <!-- ------------------------------------ CONTACT US ----------------------------------- -->
+    <div class="container-fluid text-center">
+        <h3 class="display-3">Contact Us</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, mollitia.
+        </p>
+        <div class="row">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="Name"
+                  aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="Email"
+                  aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Phone Number"
+                  id="exampleInputPassword1" />
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+              <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">Comments</label>
+                </div>
+          </div>
+  
+          <button type="submit" class="btn btn-danger">Submit</button>
+  
+        </div>
+      </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 FOOTER                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
   </body>
 </html>
