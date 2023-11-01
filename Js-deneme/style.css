@@ -1,3 +1,7 @@
 .section-c{
     background-color: blue;
 }
+
+[src]{
+    border: 2px solid red;
+}
