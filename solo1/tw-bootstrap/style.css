@@ -34,3 +34,13 @@
     width: 20px;
     height: 20px;
 }
+.contact{
+    background: url(./img/map.jpeg);
+}
+.contact form input{
+    height:3rem ;
+    
+}
+.contact button{
+    width: 9rem;
+}
