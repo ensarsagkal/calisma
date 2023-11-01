@@ -2034,5 +2034,5 @@ const users = [
 //   console.log(highPricedCategories)
 
 
-const p= document.getElementById("americode")
-console.log(p);
+// const p= document.getElementById("americode")
+// console.log(p);
