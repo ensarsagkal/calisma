@@ -24,3 +24,42 @@ password.value = "123456"
 password.type ="text"
 
 // !------step 5--------
+const button = document.querySelector(".btn")
+button.style.backgroundColor = "lightgreen"
+button.style.color = "navy"
+button.style.padding = "5px 10px"
+button.style.borderRadius = "5px"
+button.style.cursor = "pointer"
+button.style.border = "none"
+button.textContent = "Giriş Yap"
+
+// !------step 6--------
+const projects = document.getElementById("projects")
+projects.firstElementChild.innerText ="Js Dom Projects"
+
+
+// !------step 7--------
+const myProjects = ["Hello World!","Guess Number","Checkout Page","Gelir-Gider Projesi","Api Projects"]
+
+// projects.lastElementChild.innerHTML = "<li>hello world</li>"
+// projects.lastElementChild.innerHTML = "<li>Gues Number</li>"
+for(i of myProjects){
+    const ul =projects.lastElementChild
+    const li =document.createElement("li")
+    li.innerText = `${i}`
+    ul.appendChild(li)
+    
+}
+
+
+
+
+
+
+
+
+// !sonradan---
+//  const ul =projects.lastElementChild
+//  const li =document.createElement("li")
+//  li.textContent = "Guess Number"
+//  ul.appendChild(li)
