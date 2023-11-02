@@ -2175,3 +2175,10 @@ console.log(findProduct("Iphone"));
 
 
 
+const button = document.getElementById("btn")
+button.addEventListener("click",()=>{
+  button.style.backgroundColor = "green"
+  document.getElementById("body").style.backgroundColor ="aqua"
+  button.innerText = " butona BAStiniz"
+ 
+})
