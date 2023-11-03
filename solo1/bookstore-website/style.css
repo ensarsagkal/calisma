@@ -6,3 +6,8 @@
  max-height: 80vw;
  margin: auto !important;
 } */
+.carousel-item img {
+    width: auto;  /* Genişlik otomatik olarak ayarlanır */
+    height: 500px;  /* Yükseklik 500 piksel olarak sabitlenir */
+    object-fit: cover;  /* Resim, taşıyıcısına sığacak şekilde ölçeklendirilir */
+  }
