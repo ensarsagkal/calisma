@@ -15,7 +15,8 @@
 
   .card-img-top {
     width: 100%; /* ensure the image covers the full width of the card */
-    height: 15vw; /* set a fixed height */
+    height: 25vw; /* set a fixed height */
+    min-height: 200px;
     object-fit: cover; /* ensure the aspect ratio of the image is preserved */
 }
 .card{
