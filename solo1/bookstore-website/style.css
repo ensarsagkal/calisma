@@ -11,3 +11,17 @@
     height: 500px;  /* Yükseklik 500 piksel olarak sabitlenir */
     object-fit: cover;  /* Resim, taşıyıcısına sığacak şekilde ölçeklendirilir */
   }
+
+
+  .card-img-top {
+    width: 100%; /* ensure the image covers the full width of the card */
+    height: 15vw; /* set a fixed height */
+    object-fit: cover; /* ensure the aspect ratio of the image is preserved */
+}
+.card{
+    transition: transform 1s ease-in-out
+
+}
+.card:hover{
+    transform: scale(1.03);
+}
