@@ -39,6 +39,6 @@ footer i{
 
 }
 footer i:hover{
-    color: var(--red);
+    color:rgb(201, 220, 201);
     transform: scale(2);
 }
