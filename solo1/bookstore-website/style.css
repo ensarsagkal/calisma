@@ -31,3 +31,14 @@ body{
 .card:hover{
     transform: scale(1.03);
 }
+footer i{
+    color: white;
+    font-size: 2rem;
+    margin-right: 0.8rem;
+    transition: all 1s;
+
+}
+footer i:hover{
+    color: var(--red);
+    transform: scale(2);
+}
