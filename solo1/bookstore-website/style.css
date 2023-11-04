@@ -43,3 +43,9 @@ footer i:hover{
     color:rgb(201, 220, 201);
     transform: scale(2);
 }
+.card-container a{
+    text-decoration: none;
+}
+.categories{
+    background-color: rgb(201, 220, 201);
+}
