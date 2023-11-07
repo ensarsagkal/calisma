@@ -38,18 +38,18 @@
 //   };
   
 //   console.log(animal)
-let staffs = [
-    { name: "Susan", age: 14, salary: 100 },
-    { name: "Daniel", age: 16, salary: 120 },
-    { name: "Bruno", age: 56, salary: 400 },
-    { name: "Jacob", age: 15, salary: 110 },
-    { name: "Sam", age: 64, salary: 500 },
-    { name: "Dave", age: 56, salary: 380 },
-    { name: "Neils", age: 65, salary: 540 }
-  ];
+// let staffs = [
+//     { name: "Susan", age: 14, salary: 100 },
+//     { name: "Daniel", age: 16, salary: 120 },
+//     { name: "Bruno", age: 56, salary: 400 },
+//     { name: "Jacob", age: 15, salary: 110 },
+//     { name: "Sam", age: 64, salary: 500 },
+//     { name: "Dave", age: 56, salary: 380 },
+//     { name: "Neils", age: 65, salary: 540 }
+//   ];
 
- const totalSalary = staffs.reduce((sum,staff)=>sum + (staff.salary)*1.10 ,0 )
- console.log(totalSalary);
+//  const totalSalary = staffs.reduce((sum,staff)=>sum + (staff.salary)*1.10 ,0 )
+//  console.log(totalSalary);
 
 
 
@@ -59,3 +59,36 @@ let staffs = [
 
 // const salary1 = staffs.reduce((sum,p)=>sum + p.salary*1.10,0)
 // console.log(salary1);
+
+
+let users = [
+  {
+      name: "Sam",
+      age: 64,
+      hobby: "cooking",
+      hobbies: {
+        hobb1: "cooking",
+        hobby2: "sleeping"
+      }
+    },
+    { name: "Bruno", age: 56 },
+    { name: "Dave", age: 56, hobby: "Football" },
+    {
+      name: "Jacob",
+      age: 65,
+      hobbies: {
+        hobb1: "driving",
+        hobby2: "sleeping"
+      }
+    }
+  ];
+
+  // users.forEach((u) => {
+  //   console.log(u.hobbies.hobby2);
+  // });
+  // users.forEach((user) => {
+  //   console.log(user.hobbies && user.hobbies.hobby2);
+  // });
+  users.forEach((user) => {
+    console.log(user ?.hobbies ?.hobby2);
+  });
