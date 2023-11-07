@@ -11,11 +11,20 @@
 //     'lion-baby' : "cub"
 //   };
   
-//   // dot notation
-// //   console.log(lion.lion-baby); // error: ReferenceError: baby is not defined
-//   // bracket notation
-//   console.log(lion['lion-baby']); // "cub"
+  // dot notation
+  // console.log(lion.lion-baby); // error: ReferenceError: baby is not defined
+  // bracket notation
+  // console.log(lion['lion-baby']); // "cub"
+  // console.log(lion["lion-baby"]);
 
+
+//   let category = 'carnivore';
+//  let lion = {
+//   'lion-baby' : "cub",
+//   [category] : true,
+// };
+
+// console.log(lion); // { lion-baby: "cub" , carnivore: true }
 
 
 
@@ -39,7 +48,14 @@ let staffs = [
     { name: "Neils", age: 65, salary: 540 }
   ];
 
+ const totalSalary = staffs.reduce((sum,staff)=>sum + (staff.salary)*1.10 ,0 )
+ console.log(totalSalary);
 
 
-const salary1 = staffs.reduce((sum,p)=>sum + p.salary*1.10,0)
-console.log(salary1);
+
+
+
+
+
+// const salary1 = staffs.reduce((sum,p)=>sum + p.salary*1.10,0)
+// console.log(salary1);
