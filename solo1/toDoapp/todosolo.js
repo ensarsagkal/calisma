@@ -11,31 +11,36 @@ day.textContent = dayName[new Date().getDay()]
 
 // !Events
 addButton.addEventListener("click",()=>{
-    
-    // ?  created element sect.
-    const li = document.createElement("li")
-    const p = document.createElement("p")
-    const task = document.createElement("span")
-    const deleteButton = document.createElement("button")
-   
-    // ?  chained to parents that we created above
-    ul.appendChild(li)
-    li.appendChild(p)
-    li.appendChild(task)
-    li.appendChild(deleteButton)
-
-    // ?  contents
-    const text =document.createTextNode(input.value)
-    const x = document.createTextNode("X")
-
-    li.classList.add("li")
-    p.classList.add("circle")
-    task.classList.add("task")
-    deleteButton.classList.add("sil")
-
-
-
-    task.appendChild(text)
-    task.appendChild(x)
+  if(!input.value.trim()){
+    alert("please enter a task or whatever!")
+  }else{
+      // ?  created element sect.
+      const li = document.createElement("li")
+      const p = document.createElement("p")
+      const task = document.createElement("span")
+      const deleteButton = document.createElement("button")
+     
+      // ?  chained to parents that we created above
+      ul.appendChild(li)
+      li.appendChild(p)
+      li.appendChild(task)
+      li.appendChild(deleteButton)
+  
+      // ?  contents
+      const text =document.createTextNode(input.value)
+      const x = document.createTextNode("X")
+      // ? added class that we've already created on css
+      li.classList.add("li")
+      p.classList.add("circle")
+      task.classList.add("task")
+      deleteButton.classList.add("sil")
+      
+  
+  
+      // ?print to screen
+      task.appendChild(text)
+      deleteButton.appendChild(x)
+  }  
+  
 
 })
