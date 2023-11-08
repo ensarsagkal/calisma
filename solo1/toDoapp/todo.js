@@ -14,6 +14,7 @@ window.addEventListener('load',()=>{
 
     ul.innerHTML = localStorage.getItem('todo')
     input.focus()
+    taskcount()
 })
 
 
@@ -65,6 +66,7 @@ input.value = ''
 
 localStorage.setItem('todo',ul.innerHTML)
 input.focus()
+taskcount()
 
 
 })
@@ -107,5 +109,22 @@ ul.addEventListener('click',(e)=>{
 
     
     localStorage.setItem('todo',ul.innerHTML)
+    taskcount()
 
 })
+function  taskcount(){
+
+    const totalTask = document.querySelectorAll('.li').length
+    const doneTask = document.querySelectorAll('.pchecked').length
+    
+    
+    const result = document.querySelector('.result')
+    result.classList.add("result-task")
+    
+    result.textContent = ` ${doneTask}  OUT OF ${totalTask} TASK COMPLETED`
+    if(!totalTask){
+        result.style.display = "none"
+    }else{
+        result.style.display = "block"
+    }
+}
