@@ -10,6 +10,14 @@ day.textContent = dayName[new Date().getDay()]
 
 
 // !Events
+
+window.addEventListener("load",()=>{
+  ul.innerHTML =localStorage.getItem("toDo")
+  input.focus()
+  taskCount()
+})
+
+
 addButton.addEventListener("click",()=>{
   if(!input.value.trim()){
     alert("please enter a task or whatever!")
@@ -40,7 +48,52 @@ addButton.addEventListener("click",()=>{
       // ?print to screen
       task.appendChild(text)
       deleteButton.appendChild(x)
+      input.value = ""
+
   }  
-  
+  localStorage.setItem("toDo",ul.innerHTML) 
+  taskCount()
 
 })
+
+
+ul.addEventListener("click",(e)=>{
+  if(e.target.classList.contains("sil")){
+    e.target.parentElement.remove()
+  }else if(e.target.classList.contains("circle")){
+    e.target.classList.toggle("pchecked") 
+    e.target.closest("li").querySelector("span").classList.toggle("span-checked")
+  }else if(e.target.classList.contains("task")){
+    e.target.classList.toggle("span-checked")
+    e.target.closest("li").querySelector("p").classList.toggle("pchecked")
+  }
+localStorage.setItem("toDo",ul.innerHTML)  
+taskCount()
+
+})
+
+
+input.addEventListener("keyup",(e)=>{
+  if(e.key==="Enter"){
+    addButton.click()
+  }
+})
+
+
+
+// !functions
+
+const taskCount = ()=>{
+  const totalTasks = document.querySelectorAll("li").length
+  const doneTasks =document.querySelectorAll(".pchecked").length
+  const result = document.querySelector(".result")
+  result.classList.add("result-task")
+  result.textContent = `${doneTasks} out of ${totalTasks} Task Completed`
+  if(!totalTasks){result.style.display ="none"
+}else{
+  result.style.display ="block"
+}
+
+
+
+}

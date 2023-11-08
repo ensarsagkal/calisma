@@ -68,6 +68,7 @@ li{
     display: flex;
     align-items: center;
     position: relative;
+    padding: .5rem;
    
 }
 .task{
