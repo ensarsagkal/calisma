@@ -51,18 +51,7 @@ task.appendChild(text)
 deleteButton.appendChild(x)
 
 input.value = ''
-// task.textContent = input.value
-// deleteButton.textContent =  'x'
-
-// const arr = []
-
-//   if(arr.includes(input.value)){
-//       alert("Bu değer zaten girildi")
-//   }else {
-//       arr.push(input.value)
-//   }
-
-    }
+ }
 
 localStorage.setItem('todo',ul.innerHTML)
 input.focus()
