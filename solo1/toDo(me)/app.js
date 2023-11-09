@@ -29,10 +29,11 @@ if(!input.value.trim()){
 
 })
 
-clearAllButton.addEventListener("click",(e)=>{
-   if( confirm("All Tasks will clear...Are you sure?")){
-    // e.target.nextElementSibling.remove()
-    // const ul =document.createElement("ul")
-    // act.appendChild(ul)
-   }
-})
+
+clearAllButton.addEventListener("click", () => {
+    if (confirm("Tüm görevler silinecek... Emin misiniz?")) {
+        while (ul.firstChild) {
+            ul.removeChild(ul.firstChild);
+        }
+    }
+});
