@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   
+    height: 100vw;
+    background-color: #2b4162;
+    background-image: linear-gradient(315deg, #507ab9 10%, #16120e 64%);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: wheat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container{
+    border:2px solid wheat;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-image: linear-gradient(315deg,  #060606 10%,#162d4d 64%)
+}
+
+.btn{
+border-radius: 10px;
+color: wheat;
+padding: .6rem;
+outline: none;
+border: none;
+}
+
+.input{
+    padding: .6rem;
+    border-radius: 10px;
+    background-color: rgba(245, 222, 179, 0.8);
+    color: rgb(10, 105, 112);
+    font-weight: 900;
+    outline: none;
+    border: none;
+}
+
+#add{
+    background-color: rgba(0, 128, 0, 0.5);
+}
+#clear{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+ul{
+    margin-top: 1rem;
+}
+
+.li{
+    list-style-type: none;
+    margin: .3rem;
+    padding:.3rem;
+    background-color: rgba(70, 70, 129, 0.377) ;
+    border-radius: 10px;
+    position: relative;
+}
+.deleted{
+    position: absolute;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+   
+    border: none;
+    color: red;
+    font-size: 1.2rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+.added-span{
+    cursor: pointer;
+}
+
+
+.span-checked {
+    text-decoration: line-through;
+    color:rgba(37, 197, 96, 0.61) ;
+  }
