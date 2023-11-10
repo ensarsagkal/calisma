@@ -27,6 +27,9 @@ body{
     padding: 2rem;
     background-image: linear-gradient(315deg,  #060606 10%,#162d4d 64%)
 }
+/* .action{
+    width: 500px ;
+} */
 
 .btn{
 border-radius: 10px;
@@ -44,13 +47,17 @@ border: none;
     font-weight: 900;
     outline: none;
     border: none;
+    
 }
 
 #add{
     background-color: rgba(0, 128, 0, 0.5);
+    background:linear-gradient(-120deg, #29b144, rgb(86, 200, 105), #0f3c26);
 }
+
 #clear{
     background-color: rgba(255, 0, 0, 0.5);
+    background:linear-gradient(-120deg, #D62121, #C72C2C, #470202);
 }
 
 ul{
@@ -64,6 +71,8 @@ ul{
     background-color: rgba(70, 70, 129, 0.377) ;
     border-radius: 10px;
     position: relative;
+    line-height: 1.5rem;
+    margin-bottom: .6rem;
 }
 .deleted{
     position: absolute;
@@ -86,3 +95,14 @@ ul{
     text-decoration: line-through;
     color:rgba(37, 197, 96, 0.61) ;
   }
+
+ .today-date{
+    font-size: .7rem;
+    position:absolute;
+    right: 25px;
+ } 
+ 
+.today-ended{
+    opacity: .5;
+    color:rgba(37, 197, 96, 0.61)
+}
