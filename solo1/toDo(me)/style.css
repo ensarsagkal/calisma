@@ -73,6 +73,7 @@ ul{
     position: relative;
     line-height: 1.5rem;
     margin-bottom: .6rem;
+    cursor: pointer;
 }
 .deleted{
     position: absolute;
@@ -106,3 +107,32 @@ ul{
     opacity: .5;
     color:rgba(37, 197, 96, 0.61)
 }
+
+
+
+.counter {
+    color: wheat;
+    text-align: center;
+    border: 2px solid wheat;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    animation: completedText 1.3s ease-in-out alternate;
+    background-image: linear-gradient(315deg, #233b5f 10%, #16120e 64%);
+  }
+  
+  @keyframes completedText {
+    0% {
+      transform: translateX(-20%);
+      opacity: .3;
+    }
+    50%{
+        transform: translateX(20%);
+         opacity: .3;
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }

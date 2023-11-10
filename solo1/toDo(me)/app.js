@@ -1,9 +1,15 @@
 const addButton = document.getElementById("add")
 const clearAllButton = document.getElementById("clear")
 const ul = document.querySelector("ul")
-const act = document.querySelector(".action")
+const action = document.querySelector(".action")
 
+// ! events
 
+window.addEventListener("load",()=>{
+    ul.innerHTML = localStorage.getItem('todo')
+    input.focus()
+    taskCounter()
+})
 
 addButton.addEventListener("click",()=> {
 if(!input.value.trim()){
@@ -30,6 +36,8 @@ if(!input.value.trim()){
 
     input.value = ""
 }
+localStorage.setItem('todo',ul.innerHTML)
+taskCounter()
 
 })
 
@@ -39,6 +47,8 @@ clearAllButton.addEventListener("click", () => {
         while (ul.firstChild) {
             ul.removeChild(ul.firstChild);
         }
+        localStorage.setItem('todo',ul.innerHTML)
+        taskCounter()
     }
 });
 
@@ -48,6 +58,7 @@ document.addEventListener("keyup",(e)=>{
     }else if(e.key==="Escape"){
         clearAllButton.click()
     }
+
 })
 
 
@@ -58,5 +69,34 @@ ul.addEventListener("click",(e)=>{
         e.target.nextElementSibling.classList.toggle("today-ended")
     }else if(e.target.classList.contains("deleted")){
         e.target.parentElement.remove()
+    }else if(e.target.classList.contains("li")){
+        e.target.querySelector(".added-span").classList.toggle("span-checked")
+        e.target.querySelector(".today-date").classList.toggle("today-ended")
     }
+    localStorage.setItem('todo',ul.innerHTML)
+    taskCounter()
 })
+
+
+
+
+
+
+// !functions
+ const taskCounter= ()=>{
+    const totalTask = document.querySelectorAll("li").length
+    const doneTask = document.querySelectorAll(".span-checked").length
+   const resultCounter = document.querySelector(".result") 
+  
+   resultCounter.classList.add("counter")
+   resultCounter.textContent= `${doneTask} out of ${totalTask} Task completed`;
+
+   if(!totalTask){
+    resultCounter.style.display = "none"
+}else{
+    resultCounter.style.display = "block"
+}
+
+
+ }
+
