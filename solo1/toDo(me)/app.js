@@ -26,7 +26,7 @@ if(!input.value.trim()){
     li.appendChild(removeButton)
 
     content.textContent=(input.value)
-    todayDate.textContent=(new Date().getDay() +"/"+ new Date().getMonth()+"/"+new Date().getFullYear())
+    todayDate.textContent=(new Date().getDate() +"/"+(new Date().getMonth()+1)+"/"+new Date().getFullYear())
     removeButton.textContent=("X")
 
     li.classList.add("li")
@@ -43,7 +43,7 @@ taskCounter()
 
 
 clearAllButton.addEventListener("click", () => {
-    if (confirm("Tüm görevler silinecek... Emin misiniz?")) {
+    if (confirm("All tasks will be removed! Are you sure?")) {
         while (ul.firstChild) {
             ul.removeChild(ul.firstChild);
         }
@@ -72,6 +72,9 @@ ul.addEventListener("click",(e)=>{
     }else if(e.target.classList.contains("li")){
         e.target.querySelector(".added-span").classList.toggle("span-checked")
         e.target.querySelector(".today-date").classList.toggle("today-ended")
+    }else if(e.target.classList.contains("today-date")){
+        e.target.classList.toggle("today-ended")
+        e.target.previousElementSibling.classList.toggle("span-checked")
     }
     localStorage.setItem('todo',ul.innerHTML)
     taskCounter()
