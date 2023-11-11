@@ -5,6 +5,7 @@ const kaydet= document.getElementById("kaydet")
 const ekle = document.getElementById("ekle")
 const gelirInput = document.getElementById("gelirInput")
 const kalan = document.getElementById("kalan")
+const clear = document.getElementById("clear")
 
 kaydet.addEventListener("click",()=>{
     if(!(tarih.value.trim() &&harcamaAlani.value.trim() && harcamaMiktari.value.trim() )){alert("Eksik alan girdiniz")
@@ -12,6 +13,7 @@ kaydet.addEventListener("click",()=>{
     const tbody = document.getElementById("table1")
     // const tr = document.createElement("tr")
     const tr = tbody.insertRow()
+    tr.id ="tr"
      const tarihtD = tr.insertCell(0)  
      const harcamaTd = tr.insertCell(1)  
      const miktarTd = tr.insertCell(2)
@@ -43,6 +45,12 @@ ekle.addEventListener("click",()=>{
     result()
     
 })
+
+
+// clear.addEventListener("click",()=>{
+//  document.querySelector("table1").remove()
+// })
+
 
 
 const budget = ()=>{
