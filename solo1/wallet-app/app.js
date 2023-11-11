@@ -25,6 +25,7 @@ kaydet.addEventListener("click",()=>{
      harcamaAlani.value = ""
      harcamaMiktari.value = ""
      budget()
+     result()
     }
 })
 document.querySelector("tbody").addEventListener("click", (event)=>{
@@ -32,12 +33,15 @@ document.querySelector("tbody").addEventListener("click", (event)=>{
     if(event.target.classList.contains('fa-trash')){
         event.target.closest("tr").remove()
         budget()
+        result()
     }
        
 })
 
 ekle.addEventListener("click",()=>{
     document.getElementById("gelir").textContent = gelirInput.value
+    result()
+    
 })
 
 
@@ -48,10 +52,15 @@ const budget = ()=>{
     const totalGider = [...miktar].reduce((sum,m)=> sum + Number(m.textContent),0)
     gider.textContent =totalGider
     
+    
 
 }
 
-kalan.textContent = gelir.Textcontent - gider.textContent
+const result =()=>{
+    kalan.textContent = Number(gelirInput.value) - Number(gider.textContent)
+}
+
+
 
 
 
