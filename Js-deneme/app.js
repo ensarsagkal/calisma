@@ -1016,7 +1016,7 @@ const oddOrEven=[10,11,12,13,14,15,16,17,18,19,20,21]
 
 // !STRING METHODS
 
-let str ="30 Days Of JavaScript"
+// let str ="30 Days Of JavaScript"
 // console.log(str);
 // console.log(str.length);
 // console.log(str.toUpperCase());
@@ -1032,7 +1032,7 @@ let str ="30 Days Of JavaScript"
 // console.log(str.split(" "));
 // console.log("30 Days Of Javascript".split(" "));
 // console.log("Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon".split(","));
-// console.log(str.replace('Javascript','python'));
+// console.log(str.replace('JavaScript', "Python"));
 // console.log(str.charAt(15));
 // console.log(str.charCodeAt(11));
 // console.log(str.indexOf('a'));
@@ -1091,7 +1091,7 @@ let str ="30 Days Of JavaScript"
 
 // ! =========================ARRAYS=======================
 // const fruits = ['banana', 'orange', 'mango', 'lemon']
-
+// // 
 // console.log(fruits[0][2]);
 // const arr = Array()
 // const arr1 = new Array()
@@ -1319,8 +1319,8 @@ let str ="30 Days Of JavaScript"
 // console.log(webTechs.slice(2,4));
 // console.log(webTechs);
 // console.log(webTechs.slice(webTechs.length-1));
-
-const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle" ,"Amazon"]
+// 
+// const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle" ,"Amazon"]
 // console.log(itCompanies);
 // console.log(itCompanies.length);
 // console.log(itCompanies[0],itCompanies[(itCompanies.length-1)/2],itCompanies[itCompanies.length-1]);
@@ -1759,8 +1759,9 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 //     { title: 'The Hitchhiker\'s Guide to the Galaxy', author: 'Douglas Adams',rating: 4.7 },
 //     { title: 'The Count of Monte Cristo', author: 'Alexandre Dumas', rating: 4.8 },]
 
-
-//     const filteredBooks= books.filter((b)=>b.rating>=4.5).map((book)=>({title:book.author,author:book.author}))
+// const filteredAuthors = books.filter((b)=>b.rating>=4.5).map((b)=>({Author :`${b.author}`, BookName : `${b.title}` }))
+// console.log(filteredAuthors);
+//     const filteredBooks= books.filter((b)=>b.rating>=4.5).map((book)=>({title:book.title,author:book.author}))
 //     console.log(filteredBooks);
 
 
@@ -1801,6 +1802,11 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 // generated Lorem Ipsum is therefore always free from repetition, injected humour, or
 // non-characteristic words etc.`;
 
+
+// const inputTextArr = inputText.split(" ")
+// const capitalizeTextArr = inputTextArr.map((w)=>w[0].toUpperCase()+w.slice(1))
+// const capitalizeText = capitalizeTextArr.join(" ")
+// console.log(capitalizeText);
 // const result = capitalizeWords(inputText);
 // console.log(result);
 
