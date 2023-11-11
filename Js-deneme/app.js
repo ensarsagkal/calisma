@@ -552,6 +552,11 @@ console.log("Hello_World!");
 // console.log(ulkeler.length);
 // console.log(ulkeler[4]);
 
+// const yenilisteMap = ulkeler.map((u)=>u.toUpperCase())
+// console.log(yenilisteMap[4]);
+// const filteredUlke = ulkeler.filter((u)=>u.includes("a"))
+// console.log(filteredUlke);
+
 
 // const names=["Ahmet","MEHMET","aLi","SEda", "ceMal"]
 
@@ -582,7 +587,7 @@ console.log("Hello_World!");
 // console.log(sum);
 
 
-// const oddOrEven=[10,11,12,13,14,15,16,17,18,19,20,21]
+const oddOrEven=[10,11,12,13,14,15,16,17,18,19,20,21]
 // let even=[]
 // let odd=[]
 // let sumEven = 0
@@ -597,9 +602,10 @@ console.log("Hello_World!");
 // }
 // console.log(even);
 // console.log(odd);
-
-
-// const oddOrEven=[10,11,12,13,14,15,16,17,18,19,20,21]
+// const sumOfEven = oddOrEven.filter((n)=> n%2 == 0).reduce((s,n)=>s+n ,0)
+// const sumOfOdd = oddOrEven.filter((n)=> n%2 != 0).reduce((s,n)=>s+n ,0)
+// console.log(`even total : ${sumOfEven}--------------odd total : ${sumOfOdd}`);
+// // const oddOrEven=[10,11,12,13,14,15,16,17,18,19,20,21]
 // let even=[]
 // let odd=[]
 // let sum =0
@@ -617,9 +623,7 @@ console.log("Hello_World!");
 // bu sayıların toplamı: ${sum}`);
 // console.log(`tek sayılar: ${odd},
 // bu sayıların toplamı: ${sumo}`);
-/* -------------------------------------------------------------------------- */
-/!*                                FUNCTIONS                                 */
-/* -------------------------------------------------------------------------- */
+// !               FUNCTIONS
 // function printfullName(){
 //     let firstName = "Ensar"
 //     let lastName = "Sagkal"
@@ -644,6 +648,13 @@ console.log("Hello_World!");
    
 //    return index
 // }
+
+// const squareFunc = (number)=>{
+//   const result = number * number
+//   return result
+// }
+
+// console.log(squareFunc(7));
 
 
 
