@@ -2017,125 +2017,127 @@ const users = [
 
 
 
-// const products = [
-//   { name: "Product 1", price: 20, category: "Electronics" },
-//   { name: "Product 2", price: 30, category: "Clothes" },
-//   { name: "Product 3", price: 40, category: "Electronics" },
-//   { name: "Product 4", price: 50, category: "Clothes" },
-//   { name: "Product 5", price: 60, category: "Clothes" },
-//   { name: "Product 6", price: 70, category: "Electronics" },
-//   { name: "Product 7", price: 80, category: "Clothes" },
-//   { name: "Product 8", price: 90, category: "Electronics" },
-//  ];
-//  /* Use map to create an object with category as the key
-//  and an array of products as the value */
-//  const productsByCategory = products.reduce((acc, product) => {
-//   const category = product.category;
-//   if (!acc[category]) {
-//   acc[category] = [];
-//   }
-//   acc[category].push(product);
-//   return acc;
-//  }, {});
-//  console.log(productsByCategory);
-//  // Use map to calculate the average price for each category
-//  const avgPriceByCategory = Object.keys(productsByCategory).map(category => {
-//   const sum = productsByCategory[category].reduce((acc, product) => acc +
-//  product.price, 0);
-//   return { category: category, average: sum / productsByCategory[category].length
-//  };
-//  });
-//  // Use filter to only select categories with an average above a certain threshold
-//  const highPricedCategories = avgPriceByCategory.filter(category => category.average
-//  > 50);
-//   console.log(highPricedCategories)
+const products = [
+  { name: "Product 1", price: 20, category: "Electronics" },
+  { name: "Product 2", price: 30, category: "Clothes" },
+  { name: "Product 3", price: 40, category: "Electronics" },
+  { name: "Product 4", price: 50, category: "Clothes" },
+  { name: "Product 5", price: 60, category: "Clothes" },
+  { name: "Product 6", price: 70, category: "Electronics" },
+  { name: "Product 7", price: 80, category: "Clothes" },
+  { name: "Product 8", price: 90, category: "Electronics" },
+ ];
+ /* Use map to create an object with category as the key
+ and an array of products as the value */
+ const productsByCategory = products.reduce((acc, product) => {
+  const category = product.category;
+  if (!acc[category]) {
+  acc[category] = [];
+  }
+  acc[category].push(product);
+  return acc;
+ }, {});
+ console.log(productsByCategory);
+ // Use map to calculate the average price for each category
+ const avgPriceByCategory = Object.keys(productsByCategory).map(category => {
+  const sum = productsByCategory[category].reduce((acc, product) => acc +
+ product.price, 0);
+  return { category: category, average: sum / productsByCategory[category].length
+ };
+ });
+ // Use filter to only select categories with an average above a certain threshold
+ const highPricedCategories = avgPriceByCategory.filter(category => category.average
+ > 50);
+  console.log(highPricedCategories)
 
 
-// const p= document.getElementById("americode")
-// console.log(p);
-// var allProducts = [
-//   {
-//     id: 1,
-//     title: 'iPhone 9',
-//     description: 'An apple mobile which is nothing like apple',
-//     price: 549,
-//     discountPercentage: 12.96,
-//     rating: 4.69,
-//     stock: 94,
-//     brand: 'Apple',
-//     category: 'smartphones',
-//     thumbnail: 'https://i.dummyjson.com/data/products/1/thumbnail.jpg',
-//     images: [
-//       'https://i.dummyjson.com/data/products/1/1.jpg',
-//       'https://i.dummyjson.com/data/products/1/2.jpg',
-//       'https://i.dummyjson.com/data/products/1/3.jpg',
-//       'https://i.dummyjson.com/data/products/1/4.jpg',
-//       'https://i.dummyjson.com/data/products/1/thumbnail.jpg',
-//     ],
-//   },
-//   {
-//     id: 2,
-//     title: 'iPhone X',
-//     description:
-//       'SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...',
-//     price: 899,
-//     discountPercentage: 17.94,
-//     rating: 4.44,
-//     stock: 34,
-//     brand: 'Apple',
-//     category: 'smartphones',
-//     thumbnail: 'https://i.dummyjson.com/data/products/2/thumbnail.jpg',
-//     images: [
-//       'https://i.dummyjson.com/data/products/2/1.jpg',
-//       'https://i.dummyjson.com/data/products/2/2.jpg',
-//       'https://i.dummyjson.com/data/products/2/3.jpg',
-//       'https://i.dummyjson.com/data/products/2/thumbnail.jpg',
-//     ],
-//   },
-//   {
-//     id: 3,
-//     title: 'Samsung Universe 9',
-//     description:
-//       "Samsung's new variant which goes beyond Galaxy to the Universe",
-//     price: 1249,
-//     discountPercentage: 15.46,
-//     rating: 4.09,
-//     stock: 36,
-//     brand: 'Samsung',
-//     category: 'smartphones',
-//     thumbnail: 'https://i.dummyjson.com/data/products/3/thumbnail.jpg',
-//     images: ['https://i.dummyjson.com/data/products/3/1.jpg'],
-//   },
-//   {
-//     id: 4,
-//     title: 'OPPOF19',
-//     description: 'OPPO F19 is officially announced on April 2021.',
-//     price: 280,
-//     discountPercentage: 17.91,
-//     rating: 4.3,
-//     stock: 123,
-//     brand: 'OPPO',
-//     category: 'smartphones',
-//     thumbnail: 'https://i.dummyjson.com/data/products/4/thumbnail.jpg',
-//     images: [
-//       'https://i.dummyjson.com/data/products/4/1.jpg',
-//       'https://i.dummyjson.com/data/products/4/2.jpg',
-//       'https://i.dummyjson.com/data/products/4/3.jpg',
-//       'https://i.dummyjson.com/data/products/4/4.jpg',
-//       'https://i.dummyjson.com/data/products/4/thumbnail.jpg',
-//     ],
-//   },
-// ]
+const p= document.getElementById("americode")
+console.log(p);
+var allProducts = [
+  {
+    id: 1,
+    title: 'iPhone 9',
+    description: 'An apple mobile which is nothing like apple',
+    price: 549,
+    discountPercentage: 12.96,
+    rating: 4.69,
+    stock: 94,
+    brand: 'Apple',
+    category: 'smartphones',
+    thumbnail: 'https://i.dummyjson.com/data/products/1/thumbnail.jpg',
+    images: [
+      'https://i.dummyjson.com/data/products/1/1.jpg',
+      'https://i.dummyjson.com/data/products/1/2.jpg',
+      'https://i.dummyjson.com/data/products/1/3.jpg',
+      'https://i.dummyjson.com/data/products/1/4.jpg',
+      'https://i.dummyjson.com/data/products/1/thumbnail.jpg',
+    ],
+  },
+  {
+    id: 2,
+    title: 'iPhone X',
+    description:
+      'SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...',
+    price: 899,
+    discountPercentage: 17.94,
+    rating: 4.44,
+    stock: 34,
+    brand: 'Apple',
+    category: 'smartphones',
+    thumbnail: 'https://i.dummyjson.com/data/products/2/thumbnail.jpg',
+    images: [
+      'https://i.dummyjson.com/data/products/2/1.jpg',
+      'https://i.dummyjson.com/data/products/2/2.jpg',
+      'https://i.dummyjson.com/data/products/2/3.jpg',
+      'https://i.dummyjson.com/data/products/2/thumbnail.jpg',
+    ],
+  },
+  {
+    id: 3,
+    title: 'Samsung Universe 9',
+    description:
+      "Samsung's new variant which goes beyond Galaxy to the Universe",
+    price: 1249,
+    discountPercentage: 15.46,
+    rating: 4.09,
+    stock: 36,
+    brand: 'Samsung',
+    category: 'smartphones',
+    thumbnail: 'https://i.dummyjson.com/data/products/3/thumbnail.jpg',
+    images: ['https://i.dummyjson.com/data/products/3/1.jpg'],
+  },
+  {
+    id: 4,
+    title: 'OPPOF19',
+    description: 'OPPO F19 is officially announced on April 2021.',
+    price: 280,
+    discountPercentage: 17.91,
+    rating: 4.3,
+    stock: 123,
+    brand: 'OPPO',
+    category: 'smartphones',
+    thumbnail: 'https://i.dummyjson.com/data/products/4/thumbnail.jpg',
+    images: [
+      'https://i.dummyjson.com/data/products/4/1.jpg',
+      'https://i.dummyjson.com/data/products/4/2.jpg',
+      'https://i.dummyjson.com/data/products/4/3.jpg',
+      'https://i.dummyjson.com/data/products/4/4.jpg',
+      'https://i.dummyjson.com/data/products/4/thumbnail.jpg',
+    ],
+  },
+]
 
 
 
 // const deletedProduct= function(id){
 //   let updatedProducts= allProducts.filter((p)=>p.id!==id)
+//   console.log(updatedProducts);
 //   allProducts=updatedProducts
+  
 //   return allProducts
 // }
 // console.log(allProducts);
-// console.log(deletedProduct(5));
+// console.log(deletedProduct(3));
 
 // const newAddedProduct = function({title,description,image}){
 //  const newProd={
@@ -2230,7 +2232,7 @@ const users = [
  
 //  console.log(result);
 // 'urunler' dizisindeki her ürünün fiyatını %10 artırın ve ardından fiyatı 20'den büyük olan ürünleri yeni bir diziye saklayınız.
-const urunler = [{ ad: 'Elma', fiyat: 10 }, { ad: 'Armut', fiyat: 19 }, { ad: 'Muz', fiyat: 8 }];
+// const urunler = [{ ad: 'Elma', fiyat: 10 }, { ad: 'Armut', fiyat: 19 }, { ad: 'Muz', fiyat: 8 }];
 // const newProdutcs = urunler.map((p)=>p.fiyat*1.10)
 // console.log(newProdutcs);
 // urunler.forEach(urun => {
@@ -2242,8 +2244,8 @@ const urunler = [{ ad: 'Elma', fiyat: 10 }, { ad: 'Armut', fiyat: 19 }, { ad: 'M
 
 // console.log(yuksekFiyatliUrunler);
 
-const newProduct = urunler.map((p)=>({ad:p.ad , fiyat: p.fiyat*1.1})).filter((p)=>p.fiyat>=20)
-console.log(newProduct);
+// const newProduct = urunler.map((p)=>({ad:p.ad , fiyat: p.fiyat*1.1})).filter((p)=>p.fiyat>=20)
+// console.log(newProduct);
 
 
 
