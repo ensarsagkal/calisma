@@ -2150,9 +2150,21 @@ var allProducts = [
 //  allProducts.push(newProd)
 // return allProducts
 // } 
+// const newPro = ({title,des,img})=>{
+//   const newProduct={
+//     id : allProducts.length + 1,
+//     title:title,
+//     description: des,
+//     images: [img],
 
-// const yeniUrun = {title:"ensar",description:"Sagkal", image:"www.dgdsfgs.com"}
-// console.log(newAddedProduct(yeniUrun));
+//   }
+//   allProducts.push(newProduct)
+//   return allProducts
+// }
+
+
+// const yeniUrun = {title:"ensar",des:"Sagkal", img:"www.dgdsfgs.com"}
+// console.log(newPro(yeniUrun));
 
 
 
