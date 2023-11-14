@@ -1,0 +1,1 @@
+const passArea = document.querySelector(".passArea")
