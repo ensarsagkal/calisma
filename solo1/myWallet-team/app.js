@@ -15,6 +15,7 @@ let harcamaListesi= []
 const gelirinizTd = document.getElementById("geliriniz")
 const giderinizTd = document.getElementById("gideriniz")
 const kalanTd = document.getElementById("kalan")
+const kalanTh = document.getElementById("kalanTh")
 
 // ! harcama formu selectors
  const harcamaFormu =document.getElementById("harcama-formu")
@@ -37,7 +38,9 @@ window.addEventListener("load",()=>{
     gelirler= Number(localStorage.getItem("gelirler")) || 0
     gelirinizTd.innerText=gelirler
     tarihInput.valueAsDate = new Date()
-    // harcamaListesi = localStorage.getItem("")
+    harcamaListesi =JSON.parse(localStorage.getItem("harcamalar")) || []
+    harcamaListesi.forEach(harcama=> harcamayiDomaYaz(harcama))
+    hesaplaVeGuncelle()
 })
 
 
@@ -47,7 +50,8 @@ ekleFormu.addEventListener("submit",(e)=>{
     console.log(gelirler);
     localStorage.setItem("gelirler", gelirler)
     ekleFormu.reset()
-    gelirinizTd.textContent = gelirler
+    hesaplaVeGuncelle()
+   
     
 
 })
@@ -65,6 +69,7 @@ harcamaFormu.addEventListener("submit",(e)=>{
         harcamaListesi.push(yeniHarcama)
         localStorage.setItem("harcamalar", JSON.stringify(harcamaListesi))
         harcamayiDomaYaz(yeniHarcama)
+        hesaplaVeGuncelle()
 })
 
 
@@ -96,3 +101,26 @@ const harcamayiDomaYaz = ({id,miktar,tarih,alan})=>{
 
     harcamaBody.prepend(tr)
 }
+
+
+
+
+
+// !hesapla ve güncelle alt tabloyu yazan fonksiyon
+
+const hesaplaVeGuncelle = ()=>{
+    gelirinizTd.textContent = gelirler
+    const gideriniz  = harcamaListesi.reduce((sum,harcama)=> sum + Number(harcama.miktar) ,0)
+    giderinizTd.textContent= gideriniz
+    kalanTd.textContent = gelirinizTd.textContent -giderinizTd.textContent
+   
+        // kalanTh.classList.toggle("text-danger",kalanTd.textContent<0)
+        // kalanTd.classList.toggle("text-danger",kalanTd.textContent<0) 
+
+        // * ya da...
+
+        const  borclu = gelirler - gideriniz <0;
+         
+        kalanTd.classList.toggle("text-danger",borclu)
+        kalanTh.classList.toggle("text-danger",borclu)
+    }
