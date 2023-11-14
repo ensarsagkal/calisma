@@ -39,7 +39,7 @@ window.addEventListener("load",()=>{
     gelirinizTd.innerText=gelirler
     tarihInput.valueAsDate = new Date()
     harcamaListesi =JSON.parse(localStorage.getItem("harcamalar")) || []
-    harcamaListesi.forEach(harcama=> harcamayiDomaYaz(harcama))
+    harcamaListesi.forEach((harcama) => harcamayiDomaYaz(harcama))
     hesaplaVeGuncelle()
 })
 
@@ -60,7 +60,8 @@ harcamaFormu.addEventListener("submit",(e)=>{
     e.preventDefault()
     const yeniHarcama= {
         id : new Date().getTime(),
-        tarih : tarihInput.value,
+        // tarih : tarihInput.value,
+        tarih: new Date(tarihInput.value).toLocaleDateString(),
         alan : harcamaAlaniInput.value,
         miktar : miktarInput.value
     }
@@ -104,7 +105,38 @@ const harcamayiDomaYaz = ({id,miktar,tarih,alan})=>{
 
 
 
+harcamaBody.addEventListener("click", (e) => {
+    // console.log(e.target)
 
+    if (e.target.classList.contains("fa-trash-can")) {
+        e.target.parentElement.parentElement.remove()
+    }
+    //silinen harcamanın id sini alır
+    const id = e.target.id
+    // console.log(id)
+    // silinen harcamayı array den çıkarır
+    harcamaListesi = harcamaListesi.filter((harcama => harcama.id != id))
+    //yeni array i local e update eder
+    localStorage.setItem("harcamalar", JSON.stringify(harcamaListesi))
+
+    //silindikten sonra yeniden hesapla
+
+    hesaplaVeGuncelle()
+
+
+
+})
+
+// !bilgileri temizle
+temizleBtn.addEventListener("click",()=>{
+    if(confirm("Emin misiniz?")){
+        harcamaListesi = []
+        gelirler = 0
+        localStorage.clear()
+        harcamaBody.innerHTML= ""
+        hesaplaVeGuncelle()
+    }
+})
 
 // !hesapla ve güncelle alt tabloyu yazan fonksiyon
 
