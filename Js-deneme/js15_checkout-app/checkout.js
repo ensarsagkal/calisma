@@ -30,97 +30,168 @@ const products = document.querySelector(".products")
 
 //! EVENTS
 //? Delete Products button event
-deleteProducts.addEventListener("click", (e) => {
-  if (confirm("Are you sure ?")) {
-    noProductPrint()
-    calculateTotalPrice()
-  }
-})
+// deleteProducts.addEventListener("click", (e) => {
+//   if (confirm("Are you sure ?")) {
+//     noProductPrint()
+//     calculateTotalPrice()
+//   }
+// })
 
-products.addEventListener("click", (e) => {
-  console.log(e.target)
 
-  //   if (e.target.classList.contains("fa-minus")) {
-  //     alert("minus")
-  //   } else if (e.target.classList.contains("fa-plus")) {
-  //     alert("plus")
-  //   } else if (e.target.classList.contains("fa-trash-can")) {
-  //     alert("remove")
-  //   } else {
-  //     alert("diger")
-  //   }
 
-  if (e.target.classList.contains("fa-plus")) {
-    //? static olarak quantity kullanirsak hangi + butonuna tiklanilirsa tiklanilsin akistaki ilk urunun degeri artar.
-    // document.getElementById("quantity").innerText++
-    e.target.previousElementSibling.innerText++
-    calculateProductPrice(e.target)
-  } else if (e.target.classList.contains("fa-minus")) {
-    if (e.target.nextElementSibling.innerText > 1) {
-      e.target.nextElementSibling.innerText--
-      calculateProductPrice(e.target)
-    }
-  } else if (e.target.classList.contains("fa-trash-can")) {
-    e.target.closest(".product").remove()
-    calculateTotalPrice()
-  }
-})
 
-const calculateProductPrice = (btn) => {
-  const discountedPrice = btn
-    .closest(".product-info")
-    .querySelector("#discounted-price").textContent
-
-  const quantity = btn
-    .closest(".buttons-div")
-    .querySelector("#quantity").textContent
-
-  const productPrice = btn
-    .closest(".buttons-div")
-    .querySelector("#product-price")
-
-  productPrice.textContent = (discountedPrice * quantity).toFixed(2)
-  calculateTotalPrice()
-}
-
-const calculateTotalPrice = () => {
-  const prices = document.querySelectorAll("#product-price")
-
-  //? Selected Product hesabı
-  const subtotal = [...prices].reduce(
-    (sum, price) => sum + Number(price.textContent),
-    0
-  )
-
-  //? Shipping
-  const shippingPrice =
-    subtotal >= FREE_SHIPPING_LIMIT || subtotal === 0 ? 0 : SHIPPING_PRICE
-
-  //? tax hesabı
-  const taxPrice = subtotal * TAX_RATE
-
-  //? total deger
-  const totalPrice = subtotal + shippingPrice + taxPrice
-
-  //! Hesaplanan degerlerin DOM'a basilmasi
-  document.getElementById("selected-price").textContent = subtotal.toFixed(2)
-
-  document.getElementById("shipping").textContent = shippingPrice.toFixed(2)
-
-  document.getElementById("tax").textContent = taxPrice.toFixed(2)
-
-  document.getElementById("total").textContent = totalPrice.toFixed(2)
-
-  //? eger urun yoksa "No Product yazisini bastir"
-  !totalPrice && noProductPrint()
-}
-
-const noProductPrint = () => {
-  products.textContent = "No product"
+deleteProducts.addEventListener("click",()=>{
+  products.textContent="No product!"
   products.classList.add("no-product")
-  document.querySelector(".delete-div").style.display = "none"
+})
+
+
+products.addEventListener("click",(e)=>{
+  if(e.target.classList.contains("fa-plus")){
+    e.target.previousElementSibling.textContent++
+    calculateProductPrice(e.target)
+  }else if(e.target.classList.contains("fa-minus")){
+    e.target.nextElementSibling.textContent--
+    calculateProductPrice(e.target)
+  }else if(e.target.classList.contains("fa-trash-can")){
+    e.target.closest(".product").remove()
+  }
+
+})
+
+
+
+
+
+
+const calculateProductPrice = (btn)=>{
+  const discountedPrice = btn.closest(".product-info").querySelector("#discounted-price").textContent
+
+  const quantity = btn.closest(".buttons-div").querySelector("#quantity").textContent
+
+  const productPrice = btn.closest(".buttons-div").querySelector("#product-price")
+
+  productPrice.textContent = Number(discountedPrice * quantity).toFixed(2)
 }
 
-window.addEventListener("load", () => {
-  calculateTotalPrice()
-})
+
+const calculateTotalPrice =()=>{
+  const productPriceList = document.querySelectorAll("#product-price")
+  const sumOfproductPriceList = [...productPriceList].reduce((sum,num)=>sum+ Number(num.textContent))
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// products.addEventListener("click", (e) => {
+//   console.log(e.target)
+
+//   //   if (e.target.classList.contains("fa-minus")) {
+//   //     alert("minus")
+//   //   } else if (e.target.classList.contains("fa-plus")) {
+//   //     alert("plus")
+//   //   } else if (e.target.classList.contains("fa-trash-can")) {
+//   //     alert("remove")
+//   //   } else {
+//   //     alert("diger")
+//   //   }
+
+//   if (e.target.classList.contains("fa-plus")) {
+//     //? static olarak quantity kullanirsak hangi + butonuna tiklanilirsa tiklanilsin akistaki ilk urunun degeri artar.
+//     // document.getElementById("quantity").innerText++
+//     e.target.previousElementSibling.innerText++
+//     calculateProductPrice(e.target)
+//   } else if (e.target.classList.contains("fa-minus")) {
+//     if (e.target.nextElementSibling.innerText > 1) {
+//       e.target.nextElementSibling.innerText--
+//       calculateProductPrice(e.target)
+//     }
+//   } else if (e.target.classList.contains("fa-trash-can")) {
+//     e.target.closest(".product").remove()
+//     calculateTotalPrice()
+//   }
+// })
+
+// const calculateProductPrice = (btn) => {
+//   const discountedPrice = btn
+//     .closest(".product-info")
+//     .querySelector("#discounted-price").textContent
+
+//   const quantity = btn
+//     .closest(".buttons-div")
+//     .querySelector("#quantity").textContent
+
+//   const productPrice = btn
+//     .closest(".buttons-div")
+//     .querySelector("#product-price")
+
+//   productPrice.textContent = (discountedPrice * quantity).toFixed(2)
+//   calculateTotalPrice()
+// }
+
+// const calculateTotalPrice = () => {
+//   const prices = document.querySelectorAll("#product-price")
+
+//   //? Selected Product hesabı
+//   const subtotal = [...prices].reduce(
+//     (sum, price) => sum + Number(price.textContent),
+//     0
+//   )
+
+//   //? Shipping
+//   const shippingPrice =
+//     subtotal >= FREE_SHIPPING_LIMIT || subtotal === 0 ? 0 : SHIPPING_PRICE
+
+//   //? tax hesabı
+//   const taxPrice = subtotal * TAX_RATE
+
+//   //? total deger
+//   const totalPrice = subtotal + shippingPrice + taxPrice
+
+//   //! Hesaplanan degerlerin DOM'a basilmasi
+//   document.getElementById("selected-price").textContent = subtotal.toFixed(2)
+
+//   document.getElementById("shipping").textContent = shippingPrice.toFixed(2)
+
+//   document.getElementById("tax").textContent = taxPrice.toFixed(2)
+
+//   document.getElementById("total").textContent = totalPrice.toFixed(2)
+
+//   //? eger urun yoksa "No Product yazisini bastir"
+//   !totalPrice && noProductPrint()
+// }
+
+// const noProductPrint = () => {
+//   products.textContent = "No product"
+//   products.classList.add("no-product")
+//   document.querySelector(".delete-div").style.display = "none"
+// }
+
+// window.addEventListener("load", () => {
+//   calculateTotalPrice()
+// })
