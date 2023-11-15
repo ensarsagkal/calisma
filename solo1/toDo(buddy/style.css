@@ -80,6 +80,17 @@ ul{
     
 }
 
+.counterJs{
+    color: aqua;
+    background-color: black;
+    font-size: 2rem;
+    border-radius: 8px;
+    padding: .3rem;
+    text-align: center;
+    margin-top: 1.5rem;
+
+}
+
 
 
 
