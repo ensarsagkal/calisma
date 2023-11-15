@@ -50,6 +50,37 @@ h1{
     background-color: #9d0707;
 }
 
+ul{
+    margin-top: 1rem;
+}
+
+.liJs{
+    list-style-type: none;
+    background-color: #5a0404;
+    color: white;
+    padding: .3rem;
+    border-radius: 8px;
+    margin-bottom: .5rem;
+    position: relative;
+    font-size: larger;
+    cursor: pointer;
+
+}
+
+.spanJs{
+    position: absolute;
+    right: 5px;
+   
+}
+
+
+.liJs-checked{
+    text-decoration: line-through;
+    color: green;
+    
+}
+
+
 
 
 
