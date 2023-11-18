@@ -10,12 +10,17 @@ const countryApis = async ()=>{
   
   try {
     const res = await fetch(`${BASE_URL}`)
+
     if(!res.ok){
         throw new Error (`hata : ${res.status}`)
+        
 }
 const data =await res.json()
+allCountriesDatas= data
+
 //  data.forEach((country)=>{console.log(country.name.common) })
  countryName(data)
+ selectBarOptions(data)
 
 
 
@@ -27,20 +32,16 @@ const data =await res.json()
 }
 
 countryApis()
-
+let allCountriesDatas= []
 const countryArr= []
 const countries = document.getElementById("countries")
+const selectBar= document.getElementById("select-bar")
 
 
 
 const countryName= (country)=>{
     // !select bardaki ülke isimlerini bastırmak için;
-    country.forEach((c)=>countryArr.push(c.name.common))
-
-
-    const selectBar= document.getElementById("select-bar")
-    countryArr.forEach((c)=>{
-    selectBar.innerHTML +=`<option>${c}</option>`})
+   
 
 
 
@@ -92,4 +93,27 @@ const countryName= (country)=>{
 
   `   
    
+}
+
+
+selectBar.addEventListener("input",(e)=>{
+  const value = selectBar.value
+  console.log(value);
+ 
+ const searchedData= allCountriesDatas.filter((c)=>c.name.common==value)
+console.log(searchedData);
+countryName(searchedData)
+
+
+})
+console.log(allCountriesDatas);
+
+
+const selectBarOptions = (data)=>{
+  data.forEach((c)=>countryArr.push(c.name.common))
+
+console.log(countryArr);
+   
+  countryArr.forEach((cname)=>{
+  selectBar.innerHTML +=`<option>${cname}</option>`})
 }
