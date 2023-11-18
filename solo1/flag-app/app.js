@@ -30,15 +30,25 @@ countryApis()
 
 const countryArr= []
 const countries = document.getElementById("countries")
+
+
+
 const countryName= (country)=>{
-    
+    // !select bardaki ülke isimlerini bastırmak için;
     country.forEach((c)=>countryArr.push(c.name.common))
 
 
     const selectBar= document.getElementById("select-bar")
     countryArr.forEach((c)=>{
     selectBar.innerHTML +=`<option>${c}</option>`})
-    const {name:{common},flags:{png},region,capital,population,borders,maps:{googleMaps},languages,currencies} =country[Math.floor(Math.random()*country.length)]
+
+
+
+    // const {name:{common},flags:{png},region,capital,population,borders,maps:{googleMaps},languages,currencies} =country[Math.floor(Math.random()*country.length)]
+
+    const {name:{common},flags:{png},region,capital,population,borders,maps:{googleMaps},languages,currencies}=  country[Math.floor(Math.random()*country.length)]
+
+
     countries.innerHTML=`
 
 
@@ -62,11 +72,8 @@ const countryName= (country)=>{
           </li>
           <li class="list-group-item">
             <i class="fas fa-lg fa-money-bill-wave"></i>
-            <span class="fw-bold"> Currencies:</span> ${
-                currencies[Object.keys(currencies)[0]].name
-              } ,${
-                currencies[Object.keys(currencies)[0]].symbol
-              }
+            <span class="fw-bold"> Currencies:</span> ${currencies[Object.keys(currencies)].name} ,${currencies[Object.keys(currencies)].symbol}
+              
           </li>
           <li class="list-group-item">
           <i class="fa-solid fa-people-group"></i></i>
@@ -83,10 +90,6 @@ const countryName= (country)=>{
       </div>
 
 
-  `
-
-
-
-   
+  `   
    
 }
