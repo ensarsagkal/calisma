@@ -4,6 +4,7 @@ const emailSpn = document.querySelector(".email")
 const phoneSpn = document.querySelector(".phone")
 const pictureSrc = document.querySelector(".pictureSrc")
 const API = "https://randomuser.me/api/";
+const btn = document.getElementById("btn")
 
 // const getData = ()=>{//?verileri transfer edecek fonksiyonumuzu burada oluşturduk.
 //   fetch(API)//?api üzerinden veriler transfer ediyoruz
@@ -29,9 +30,42 @@ const API = "https://randomuser.me/api/";
     
 //     nameSpn.textContent = title + " " +first + " "+ last//? html'e verilerimi ekledik
 //     emailSpn.textContent = email
-//     phoneSpn.textContent = phone
+    // phoneSpn.textContent = phone
 //     pictureSrc.src = picture.large
 
     
 // }
 // getData()
+
+
+const getApi = async () =>{
+    try {
+        const res =await fetch(API)
+        if(res.ok){
+        const data =await res.json()
+        showData(data)
+
+        }else{
+            throw new Error(`something went wrong ${res.status}`)
+        }
+        
+    } catch (error) {console.log(error);
+        
+    }
+}
+
+
+const showData=(personalInfo)=>{
+    const {name:{title,first,last},email,phone,picture:{large}} = personalInfo.results[0]
+ 
+    nameSpn.textContent = `${title} ${first} ${last}`
+    emailSpn.textContent=email
+    phoneSpn.textContent = phone
+    pictureSrc.src = large
+}
+
+btn.addEventListener("click",()=>{
+    getApi()
+})
+
+getApi()
