@@ -2356,7 +2356,7 @@ const newPro ={
 allProducts.push(newPro)
 return allProducts
 }
-console.log( createNewProduct({title:"Iphone 15 pro", description:"eşiz deneyim", image:"wwww.abc.com"}));
+// console.log( createNewProduct({title:"Iphone 15 pro", description:"eşiz deneyim", image:"wwww.abc.com"}));
 
 
 
@@ -2387,7 +2387,7 @@ const guncel = {
   thumbnail: 'https://i.dummyjson.com/data/products/3/thumbnail.jpg',
   images: ['https://i.dummyjson.com/data/products/3/1.jpg'],
 }
-console.log(editPro(guncel));
+// console.log(editPro(guncel));
 
 // <--------------------  Edit  product  ------------------------->​
 // <--------------------  filter  product  ------------------------->
@@ -2400,7 +2400,7 @@ const  findPro = (keyword)=>{
   return filteredKeyword
 } 
 
-console.log(findPro("oppo"));
+// console.log(findPro("oppo"));
 
 
 // <--------------------  filter  product  ------------------------->
