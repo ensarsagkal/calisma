@@ -2364,9 +2364,43 @@ console.log( createNewProduct({title:"Iphone 15 pro", description:"eşiz deneyim
 
 // <--------------------  Edit  product  ------------------------->
 // 3 - Ürün listesindeki bir ürünü güncelleyen ve yeni listeyi dönen fonksiyonu yazınız. (editProduct({id, title, description}))​
-
+const editPro = ({id, title, description})=>{
+  const editedMap = allProducts.map((p)=>{
+    if(id === p.id){
+      return {...p,title:title,description:description}
+    }
+    return p
+  })
+  return editedMap
+}
+const guncel = {
+  id: 3,
+  title: 'bla bla bla',
+  description:
+    "o my gosh!!",
+  price: 1249,
+  discountPercentage: 15.46,
+  rating: 4.09,
+  stock: 36,
+  brand: 'Samsung',
+  category: 'smartphones',
+  thumbnail: 'https://i.dummyjson.com/data/products/3/thumbnail.jpg',
+  images: ['https://i.dummyjson.com/data/products/3/1.jpg'],
+}
+console.log(editPro(guncel));
 
 // <--------------------  Edit  product  ------------------------->​
 // <--------------------  filter  product  ------------------------->
 // 4 - Ürün listesindeki ürünleri, ürünün adı, açıklaması ve markasında arayıp eşleşen tüm ürünlerin listesini dönen fonksiyonu yazınız. (filterProducts(query)) büyük-küçük harf duyarlılığı olmamalıdır.​
+const  findPro = (keyword)=>{
+  const lowerKeyword = keyword.toLowerCase()
+  const filteredKeyword = allProducts.filter((p)=>{
+  return  p.title.toLowerCase().includes(lowerKeyword)||p.description.toLowerCase().includes(lowerKeyword)||(p.brand ? p.brand.toLowerCase().includes(lowerKeyword):false)
+  })
+  return filteredKeyword
+} 
+
+console.log(findPro("oppo"));
+
+
 // <--------------------  filter  product  ------------------------->
