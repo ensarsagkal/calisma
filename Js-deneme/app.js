@@ -2338,8 +2338,9 @@ var allProducts = [
 // <--------------------  Delete product  ------------------------->
 // 1 - Ürün listesinden id'si verilen ürünü silen ve geri kalan ürün listesini dönen fonksiyonu yazınız.(deleteProduct(id))
 const  deletedProduct=(id)=>{
-  const deletedFilter= allProducts.filter((p)=>p.id!==id);
-  return (allProducts =deletedFilter)
+const deleteFilter = allProducts.filter((p)=> p.id!==id)
+allProducts=deleteFilter
+return allProducts
 
 }
 console.log(deletedProduct(2));
@@ -2347,14 +2348,13 @@ console.log(deletedProduct(2));
 // <--------------------  Create  product  ------------------------->
 // 2 - Ürün listesine yeni bir ürün ekleyen ve yeni listeyi dönen fonksiyonu yazınız. (createNewProduct({title, description, image}))​​
 const  createNewProduct= ({title,description,image})=>{
-  const newPro={
-    id : allProducts.length+1,
-   title: title ,
-   description:description,
-   image: [image]
-  }
-  allProducts.push(newPro)
-  return allProducts
+const newPro ={
+  id : allProducts.length+1,
+  title:title,
+  description:description
+}
+allProducts.push(newPro)
+return allProducts
 }
 console.log( createNewProduct({title:"Iphone 15 pro", description:"eşiz deneyim", image:"wwww.abc.com"}));
 
