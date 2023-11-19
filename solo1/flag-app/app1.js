@@ -26,7 +26,7 @@ getApi()
 let countriesArr=[]
 
 const selectBarOptions= (country)=>{
-    //' country.forEach((c)=> countriesArr.push(c.name.common))
+    //& country.forEach((c)=> countriesArr.push(c.name.common))
     countriesArr = country.map((c)=>c.name.common)
     
     console.log(countriesArr);
