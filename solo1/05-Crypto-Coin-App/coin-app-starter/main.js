@@ -7,6 +7,7 @@ const searchButton = document.getElementById("search")
 const coinList = document.getElementById("coinList")
 const form = document.getElementById("form")
 
+
 const getCoinApi = async ()=>{
    coinList.innerHTML=""
     try {
@@ -49,8 +50,20 @@ coinList.innerHTML +=` <li class="coinClass">
 </li>
 
 `
-});   
+// const div = document.querySelector('.change');
+// if (change) {
+//     change >= 0 ? div.classList.add('green') : div.classList.add('red');
+// };  
+
+})
+ 
 }
+
+
+ 
+
+
+
 form.addEventListener("submit",(e)=>{
     coinList.innerHTML=""
     e.preventDefault()
@@ -59,25 +72,7 @@ form.addEventListener("submit",(e)=>{
     // console.log(allCoinsArr);
     // console.log(filteredValue);
     getCoins(filteredValue)
-//    filteredValue.forEach((item)=>{
-       
-//     const {name, color,symbol,price,iconUrl,change} = item
 
-// coinList.innerHTML +=` <li class="coinClass">
-// <article class='article1'>
-//     <p class="name">${name}</p>
-//     <p class="symbol" style="color: ${color}">${symbol}</p>
-// </article>
-// <p class="price">$ ${price}</p>
-// <div class="img svg-icon" style="background-image: url('${iconUrl}')"></div>
-// <article class='change'><i class="fa-solid fa-chart-line"></i>
-//     <p class="change">${change}</p>
-// </article>
-// </li>
-
-// `
-   
-// })
 
     
 })
@@ -98,7 +93,4 @@ form.addEventListener("submit",(e)=>{
 //                 <p class="change">${change}</p>
 //             </article>
 //         </li>`;
-//     const div = document.querySelector('.change');
-//     if (change) {
-//         change >= 0 ? div.classList.add('green') : div.classList.add('red');
-//     }
+//   

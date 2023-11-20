@@ -168,3 +168,65 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+.coinClass{
+
+  border: 1px solid white;
+  padding: 2rem  .4rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  line-height: 3rem;
+  box-shadow:  2px 2px 20px black;
+  
+}
+
+.svg-icon {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  margin: auto;
+}
+
+.article1{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+}
+
+.red{
+
+  color: red;
+}
+
+.green{
+
+  color: green;
+}
+
+.change{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .7rem;
+}
+
+.name{
+
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.symbol{
+
+  background-color: #d1d0cf;
+  padding: 0rem .5rem  ;
+  border-radius: 5px;
+ display: flex;
+ align-items: center;
+  height: 30px;
+
+}
