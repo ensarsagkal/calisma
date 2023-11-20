@@ -19,7 +19,7 @@ const getCoinApi = async ()=>{
         const coins =  data.data.coins
         allCoinsArr = coins
        getCoins(coins)
-        // console.log(coins);
+        console.log(coins);
         // console.log(allCoinsArr);
     } catch (error) {
         
@@ -50,11 +50,13 @@ coinList.innerHTML +=` <li class="coinClass">
 </li>
 
 `
-// const div = document.querySelector('.change');
-// if (change) {
-//     change >= 0 ? div.classList.add('green') : div.classList.add('red');
-// };  
-
+})
+const classChange = document.querySelectorAll(".change")
+classChange.forEach((n)=>{
+    if(n.textContent >= 0){n.classList.add("green")
+}else{
+n.classList.add("red")
+}
 })
  
 }
