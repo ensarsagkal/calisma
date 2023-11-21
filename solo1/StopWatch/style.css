@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+  background-image: url(./img/stopwatch.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  border: 2px solid black;
+  background-color: white;
+  display: inline-block;
+  padding: 10px 70px;
+  margin-bottom: 20px;
+}
+
+#stopwatch {
+  font-size: 3em;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: inline-block;
+}
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  font-size: 2em;
+  padding: 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid red;
+}
+
+#startPauseButton {
+  border: 2px solid green;
+}
