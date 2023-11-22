@@ -1,4 +1,4 @@
-
+import { renderCoins } from "./renderData";
 
 export const apiRequest= async(input)=>{
    
@@ -9,7 +9,13 @@ export const apiRequest= async(input)=>{
     try {
         const res= await fetch(url,options)
         const json= await res.json()
-        console.log(json.data.coins[0]);
+        if(json.data.coins.length===0){
+            alert("coin can not be found")
+        }else{
+        //    console.log(json.data.coins[0]);
+            renderCoins(json.data.coins[0])
+        }
+        
         
       } catch (error) {
         console.log(error);
