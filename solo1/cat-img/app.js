@@ -2,7 +2,11 @@ const loading = document.getElementById("loading");
 const cardDiv= document.getElementById("cardDiv")
 const btn= document.querySelector(".btn")
 const tarih= document.getElementById("tarih")
-tarih.innerHTML=`${new Date().getHours()} : ${new Date().getMinutes()}: ${new Date().getSeconds()}`
+setInterval(() => {
+    tarih.innerHTML=`${new Date().getHours()} : ${new Date().getMinutes()}: ${new Date().getSeconds()}`    
+}, 1000);
+
+
 
 const loadingTimeOut = setTimeout(() => {
     loading.style.display = "none";
@@ -19,7 +23,7 @@ fetch("https://api.thecatapi.com/v1/images/search?limit=10").then((res)=>{
 }).then((data)=>{
     console.log(data);
     catDatas=data
-    cardDiv.innerHTML = ''; // cardDiv'i temizliyoruz
+    cardDiv.innerHTML=""
     show(data)
 }).catch((error)=>error)
 
