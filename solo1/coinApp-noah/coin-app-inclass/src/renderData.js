@@ -13,9 +13,23 @@ export const renderCoins=(coin)=>{
         <span>${name}</span>
         <sup>${symbol}</sup>
     </h2>
+    <div class="coin-temp>$${Number(price).toFixed(4)}</div>
+    <figure>
+        <img src="${iconUrl}" alt=""/>
+        <figcaption style='color:${change < 0 ? "red" : "green"}'>
+            <i class="fa-solid fa-chart-line"></i>
+            <span>${change || "0"}%</span>
+            
+        </figcaption>
+        <div>RANK : ${rank}</div>
+    </figure>
 
     
     
     `
     coinsUl.append(newCoinLi)
+
+    newCoinLi.querySelector(".remove-icon").addEventListener("click",()=>{
+        newCoinLi.remove()
+    })
 }
