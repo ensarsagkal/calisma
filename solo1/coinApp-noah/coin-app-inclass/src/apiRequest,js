@@ -2,7 +2,7 @@ import { renderCoins } from "./renderData";
 
 export const apiRequest= async(input)=>{
    
-    // const API_KEY="coinranking1c86887a84d81a68c6114628b1125ec2d803900d6ba62f1e"
+   //& env'dan değişkenin okunması için import meta env yolladık .env.local dosyasına koyduk api key i
     const options = {headers: {'x-access-token': import.meta.env.VITE_API_KEY},};
   
     const url=`https://api.coinranking.com/v2/coins?search=${input}`
