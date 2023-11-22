@@ -1,6 +1,8 @@
 const loading = document.getElementById("loading");
 const cardDiv= document.getElementById("cardDiv")
 const btn= document.querySelector(".btn")
+const tarih= document.getElementById("tarih")
+tarih.innerHTML=`${new Date().getHours()} : ${new Date().getMinutes()}: ${new Date().getSeconds()}`
 
 const loadingTimeOut = setTimeout(() => {
     loading.style.display = "none";
@@ -42,3 +44,4 @@ const show=(images)=>{
 btn.addEventListener("click",()=>{
    fetchCats()
 })
+
