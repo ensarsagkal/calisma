@@ -2002,10 +2002,10 @@ const oddOrEven=[10,11,12,13,14,15,16,17,18,19,20,21]
 
 
 
-//   const sumAll=(...n)=>{
-//     console.log(n);
-//     return n.reduce((sum,num)=>sum+num)
-//   }
+  // const sumAll=(...n)=>{
+  //   console.log(n);
+  //   return n.reduce((sum,num)=>sum+num)
+  // }
 
 // console.log(`sum of all : ${sumAll(5,8,99,7)}`);
 
@@ -2027,7 +2027,7 @@ const oddOrEven=[10,11,12,13,14,15,16,17,18,19,20,21]
 //   { name: "Product 7", price: 80, category: "Clothes" },
 //   { name: "Product 8", price: 90, category: "Electronics" },
 //  ];
-//  /* Use map to create an object with category as the key
+ /* Use map to create an object with category as the key
 //  and an array of products as the value */
 //  const productsByCategory = products.reduce((acc, product) => {
 //   const category = product.category;
@@ -2037,7 +2037,7 @@ const oddOrEven=[10,11,12,13,14,15,16,17,18,19,20,21]
 //   acc[category].push(product);
 //   return acc;
 //  }, {});
-//  console.log(productsByCategory);
+// //  console.log(productsByCategory);
 //  // Use map to calculate the average price for each category
 //  const avgPriceByCategory = Object.keys(productsByCategory).map(category => {
 //   const sum = productsByCategory[category].reduce((acc, product) => acc +
@@ -2343,7 +2343,7 @@ allProducts=deleteFilter
 return allProducts
 
 }
-console.log(deletedProduct(2));
+// console.log(deletedProduct(2));
 // <--------------------  Delete product  ------------------------->​
 // <--------------------  Create  product  ------------------------->
 // 2 - Ürün listesine yeni bir ürün ekleyen ve yeni listeyi dönen fonksiyonu yazınız. (createNewProduct({title, description, image}))​​
@@ -2404,3 +2404,100 @@ const  findPro = (keyword)=>{
 
 
 // <--------------------  filter  product  ------------------------->
+
+
+
+
+const products = [
+  { name: "Product 1", price: 20, category: "Electronics" },
+  { name: "Product 2", price: 30, category: "Clothes" },
+  { name: "Product 3", price: 40, category: "Electronics" },
+  { name: "Product 4", price: 50, category: "Clothes" },
+  { name: "Product 5", price: 60, category: "Clothes" },
+  { name: "Product 6", price: 70, category: "Electronics" },
+  { name: "Product 7", price: 80, category: "Clothes" },
+  { name: "Product 8", price: 90, category: "Electronics" },
+  { name: "Product 9", price: 200, category: "bakliyat" },
+  
+  
+ ];
+//  console.log(products);
+const categoryCount={}
+const categoryTotals={}
+// categoryTotals.ensar sagkal="hüdai"
+// console.log(categoryTotals);
+// categoryTotals["ensar2 sagkal"]="hüdai2"
+// console.log(categoryTotals);
+
+for(const product of products){
+  categoryTotals[product.category]=(categoryTotals[product.category]|| 0)+product.price
+  categoryCount[product.category]=(categoryCount[product.category] ||0 ) + 1
+}
+console.log(categoryTotals);
+console.log(categoryCount);
+
+
+ const categoryAvg = {}
+for(const category in categoryTotals){
+  categoryAvg[category]=categoryTotals[category]/categoryCount[category]
+}
+console.log(categoryAvg);
+
+const bosArray = []
+bosArray.push(categoryAvg)
+console.log(bosArray);
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+// const categoryTotals = products.reduce((acc,product)=>{
+//   acc[product.category]=(acc[product.category] || 0) + product.price
+  
+//  return acc
+// },{})
+
+// const categoryCount = products.reduce((acc,product)=>{
+//   acc[product.category]=(acc[product.category] || 0) + 1
+//  return acc
+// },{})
+
+
+// const lastLevel = ()=>{
+  
+// }
+// console.log(categoryTotals);
+// console.log(categoryCount);
+
+
+
+
+//   let categories = {};
+ 
+//   products.map(product => {
+//   if(!categories[product.category]){
+//     categories[product.category] = {total: 0, count: 0};
+//   }
+//   categories[product.category].total += product.price;
+//   categories[product.category].count++;
+  
+//  });
+
+ 
+//  let averages = Object.keys(categories).map(category => {
+//   return {category: category, average: categories[category].total / categories[category].count};
+//  });
+ 
+//  let result = averages.filter(item => item.average > 50);
+ 
