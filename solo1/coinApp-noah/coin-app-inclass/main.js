@@ -1,6 +1,6 @@
 //? projenin style dosyasını ana js kodumuza import ettik.
 import "./scss/style.scss"
-import { apiRequest } from "./src/apiRequest,js"
+import { apiRequest } from "./src/apiRequest.js"
 const form= document.querySelector("header form")
 
 
