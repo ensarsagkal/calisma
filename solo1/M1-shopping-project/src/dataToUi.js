@@ -23,12 +23,13 @@
          >
            <span>Fiyatı:</span><span> ${price} ₺</span>
          </div>
-         <div class="card-footer w-100 d-flex justify-content-center gap-3">
-           <button class="btn btn-danger">Sepete Ekle</button>
+         <div  class="card-footer w-100 d-flex justify-content-center gap-3">
+           <button class="btn btn-danger"style="white-space: nowrap;" >Sepete Ekle</button>
            <button
-             class="btn btn-primary"
+             class="btn btn-primary" 
              data-bs-toggle="modal"
              data-bs-target="#exampleModal"
+             style="white-space: nowrap;"
            >
             Detayları Gör
            </button>
