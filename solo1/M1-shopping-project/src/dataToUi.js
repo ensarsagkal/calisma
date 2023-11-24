@@ -15,13 +15,13 @@
            alt="..."
          />
          <div class="card-body">
-           <h5 class="card-title line-clamp-1">${title}</h5>
-           <p class="card-text line-clamp-3">${description}</p>
+           <h5 class="card-title line1">${title}</h5>
+           <p class="card-text line3">${description}</p>
          </div>
          <div
            class="card-footer w-100 fw-bold d-flex justify-content-between gap-3"
          >
-           <span>Price:</span><span>${price} $</span>
+           <span>Fiyatı:</span><span> ${price} ₺</span>
          </div>
          <div class="card-footer w-100 d-flex justify-content-center gap-3">
            <button class="btn btn-danger">Sepete Ekle</button>
@@ -30,7 +30,7 @@
              data-bs-toggle="modal"
              data-bs-target="#exampleModal"
            >
-             See Details
+            Detayları Gör
            </button>
          </div>
        </div>
