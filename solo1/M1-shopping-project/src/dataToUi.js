@@ -2,7 +2,7 @@
 
  export const dataToUi=(data)=>{
     const products = document.getElementById("products")
-    console.log(products);
+    // console.log(products);
     data.forEach((item)=>{
         const {title,description,category,price,image,id}=item
        products.innerHTML +=`
@@ -39,3 +39,6 @@
        `
     })
 }
+
+
+// [elek,clothes,yiyecek,all]

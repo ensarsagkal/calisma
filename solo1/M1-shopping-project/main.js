@@ -1,6 +1,7 @@
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { dataToUi } from "./src/dataToUi";
+import { categoryArrFunc } from "./src/categoryArr";
 
 
 const getApiData = async () => {
@@ -15,9 +16,11 @@ const getApiData = async () => {
         const data =await res.json()
         // console.log(data); 
         dataToUi(data)
+        categoryArrFunc(data)
     }
   } catch (error) {
     console.log(error);
   }
 };
 getApiData();
+
