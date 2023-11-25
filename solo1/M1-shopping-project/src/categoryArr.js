@@ -24,10 +24,15 @@ export const categoryArrFunc = (data)=>{
     // <button class="btn btn-warning">${categorName}</button>
     // `
     const button = document.createElement('button');
-    
     button.type = 'button';
+    button.classList.add("btn")
+    button.classList.add("btn-warning")
+
     button.textContent= categorName
+    const categoryDom =document.getElementById("category")
+    
     btns.appendChild(button)
+   
     button.addEventListener("click",(e)=>{
       products.innerHTML=""
       if(e.target.textContent=="All"){
@@ -37,6 +42,7 @@ export const categoryArrFunc = (data)=>{
       let filtered = data.filter((item)=>item.category==categorName)
       
       dataToUi(filtered)}
+      categoryDom.textContent=categorName
       
  })
 
