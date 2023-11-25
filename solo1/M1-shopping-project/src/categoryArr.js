@@ -43,6 +43,13 @@ export const categoryArrFunc = (data)=>{
       
       dataToUi(filtered)}
       categoryDom.textContent=categorName
+
+    // const searchInput = document.getElementById("searchInput")  
+    // searchInput.addEventListener("input",()=>{
+    // if(searchInput.value.includes(filetered.category)){
+    //   dataToUi(filetered.categorName)
+    // } 
+    // })
       
  })
 
